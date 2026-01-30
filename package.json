@@ -1,7 +1,7 @@
 {
-  "name": "pranjal-ekhande-portfolio",
+  "name": "yash-kucheriya-portfolio",
   "version": "1.0.0",
-  "description": "Professional portfolio website for Pranjal Ekhande",
+  "description": "Professional portfolio website for Yash Vijay Kucheriya",
   "main": "index.html",
   "scripts": {
     "upload-video": "node upload-to-vercel-blob.js",
@@ -12,6 +12,6 @@
   },
   "devDependencies": {},
   "keywords": ["portfolio", "web", "javascript", "css", "html"],
-  "author": "Pranjal Ekhande",
+  "author": "Yash Vijay Kucheriya",
   "license": "MIT"
 } 

@@ -83,7 +83,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Contact & Connect
 
 - **GitHub**: [github.com/yashkuceriya](https://github.com/yashkuceriya)
-- **Email**: yashkuceriya@example.com
+- **Email**: ykucheri@asu.edu
 - **Portfolio**: [yashkuceriya.github.io/yash-kucheriya-portfolio](https://yashkuceriya.github.io/yash-kucheriya-portfolio/)
 
 Feel free to reach out for collaboration opportunities or professional inquiries!

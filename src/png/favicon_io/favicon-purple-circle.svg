@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="16" cy="16" r="15"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Purple circle background -->
+  <circle cx="16" cy="16" r="16" fill="#8000ff"/>
+  
+  <!-- Inner circle for avatar -->
+  <circle cx="16" cy="16" r="14" fill="#9333ea" opacity="0.8"/>
+  
+  <!-- Placeholder for avatar - will be replaced by CSS background-image -->
+  <circle cx="16" cy="16" r="12" fill="#a855f7" opacity="0.6"/>
+  
+  <!-- Add subtle gradient overlay -->
+  <defs>
+    <radialGradient id="overlay" cx="0.3" cy="0.3">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <circle cx="16" cy="16" r="16" fill="url(#overlay)"/>
+  
+  <!-- Simple avatar representation -->
+  <circle cx="16" cy="12" r="4" fill="white" opacity="0.9"/>
+  <ellipse cx="16" cy="24" rx="6" ry="4" fill="white" opacity="0.9"/>
+</svg> 

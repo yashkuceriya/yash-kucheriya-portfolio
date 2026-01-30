@@ -1,0 +1,17 @@
+{
+  "name": "pranjal-ekhande-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Pranjal Ekhande",
+  "main": "index.html",
+  "scripts": {
+    "upload-video": "node upload-to-vercel-blob.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "@vercel/blob": "^0.23.4"
+  },
+  "devDependencies": {},
+  "keywords": ["portfolio", "web", "javascript", "css", "html"],
+  "author": "Pranjal Ekhande",
+  "license": "MIT"
+} 

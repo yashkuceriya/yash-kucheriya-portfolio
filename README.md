@@ -1,11 +1,11 @@
-# Pranjal Ekhande Portfolio
+# Yash Vijay Kucheriya - Portfolio
 
 ## Overview
 A responsive personal portfolio website showcasing my professional projects, technical skills, work experience, and contact information. The site features modern design principles with smooth animations and interactive elements.
 
-[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/pranjal-ekhande/pranjal-ekhande-portfolio)
-[![Website Status](https://img.shields.io/badge/Website%20Status-Online-dark%20green)](https://pranjal-ekhande.github.io/pranjal-ekhande-portfolio/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/pranjal-ekhande/pranjal-ekhande-portfolio/blob/master/LICENSE)
+[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/yashkuceriya/yash-kucheriya-portfolio)
+[![Website Status](https://img.shields.io/badge/Website%20Status-Online-dark%20green)](https://yashkuceriya.github.io/yash-kucheriya-portfolio/)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/yashkuceriya/yash-kucheriya-portfolio/blob/main/LICENSE)
 
 ## Features
 
@@ -17,16 +17,33 @@ A responsive personal portfolio website showcasing my professional projects, tec
 
 ## Installation and Deployment
 
-1. Clone this repository to your local machine
-2. Modify the content in `index.html` to reflect your personal information
-3. Update images in the `src/` directory with your own professional photos and project screenshots
-4. Customize styling in `index.css` as needed
-5. Deploy to your preferred hosting platform
+### Live Portfolio
+Visit my portfolio at: **[yashkuceriya.github.io/yash-kucheriya-portfolio](https://yashkuceriya.github.io/yash-kucheriya-portfolio/)**
 
-**Important Notes:**
-- Remove existing personal branding and replace with your own
-- Update Google Analytics ID in the HTML head section if you plan to use analytics
-- Ensure all personal information and contact details are updated before deployment
+### Local Setup
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yashkuceriya/yash-kucheriya-portfolio.git
+   cd yash-kucheriya-portfolio
+   ```
+
+2. Open in a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Then visit `http://localhost:8000`
+
+3. Or simply open `index.html` in your browser
+
+### Customization
+- Modify content in `index.html` for your personal information
+- Update images in `src/` directory with your own photos
+- Customize styling in `index.css` as needed
+
+**Deploy to GitHub Pages:**
+1. Create a new repository named `your-username.github.io`
+2. Push your portfolio files to the repository
+3. Your portfolio will be live at `https://your-username.github.io`
 
 ## Technical Implementation
 
@@ -44,15 +61,18 @@ A responsive personal portfolio website showcasing my professional projects, tec
 ## Project Structure
 
 ```
-pranjal-ekhande-portfolio/
-├── index.html          # Main HTML file
-├── index.css           # Stylesheet
-├── main.js            # JavaScript functionality
+yash-kucheriya-portfolio/
+├── index.html          # Main HTML file with all sections
+├── index.css           # Responsive styling and animations
+├── main.js            # Interactive functionality
+├── package.json       # Project metadata
 ├── src/               # Assets directory
-│   ├── png/           # Image files
-│   ├── pdf/           # Document files
+│   ├── png/           # Image files and favicons
+│   ├── webp/          # Optimized image formats
+│   ├── pdf/           # Resume and documents
 │   ├── mp3/           # Audio files
-│   └── videos/        # Video demonstrations
+│   ├── svg/           # SVG icons and graphics
+│   └── videos/        # Project demonstration videos
 └── README.md          # Project documentation
 ```
 
@@ -60,10 +80,14 @@ pranjal-ekhande-portfolio/
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for complete details.
 
-## Contact
+## Contact & Connect
 
-For inquiries about this portfolio or professional opportunities, please reach out through the contact form on the website or via the provided contact information.
+- **GitHub**: [github.com/yashkuceriya](https://github.com/yashkuceriya)
+- **Email**: yashkuceriya@example.com
+- **Portfolio**: [yashkuceriya.github.io/yash-kucheriya-portfolio](https://yashkuceriya.github.io/yash-kucheriya-portfolio/)
+
+Feel free to reach out for collaboration opportunities or professional inquiries!
 
 ---
 
-*This portfolio demonstrates technical proficiency in modern web development practices and serves as a comprehensive overview of professional capabilities and achievements.*
+*Built with HTML5, CSS3, and JavaScript | Deployed on GitHub Pages | © 2025*

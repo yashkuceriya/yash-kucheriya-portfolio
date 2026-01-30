@@ -85,7 +85,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 - **GitHub**: [github.com/yashkuceriya](https://github.com/yashkuceriya)
 - **Email**: ykucheri@asu.edu
 - **Phone**: +1 (623) 276-6592
-- **LinkedIn**: [linkedin.com/in/yash-kucheriya](https://www.linkedin.com/in/yash-kucheriya/)
+- **LinkedIn**: [linkedin.com/in/yash-kucheriya-b05a17162](https://www.linkedin.com/in/yash-kucheriya-b05a17162/)
 - **Portfolio**: [yashkuceriya.github.io/yash-kucheriya-portfolio](https://yashkuceriya.github.io/yash-kucheriya-portfolio/)
 
 Feel free to reach out for collaboration opportunities or professional inquiries!

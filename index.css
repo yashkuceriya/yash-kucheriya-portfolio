@@ -569,7 +569,8 @@ noscript {
 
 .logo-top img,
 .logo-top .header-footer-avatar,
-.logo-top .memoji-avatar {
+.logo-top .memoji-avatar,
+.logo-top .sticker-avatar {
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -617,6 +618,7 @@ noscript {
 
 .logo:hover .header-footer-avatar,
 .logo:hover .memoji-avatar,
+.logo:hover .sticker-avatar,
 .logo:hover img {
   transform: scale(1.2) translateY(-2px);
   border-color: var(--accent);
@@ -2110,7 +2112,9 @@ footer {
 
 .footer-avatar-img,
 .footer-avatar-container .header-footer-avatar,
-.footer-avatar-container .memoji-avatar {
+.footer-avatar-container .memoji-avatar,
+.footer-avatar-container .sticker-avatar,
+.footer-avatar-container img.sticker-avatar {
   width: 160px;
   height: 160px;
   max-width: 200px;
@@ -2134,7 +2138,8 @@ footer {
 
 .footer-avatar-container:hover .footer-avatar-img,
 .footer-avatar-container:hover .header-footer-avatar,
-.footer-avatar-container:hover .memoji-avatar {
+.footer-avatar-container:hover .memoji-avatar,
+.footer-avatar-container:hover .sticker-avatar {
   transform: scale(1.12) translateY(-6px);
   border-color: var(--accent);
   box-shadow: 0 0 0 6px var(--accent-muted), 0 12px 32px rgba(0, 0, 0, 0.5);

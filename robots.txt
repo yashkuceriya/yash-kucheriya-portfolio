@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yashkuceriya.github.io/yash-kucheriya-portfolio/sitemap.xml

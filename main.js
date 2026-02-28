@@ -133,11 +133,11 @@ window.addEventListener("scroll", () => {
 let mybutton = document.getElementById("backtotopbutton");
 function scrollFunction() {
   document.body.scrollTop > 400 || document.documentElement.scrollTop > 400
-    ? (mybutton.style.display = "block")
+    ? (mybutton.style.display = "flex")
     : (mybutton.style.display = "none");
 }
 function scrolltoTopfunction() {
-  (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 (window.onscroll = function () {
   scrollFunction();

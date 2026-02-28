@@ -149,6 +149,25 @@ body {
   border-radius: var(--radius-sm);
 }
 
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 16px;
+  z-index: 100000;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: #0c0c0f;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: top var(--duration-normal) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
 /* Custom cursor styles */
 .cursor-inner {
     width: 5px;
@@ -368,7 +387,7 @@ header {
 }
 
 #preloader {
-  background-color: white;
+  background-color: #0c0c0f;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -381,7 +400,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10%;
-  filter: invert(1);
 }
 
 noscript {
@@ -549,7 +567,8 @@ noscript {
   position: relative;
 }
 
-.logo-top img {
+.logo-top img,
+.logo-top .meme-avatar {
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -559,6 +578,24 @@ noscript {
   transition: all var(--duration-normal) var(--ease-out);
   border: 1.5px solid var(--border-default);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.meme-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.meme-avatar svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.meme-avatar-nav {
+  color: var(--color-dark-mode);
 }
 
 /* Navbar avatar specific styling */
@@ -581,7 +618,8 @@ noscript {
   }
 }
 
-.logo:hover img {
+.logo:hover img,
+.logo:hover .meme-avatar {
   transform: scale(1.05);
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-muted), 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -977,6 +1015,8 @@ noscript {
   border-radius: 0px;
   cursor: pointer;
   transition: all var(--duration-normal) var(--ease-out);
+  text-decoration: none;
+  display: inline-flex;
 }
 
 .letsTalkBtn-text {
@@ -1858,38 +1898,30 @@ noscript {
 
 #backtotopbutton {
   position: fixed;
-  right: 10px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
+  right: 24px;
+  bottom: 24px;
+  display: none;
   align-items: center;
   justify-content: center;
-  border: none;
-  width: 3rem;
-  height: 15rem;
+  border: 1px solid var(--border-default);
+  width: 42px;
+  height: 42px;
   z-index: 101;
-  text-align: center;
-  transition: all 0.4s;
-  background-color: transparent;
-  display: none;
-}
-
-#backtotopbutton article {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  font-weight: 400;
-  /* width: 200px; */
-  /* transform: rotate(90deg); */
-
-  writing-mode: vertical-rl;
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif;
-  mix-blend-mode: difference;
+  background: var(--surface-2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all var(--duration-normal) var(--ease-out);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #backtotopbutton:hover {
-  transform: translate(0px, -20px);
-  text-decoration: line-through var(--color-white);
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  color: var(--text-primary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* footer starts */
@@ -2078,16 +2110,20 @@ footer {
   justify-content: center;
 }
 
-.footer-avatar-img {
-  width: auto;
+.footer-avatar-img,
+.meme-avatar-footer {
+  width: 160px;
+  height: 160px;
   max-width: 200px;
   z-index: 2;
-  /* opacity: .2; */
-  height: 280px;
-  object-fit: contain;
-  object-position: center bottom;
-  -webkit-filter: drop-shadow(5px 5px 5px #fff);
-  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.4));
+  color: var(--color-dark-mode);
+}
+
+.meme-avatar-footer svg {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-bottom {
@@ -2531,8 +2567,10 @@ footer {
     /* Smaller font size for small screens */
   }
 
-  .footer-avatar-img {
-    height: 320px;
+  .footer-avatar-img,
+  .meme-avatar-footer {
+    height: 200px;
+    width: 200px;
     max-width: 220px;
   }
 }
@@ -2650,8 +2688,10 @@ footer {
     height: calc(76vw / 2);
   }
 
-  .footer-avatar-img {
-    height: 250px;
+  .footer-avatar-img,
+  .meme-avatar-footer {
+    height: 160px;
+    width: 160px;
     max-width: 180px;
   }
 }

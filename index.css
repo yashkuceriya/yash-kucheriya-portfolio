@@ -1361,63 +1361,55 @@ noscript {
   width: 100%;
 }
 
-/* Project-specific card styling (separate from experience cards) */
+/* Project-specific card styling */
 .project-card {
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.05)
+    145deg,
+    rgba(15, 23, 42, 0.85),
+    rgba(30, 41, 59, 0.6)
   );
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;
-  height: 400px; /* Fixed height for consistency */
+  height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   transition: all 0.3s ease;
   position: relative;
-  
-  border-radius: 20px;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-light-blue), var(--color-light-purple));
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 
-    0 12px 40px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+  border-color: rgba(0, 217, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-card .info-div {
-  width: 50%;
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  padding: 0 40px;
-}
-
-.project-card .image-div {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  padding-top: 70px;
-  padding-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.project-card .image-div img {
-  height: 100%;
-  border-top-left-radius: 30px;
+  gap: 12px;
+  padding: 32px 36px;
 }
 
 .projects-section-div {
@@ -1489,12 +1481,10 @@ noscript {
 .project-boxes-div {
   width: 100%;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 40px 0;
 }
 
 .project-box-wrapper {
@@ -1700,14 +1690,20 @@ noscript {
 
 .ProjectHeading {
   color: var(--color-white);
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   font-weight: 700;
+  line-height: 1.2;
+}
+
+.project-card .ProjectHeading {
+  font-size: 2.2rem;
 }
 
 .ProjectDescription {
-  color: gray;
-  font-size: 1.7rem;
+  color: rgba(200, 200, 215, 0.85);
+  font-size: 1.4rem;
   font-weight: 400;
+  line-height: 1.7;
 }
 
 /* Project visit button */
@@ -1721,18 +1717,21 @@ noscript {
 
 .github-redirect {
   text-decoration: none;
-  width: 50px;
+  width: 36px;
 }
 
 .github-redirect img {
-  width: 45px;
+  width: 32px;
   height: auto;
   transition: all 0.3s;
-  filter: brightness(2);
+  filter: brightness(1.5);
+  opacity: 0.7;
 }
 
 .github-redirect:hover img {
-  filter: brightness(4);
+  filter: brightness(3);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .cta {
@@ -1811,43 +1810,45 @@ noscript {
 /* Project subheading */
 .ProjectSubheading {
   color: var(--color-light-blue);
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  letter-spacing: 0.3px;
-  margin-top: -12px;
+  letter-spacing: 0.2px;
+  margin-top: -6px;
+  opacity: 0.9;
 }
 
 /* Project date badge */
 .project-date {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 /* Tech tag badges */
 .project-tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: 4px;
 }
 
 .tech-tag {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 20px;
-  background: rgba(0, 217, 255, 0.1);
-  border: 1px solid rgba(0, 217, 255, 0.25);
+  background: rgba(0, 217, 255, 0.08);
+  border: 1px solid rgba(0, 217, 255, 0.2);
   color: var(--color-light-blue);
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
   transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
 .tech-tag:hover {
-  background: rgba(0, 217, 255, 0.22);
+  background: rgba(0, 217, 255, 0.18);
   border-color: var(--color-light-blue);
   transform: translateY(-1px);
 }
@@ -2456,21 +2457,28 @@ footer {
     width: 80%;
   }
 
+  .project-boxes-div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
   .project-box {
     flex-direction: column;
-    height: 800px;
+    height: auto;
+    min-height: auto;
   }
 
   .info-div {
     width: 100%;
-    height: 50%;
+    height: auto;
   }
 
   .image-div {
     padding: 0;
     width: 100%;
-    height: 50%;
-    padding-left: 80px;
+    height: auto;
+    padding-left: 40px;
   }
 }
 
@@ -2636,28 +2644,13 @@ footer {
     backdrop-filter: blur(8px);
   }
 
-  /* Responsive styling for project cards (separate from experience) */
-  .project-card {
-    height: 500px;
-    flex-direction: column;
-    backdrop-filter: blur(8px);
+  .project-boxes-div {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .project-card .info-div {
-    width: 100%;
-    height: 60%;
-    padding: 30px;
-  }
-
-  .project-card .image-div {
-    width: 100%;
-    height: 40%;
-    padding-top: 0;
-    padding-left: 30px;
-  }
-
-  .project-card .image-div img {
-    border-top-left-radius: 10px;
+    padding: 28px 24px;
   }
 
   .info-div {
@@ -2745,19 +2738,21 @@ footer {
     padding: 20px 8px;
   }
 
-  /* Mobile responsive for project cards */
-  .project-card {
-    height: 450px;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-  }
-
   .project-card .info-div {
-    padding: 25px 20px;
+    padding: 22px 18px;
   }
 
-  .project-card .image-div {
-    padding-left: 20px;
+  .project-card .ProjectHeading {
+    font-size: 1.8rem;
+  }
+
+  .ProjectSubheading {
+    font-size: 1.15rem;
+  }
+
+  .show-more-btn {
+    padding: 12px 24px;
+    font-size: 1.4rem;
   }
 
   /* Mobile company logo styling */

@@ -38,6 +38,7 @@ Visit my portfolio at: **[yashkuceriya.github.io/yash-kucheriya-portfolio](https
 ### Customization
 - Modify content in `index.html` for your personal information
 - Update images in `src/` directory with your own photos
+- **Resume**: Copy your resume PDF to `src/pdf/Yash_Vijay_Kucheriya_Resume.pdf` so the About-section "Resume" button works
 - Customize styling in `index.css` as needed
 
 **Deploy to GitHub Pages:**

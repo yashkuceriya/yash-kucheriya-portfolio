@@ -866,6 +866,25 @@ noscript {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-link {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light-blue);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 217, 255, 0.4);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero-link:hover {
+  background: rgba(0, 217, 255, 0.15);
+  border-color: var(--color-light-blue);
+  transform: translateY(-2px);
 }
 
 .letsTalkBtn {

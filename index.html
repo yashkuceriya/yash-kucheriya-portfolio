@@ -676,7 +676,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <section class="projects-section-container" id="projects">
         <div class="projects-section-div">
           <div class="section-heading" data-aos="fade-up">
-            <h2 class="section-heading-article" class="shimmer" tabindex="0"
+            <h2 class="section-heading-article" tabindex="0"
               aria-label="My projects starts from here">
               &#60;/Projects&#62;
             </h2>
@@ -684,127 +684,374 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="project-boxes-div">
-            <!-- Logical Language Modeling for Reasoning -->
+
+            <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-card project-box2" id="project-box1">
+              <div class="project-card" id="project-collabboard">
                 <div class="info-div">
-                  <article class="ProjectHeading">Logical Language Modeling for Reasoning</article>
+                  <span class="project-date">Feb 2026 – Present</span>
+                  <article class="ProjectHeading">CollabBoard</article>
+                  <p class="ProjectSubheading">Real-Time Collaborative Whiteboard with AI Assistant</p>
                   <p class="ProjectDescription">
-                    Fine-tuned LLaMA 3.2 on OpenWebMath with reweighted loss, boosting LogiQA accuracy by <strong>28%</strong>. 
-                    Applied attention diagnostics and AI-based prompt optimization for logical consistency and interpretability. 
-                    Built scalable inference scripts for distributed GPUs and cloud checkpoints.
+                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization. 
+                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing. 
+                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations. 
+                    Designed auth, board sharing, and role-based access with <strong>Supabase Auth + RLS</strong>.
                   </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Vercel</span>
+                    <span class="tech-tag">AI</span>
+                  </div>
                   <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya"
+                    <a href="https://github.com/yashkuceriya/collabboard"
                       target="_blank" class="github-redirect"
-                      aria-label="Visit Logical Language Modeling Project on GitHub">
+                      aria-label="Visit CollabBoard on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" />
                     </a>
                   </div>
                 </div>
-                <div class="image-div">
-                  <!-- Add project image here -->
-                </div>
+                <div class="image-div"></div>
               </div>
             </div>
 
-            <!-- Cloud-Based Face Recognition -->
+            <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-card project-box5" id="project-box2">
+              <div class="project-card" id="project-eventiq">
                 <div class="info-div">
+                  <span class="project-date">Jul 2025 – Jan 2026</span>
+                  <article class="ProjectHeading">EventIQ</article>
+                  <p class="ProjectSubheading">AI-Powered Real-Time Event Intelligence Platform</p>
+                  <p class="ProjectDescription">
+                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics. 
+                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing. 
+                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization. 
+                    Integrated <strong>PostgreSQL + Redis</strong> caching with rate limiting, dead-letter queues, and fault-tolerant workflows.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Kafka</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">GPT-4</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Terraform</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit EventIQ on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 3: Cloud-Based Face Recognition ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-facerecog">
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
                   <article class="ProjectHeading">Cloud-Based Face Recognition</article>
+                  <p class="ProjectSubheading">Multi-Stage Cloud-to-Edge Architecture on AWS</p>
                   <p class="ProjectDescription">
-                    Built Flask REST API for CNN inference with OpenCV preprocessing, deployed via <strong>AWS EC2 + Docker</strong>. 
-                    Added S3-based data versioning and implemented concurrency-safe inference handling with <strong>1000+ concurrent users</strong>. 
-                    Tech: TensorFlow, OpenCV, Flask, AWS EC2, S3, Docker, Python
+                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>. 
+                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>. 
+                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT. 
+                    Integrated <strong>OpenCV + facenet-pytorch</strong> for detection and recognition.
                   </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">EC2</span>
+                    <span class="tech-tag">Lambda</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">PyTorch</span>
+                  </div>
                   <div class="project-buttons">
                     <a href="https://github.com/yashkuceriya"
                       target="_blank" class="github-redirect"
-                      aria-label="Visit Cloud Face Recognition Project on GitHub">
+                      aria-label="Visit Cloud Face Recognition on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" />
                     </a>
                   </div>
                 </div>
-                <div class="image-div">
-                  <!-- Add project image here -->
-                </div>
+                <div class="image-div"></div>
               </div>
             </div>
 
-            <!-- Sales Forecasting (Time Series) -->
+            <!-- ===== FEATURED PROJECT 4: Logical Language Modeling ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-card project-box3" id="project-box3">
+              <div class="project-card" id="project-llm">
                 <div class="info-div">
-                  <article class="ProjectHeading">Sales Forecasting (Time Series)</article>
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Logical Language Modeling</article>
+                  <p class="ProjectSubheading">LLaMA Fine-Tuning for Reasoning</p>
                   <p class="ProjectDescription">
-                    Combined ARIMA, LSTM, and XGBoost for ensemble forecasting; achieved <strong>93% accuracy</strong> and <strong>30% lower MAE</strong>. 
-                    Automated feature engineering using Pandas and NumPy to produce rolling predictions in cloud jobs. 
-                    Tech: Python, Pandas, TensorFlow, ARIMA, XGBoost, Matplotlib
+                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors. 
+                    Designed soft and hard token reweighting to improve transformer attention mechanisms. 
+                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench. 
+                    Performed attention-head visualization to interpret model reasoning behavior.
                   </p>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Sales Forecasting Project on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" />
-                    </a>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Hugging Face</span>
+                    <span class="tech-tag">LLaMA</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">GPU</span>
                   </div>
-                </div>
-                <div class="image-div">
-                  <!-- Add project image here -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Fake News Detection -->
-            <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-card project-box4" id="project-box4">
-                <div class="info-div">
-                  <article class="ProjectHeading">Fake News Detection</article>
-                  <p class="ProjectDescription">
-                    Built hybrid TF-IDF + BiLSTM classifier reaching <strong>95% accuracy</strong>; deployed for real-time screening. 
-                    Integrated REST-based moderation service and Dockerized deployment for scalability. 
-                    Tech: TensorFlow, Keras, Flask, REST APIs, NLP, Docker, Semantic analysis
-                  </p>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Fake News Detection Project on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" />
-                    </a>
-                  </div>
-                </div>
-                <div class="image-div">
-                  <!-- Add project image here -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Real-Time Graph Analytics -->
-            <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-card project-box4" id="project-box5">
-                <div class="info-div">
-                  <article class="ProjectHeading">Real-Time Graph Analytics</article>
-                  <p class="ProjectDescription">
-                    Designed and deployed a real-time streaming graph pipeline using <strong>Kafka + Neo4j</strong>, processing NYC Taxi trip data with dynamic ingestion. 
-                    Implemented <strong>PageRank and BFS</strong> using Neo4j Graph Data Science (GDS) to analyze zone centrality and connectivity. 
-                    Orchestrated containerized services with <strong>Docker, Kubernetes (Minikube), and Helm</strong> for scalable, fault-tolerant deployment. 
-                    Integrated Kafka Connect for real-time ingestion into Neo4j with persistent volumes and resource-controlled pods.
-                  </p>
                   <div class="project-buttons">
                     <a href="https://github.com/yashkuceriya"
                       target="_blank" class="github-redirect"
-                      aria-label="Visit Real-Time Graph Analytics on GitHub">
+                      aria-label="Visit LLM Reasoning on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" />
                     </a>
                   </div>
                 </div>
-                <div class="image-div">
-                  <!-- Add project image here -->
-                </div>
+                <div class="image-div"></div>
               </div>
             </div>
           </div>
+          <!-- End featured projects -->
+
+          <!-- Show More / Show Less toggle -->
+          <div class="show-more-container" data-aos="fade-up">
+            <button class="show-more-btn" id="show-more-btn" onclick="toggleMoreProjects()">
+              <span id="show-more-text">Show More Projects</span>
+              <svg id="show-more-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hidden projects (revealed by Show More) -->
+          <div class="project-boxes-div more-projects-hidden" id="more-projects">
+
+            <!-- ===== MORE 1: ReadEaseAI ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-readeaseai">
+                <div class="info-div">
+                  <span class="project-date">Nov 2025 &middot; Anthropic Hackathon</span>
+                  <article class="ProjectHeading">ReadEaseAI</article>
+                  <p class="ProjectSubheading">AI Reading Assistant for Accessible Content</p>
+                  <p class="ProjectDescription">
+                    Built at the <strong>Claude &times; Anthropic Hackathon</strong>. NLP-driven system that analyzes and rewrites complex text into clearer formats for non-native speakers and accessibility-focused audiences. 
+                    Implemented AI-powered summarization using LLMs with prompt engineering for readability while preserving context. 
+                    Interactive interface for real-time simplified outputs.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit ReadEaseAI on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-graphanalytics">
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Real-Time Graph Analytics</article>
+                  <p class="ProjectSubheading">Kafka + Neo4j + Kubernetes Pipeline</p>
+                  <p class="ProjectDescription">
+                    Built a scalable pipeline transforming batch graph processing into real-time streaming. 
+                    Modeled NYC Yellow Taxi data as graph relationships in <strong>Neo4j</strong>, executed <strong>PageRank and BFS</strong> via Graph Data Science. 
+                    <strong>Kafka Connect</strong> for continuous ingestion generating <strong>1500+ graph relationships</strong> in real time. 
+                    Orchestrated with <strong>Docker, Kubernetes (Minikube), and Helm</strong>.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Kafka</span>
+                    <span class="tech-tag">Neo4j</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Helm</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Graph Analytics on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 3: Store Sales Forecasting ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-salesforecast">
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
+                  <article class="ProjectHeading">Store Sales Forecasting</article>
+                  <p class="ProjectSubheading">ML &amp; Deep Learning Time-Series</p>
+                  <p class="ProjectDescription">
+                    Compared <strong>15+ models</strong> — XGBoost, LightGBM, CatBoost, Random Forest, ARIMA, LSTM, GRU, and ensemble boosting. 
+                    Extensive feature engineering: lag features, rolling averages, temporal encoding, and categorical transforms. 
+                    Boosting and deep learning models significantly outperformed traditional statistical approaches across large-scale retail data.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">LSTM</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">TensorFlow</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Sales Forecasting on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 4: Fake News Detection ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-fakenews">
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2024</span>
+                  <article class="ProjectHeading">Fake News Detection</article>
+                  <p class="ProjectSubheading">ML &amp; NLP Classification</p>
+                  <p class="ProjectDescription">
+                    End-to-end text classification using TF-IDF with Naive Bayes, Logistic Regression, SVM, Neural Networks, and <strong>XGBoost achieving ~99.7% accuracy</strong>. 
+                    Text preprocessing with NLTK — tokenization, stopword removal, feature engineering. 
+                    Visualization workflows analyzing model performance, boosting behavior, and loss convergence.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">TF-IDF</span>
+                    <span class="tech-tag">NLTK</span>
+                    <span class="tech-tag">Python</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Fake News Detection on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 5: Income Prediction Insights ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-income">
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Income Prediction Insights</article>
+                  <p class="ProjectSubheading">Data Visualization &amp; Analytics</p>
+                  <p class="ProjectDescription">
+                    Analyzed U.S. Census data to understand socio-economic predictors of income. 
+                    Designed interactive visualizations — mosaic plots, scatter plots, parallel coordinate plots. 
+                    Identified key income drivers: <strong>education level, occupation type, age, and weekly hours</strong>. 
+                    Generated actionable insights for marketing strategy, scholarship planning, and workforce analytics.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Data Viz</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Income Prediction on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-houseasp">
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
+                  <article class="ProjectHeading">House Reconfiguration Optimization</article>
+                  <p class="ProjectSubheading">Answer Set Programming (Clingo)</p>
+                  <p class="ProjectDescription">
+                    Constraint-based optimization system solving the House Reconfiguration Problem using <strong>ASP and Clingo</strong>. 
+                    Modeled spatial allocation constraints for items, cabinets, and rooms with declarative logic rules. 
+                    Cost-minimization prioritizing reuse over expansion. 
+                    Achieved optimal configurations in <strong>~0.005 seconds</strong>; applicable to warehouse layout and resource allocation.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">ASP</span>
+                    <span class="tech-tag">Clingo</span>
+                    <span class="tech-tag">Logic Programming</span>
+                    <span class="tech-tag">Optimization</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit House ASP on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 7: Network RTT Analysis ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-rtt">
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2024</span>
+                  <article class="ProjectHeading">Analyzing Network RTT</article>
+                  <p class="ProjectSubheading">FABRIC Testbed Cloud Networking</p>
+                  <p class="ProjectDescription">
+                    Designed controlled networking experiments across distributed nodes on <strong>FABRIC research infrastructure</strong> to measure RTT behavior. 
+                    Investigated impact of topology, routing paths, and infrastructure configuration on latency. 
+                    Built automated experiment workflows and visualization pipelines to interpret performance bottlenecks.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">FABRIC</span>
+                    <span class="tech-tag">Networking</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Cloud</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit RTT Analysis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                  </div>
+                </div>
+                <div class="image-div"></div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End more-projects -->
+
         </div>
       </section>
     </main>

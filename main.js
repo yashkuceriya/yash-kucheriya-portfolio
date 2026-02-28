@@ -1,3 +1,24 @@
+// Show More / Show Less projects toggle
+function toggleMoreProjects() {
+  var container = document.getElementById('more-projects');
+  var btnText = document.getElementById('show-more-text');
+  var arrow = document.getElementById('show-more-arrow');
+
+  if (container.classList.contains('more-projects-hidden')) {
+    container.classList.remove('more-projects-hidden');
+    container.classList.add('more-projects-visible');
+    btnText.textContent = 'Show Less';
+    arrow.style.transform = 'rotate(180deg)';
+    AOS.refresh();
+  } else {
+    container.classList.remove('more-projects-visible');
+    container.classList.add('more-projects-hidden');
+    btnText.textContent = 'Show More Projects';
+    arrow.style.transform = 'rotate(0deg)';
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 var lastScrollTop; // This Varibale will store the top position
 navbar = document.getElementById('navbar'); // Get The NavBar
 window.addEventListener('scroll',function(){

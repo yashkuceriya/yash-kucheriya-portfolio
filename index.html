@@ -630,6 +630,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="project-boxes-div">
+            <!-- Gauntlet AI -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-box project-box2" id="experience-box0">
+                <div class="info-div">
+                  <article class="ProjectHeading">Gauntlet AI</article>
+                  <p class="ProjectDescription">
+                    <strong>AI Engineer</strong><br>
+                    <em>Feb 2026 – Present | Austin, TX, USA</em><br><br>
+                    • Rigorous 10-week intensive transforming experienced engineers into builders of advanced AI systems<br>
+                    • Deep hands-on development with AI-accelerated tools, frameworks, and real production challenges<br>
+                    • Mastering full-stack AI workflows, end-to-end <strong>agentic development</strong>, and scalable model integrations<br>
+                    • Emphasis on rapid iteration, real software delivery under real constraints, and preparation for high-impact AI engineering roles
+                  </p>
+                </div>
+                <div class="image-div">
+                  <img src="src/png/gauntlet-logo.svg"
+                    alt="Gauntlet AI logo" class="company-logo" />
+                </div>
+              </div>
+            </div>
+
             <!-- ZenZiee (YesTech Corp) -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-box project-box2" id="experience-box1">
@@ -709,14 +730,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-collabboard">
+                <div class="project-preview" onclick="openProjectPreview('https://collabboard-five.vercel.app', 'CollabBoard')">
+                  <div class="preview-gradient" style="--grad-from:#0ea5e9;--grad-to:#6366f1;">
+                    <span class="preview-initial">CB</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Feb 2026 – Present</span>
                   <article class="ProjectHeading">CollabBoard</article>
                   <p class="ProjectSubheading">Real-Time Collaborative Whiteboard with AI Assistant</p>
                   <p class="ProjectDescription">
-                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization. 
-                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing. 
-                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations. 
+                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization.
+                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing.
+                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations.
                     Designed auth, board sharing, and role-based access with <strong>Supabase Auth + RLS</strong>.
                   </p>
                   <div class="project-tech-tags">
@@ -733,6 +763,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       aria-label="Visit CollabBoard on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" />
                     </a>
+                    <a href="https://collabboard-five.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CollabBoard">Live Demo</a>
                   </div>
                 </div>
               </div>
@@ -741,14 +772,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-eventiq">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/EventIQ-Platform', 'EventIQ')">
+                  <div class="preview-gradient" style="--grad-from:#f59e0b;--grad-to:#ef4444;">
+                    <span class="preview-initial">EIQ</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jul 2025 – Jan 2026</span>
                   <article class="ProjectHeading">EventIQ</article>
                   <p class="ProjectSubheading">AI-Powered Real-Time Event Intelligence Platform</p>
                   <p class="ProjectDescription">
-                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics. 
-                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing. 
-                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization. 
+                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics.
+                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing.
+                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization.
                     Integrated <strong>PostgreSQL + Redis</strong> caching with rate limiting, dead-letter queues, and fault-tolerant workflows.
                   </p>
                   <div class="project-tech-tags">
@@ -771,17 +811,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <!-- ===== FEATURED PROJECT 3: Cloud-Based Face Recognition ===== -->
+            <!-- ===== FEATURED PROJECT 3: LexivoAI ===== -->
+            <div data-aos="fade-up" class="project-box-wrapper">
+              <div class="project-card" id="project-lexivoai">
+                <div class="project-preview" onclick="openProjectPreview('https://v0-word-wise-ai.vercel.app', 'LexivoAI')">
+                  <div class="preview-gradient" style="--grad-from:#8b5cf6;--grad-to:#ec4899;">
+                    <span class="preview-initial">Lx</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – Feb 2026</span>
+                  <article class="ProjectHeading">LexivoAI</article>
+                  <p class="ProjectSubheading">AI-Powered Writing Assistant &amp; Content Creation Platform</p>
+                  <p class="ProjectDescription">
+                    Built a full-stack AI writing platform with real-time <strong>grammar checking</strong>, style suggestions, and <strong>Instagram carousel generation</strong>.
+                    Integrated <strong>OpenAI API</strong> for intelligent content templates, brand voice analysis, and writing performance analytics.
+                    Designed multi-format document management with export to <strong>PDF, images, and ZIP</strong>.
+                    Auth via <strong>Clerk</strong>, data layer with <strong>Supabase (PostgreSQL)</strong>, deployed on <strong>Vercel</strong>.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">Clerk</span>
+                    <span class="tech-tag">Tailwind</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/LexivoAI"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit LexivoAI on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" />
+                    </a>
+                    <a href="https://v0-word-wise-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of LexivoAI">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 4: Cloud-Based Face Recognition ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-facerecog">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya', 'Cloud-Based Face Recognition')">
+                  <div class="preview-gradient" style="--grad-from:#10b981;--grad-to:#0ea5e9;">
+                    <span class="preview-initial">FR</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Aug – Dec 2024</span>
                   <article class="ProjectHeading">Cloud-Based Face Recognition</article>
                   <p class="ProjectSubheading">Multi-Stage Cloud-to-Edge Architecture on AWS</p>
                   <p class="ProjectDescription">
-                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>. 
-                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>. 
-                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT. 
+                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>.
+                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>.
+                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT.
                     Integrated <strong>OpenCV + facenet-pytorch</strong> for detection and recognition.
                   </p>
                   <div class="project-tech-tags">
@@ -804,17 +895,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <!-- ===== FEATURED PROJECT 4: Logical Language Modeling ===== -->
+            <!-- ===== FEATURED PROJECT 5: Logical Language Modeling ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-llm">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/abhiramvad/nlp-project', 'Logical Language Modeling')">
+                  <div class="preview-gradient" style="--grad-from:#f97316;--grad-to:#eab308;">
+                    <span class="preview-initial">LLM</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jan – May 2025</span>
                   <article class="ProjectHeading">Logical Language Modeling</article>
                   <p class="ProjectSubheading">LLaMA Fine-Tuning for Reasoning</p>
                   <p class="ProjectDescription">
-                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors. 
-                    Designed soft and hard token reweighting to improve transformer attention mechanisms. 
-                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench. 
+                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors.
+                    Designed soft and hard token reweighting to improve transformer attention mechanisms.
+                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench.
                     Performed attention-head visualization to interpret model reasoning behavior.
                   </p>
                   <div class="project-tech-tags">
@@ -853,6 +953,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 1: ReadEaseAI ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-readeaseai">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya', 'ReadEaseAI')">
+                  <div class="preview-gradient" style="--grad-from:#14b8a6;--grad-to:#6366f1;">
+                    <span class="preview-initial">RE</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Nov 2025 &middot; Anthropic Hackathon</span>
                   <article class="ProjectHeading">ReadEaseAI</article>
@@ -882,6 +991,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-graphanalytics">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya', 'Real-Time Graph Analytics')">
+                  <div class="preview-gradient" style="--grad-from:#06b6d4;--grad-to:#3b82f6;">
+                    <span class="preview-initial">GA</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jan – May 2025</span>
                   <article class="ProjectHeading">Real-Time Graph Analytics</article>
@@ -913,6 +1031,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 3: Store Sales Forecasting ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-salesforecast">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project', 'Store Sales Forecasting')">
+                  <div class="preview-gradient" style="--grad-from:#22c55e;--grad-to:#14b8a6;">
+                    <span class="preview-initial">SF</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Aug – Dec 2024</span>
                   <article class="ProjectHeading">Store Sales Forecasting</article>
@@ -943,6 +1070,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 4: Fake News Detection ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-fakenews">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb', 'Fake News Detection')">
+                  <div class="preview-gradient" style="--grad-from:#ef4444;--grad-to:#f97316;">
+                    <span class="preview-initial">FN</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jan – May 2024</span>
                   <article class="ProjectHeading">Fake News Detection</article>
@@ -973,6 +1109,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 5: Income Prediction Insights ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-income">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya', 'Income Prediction Insights')">
+                  <div class="preview-gradient" style="--grad-from:#a855f7;--grad-to:#6366f1;">
+                    <span class="preview-initial">IP</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jan – May 2025</span>
                   <article class="ProjectHeading">Income Prediction Insights</article>
@@ -1003,6 +1148,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-houseasp">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya', 'House Reconfiguration Optimization')">
+                  <div class="preview-gradient" style="--grad-from:#f43f5e;--grad-to:#a855f7;">
+                    <span class="preview-initial">HR</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Aug – Dec 2024</span>
                   <article class="ProjectHeading">House Reconfiguration Optimization</article>
@@ -1033,6 +1187,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== MORE 7: Network RTT Analysis ===== -->
             <div data-aos="fade-up" class="project-box-wrapper">
               <div class="project-card" id="project-rtt">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE-534-project', 'Analyzing Network RTT')">
+                  <div class="preview-gradient" style="--grad-from:#0284c7;--grad-to:#0d9488;">
+                    <span class="preview-initial">RTT</span>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
                 <div class="info-div">
                   <span class="project-date">Jan – May 2024</span>
                   <article class="ProjectHeading">Analyzing Network RTT</article>
@@ -1131,6 +1294,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </footer>
     <!-- footer ends here -->
+
+    <!-- Project Preview Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeProjectPreview()">
+      <div class="modal-container" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <span class="modal-title" id="modal-title">Project Preview</span>
+          <div class="modal-header-actions">
+            <a href="" target="_blank" class="modal-open-external" id="modal-external-link" aria-label="Open in new tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <button class="modal-close-btn" onclick="closeProjectPreview()" aria-label="Close preview">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-loader" id="modal-loader">
+            <div class="modal-spinner"></div>
+            <span>Loading preview...</span>
+          </div>
+          <iframe id="modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

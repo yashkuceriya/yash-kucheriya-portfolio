@@ -1,3 +1,60 @@
+// Project preview modal
+function openProjectPreview(url, title) {
+  var overlay = document.getElementById('modal-overlay');
+  var iframe = document.getElementById('modal-iframe');
+  var loader = document.getElementById('modal-loader');
+  var titleEl = document.getElementById('modal-title');
+  var externalLink = document.getElementById('modal-external-link');
+
+  titleEl.textContent = title;
+  externalLink.href = url;
+  loader.classList.remove('hidden');
+  iframe.style.opacity = '0';
+  iframe.src = url;
+
+  iframe.onload = function() {
+    loader.classList.add('hidden');
+    iframe.style.opacity = '1';
+  };
+
+  // Fallback if iframe is blocked by X-Frame-Options
+  setTimeout(function() {
+    if (!loader.classList.contains('hidden')) {
+      loader.innerHTML = '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-tertiary)"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+        '<span>Preview blocked by site policy</span>' +
+        '<a href="' + url + '" target="_blank" style="color:var(--accent);text-decoration:none;font-size:1.4rem;padding:8px 20px;border:1px solid var(--accent);border-radius:9999px;margin-top:8px;">Open in New Tab</a>';
+    }
+  }, 5000);
+
+  overlay.style.display = 'flex';
+  requestAnimationFrame(function() {
+    overlay.classList.add('modal-active');
+  });
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProjectPreview() {
+  var overlay = document.getElementById('modal-overlay');
+  var iframe = document.getElementById('modal-iframe');
+  var loader = document.getElementById('modal-loader');
+
+  overlay.classList.remove('modal-active');
+  document.body.style.overflow = '';
+
+  setTimeout(function() {
+    overlay.style.display = 'none';
+    iframe.src = '';
+    loader.classList.remove('hidden');
+    loader.innerHTML = '<div class="modal-spinner"></div><span>Loading preview...</span>';
+  }, 300);
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeProjectPreview();
+  }
+});
+
 // Show More / Show Less projects toggle
 function toggleMoreProjects() {
   var container = document.getElementById('more-projects');

@@ -120,42 +120,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="navbar-tabs box-shadow" id="navbar-tabs">
           <ul class="navbar-tabs-ul">
-            <li class="home activeThistab" class="navbar-tabs-li"
+            <li class="home activeThistab navbar-tabs-li"
               data-aos="fade-down" data-aos-delay="100">
               <a href="#home" tabindex="0" aria-label="Home menu button">
                 Home
               </a>
             </li>
 
-            <li class="about" class="navbar-tabs-li" data-aos="fade-down"
+            <li class="about navbar-tabs-li" data-aos="fade-down"
               data-aos-delay="300">
               <a href="#about" aria-label="about menu button">
                 About
               </a>
             </li>
 
-            <li class="skills" class="navbar-tabs-li" data-aos="fade-down"
+            <li class="skills navbar-tabs-li" data-aos="fade-down"
               data-aos-delay="500">
               <a href="#skills" aria-label="skills menu button">
                 Skills
               </a>
             </li>
 
-            <li class="education" class="navbar-tabs-li" data-aos="fade-down"
+            <li class="education navbar-tabs-li" data-aos="fade-down"
               data-aos-delay="550">
               <a href="#education" aria-label="education menu button">
                 Education
               </a>
             </li>
 
-            <li class="experience" class="navbar-tabs-li" data-aos="fade-down"
+            <li class="experience navbar-tabs-li" data-aos="fade-down"
               data-aos-delay="650">
               <a href="#experience" aria-label="experience menu button">
                 Experience
               </a>
             </li>
 
-            <li class="projects" class="navbar-tabs-li" data-aos="fade-down"
+            <li class="projects navbar-tabs-li" data-aos="fade-down"
               data-aos-delay="750">
               <a href="#projects" aria-label="projects menu button">
                 Projects
@@ -406,7 +406,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </li>
 
               <li class="tech-stack-box" data-aos="fade-up">
-                <img src="./src/png/cpplogo.png" alt="Java language skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java language skill"
                   class="tech-stack-logo" />
                 <span class="tooltip">JAVA</span>
               </li>
@@ -1315,7 +1315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="footer-bottom">
             <article>
               Design & Built by Yash Vijay Kucheriya
-              &#169; twentytwentyfive
+              &#169; twentytwentysix
             </article>
 
           </div>
@@ -1338,41 +1338,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   </script>
 
-    <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
     <script data-name="BMC-Widget" data-cfasync="false"
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="yash_kucheriya" data-description="Support me on Buy me a coffee!"

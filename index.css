@@ -1848,6 +1848,270 @@ noscript {
   transform: scale(1.05);
 }
 
+/* Mini mockup previews */
+.preview-mockup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Terminal mockup — for CLI/backend/RAG projects */
+.preview-terminal {
+  background: #0d1117;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.preview-terminal::before {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 14px;
+  background:
+    radial-gradient(circle 4px at 10px 7px, #ff5f57 99%, transparent),
+    radial-gradient(circle 4px at 26px 7px, #ffbd2e 99%, transparent),
+    radial-gradient(circle 4px at 42px 7px, #28c840 99%, transparent);
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+
+.term-line {
+  height: 3px;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.term-line:nth-child(2) { width: 70%; background: #7ee787; }
+.term-line:nth-child(3) { width: 55%; background: #79c0ff; }
+.term-line:nth-child(4) { width: 85%; background: #d2a8ff; }
+.term-line:nth-child(5) { width: 40%; background: #ffa657; }
+.term-line:nth-child(6) { width: 65%; background: #79c0ff; }
+.term-line:nth-child(7) { width: 50%; background: #7ee787; }
+.term-line:nth-child(8) { width: 75%; background: #ff7b72; }
+.term-line:nth-child(9) { width: 45%; background: #d2a8ff; }
+.term-line:nth-child(10) { width: 60%; background: #ffa657; }
+.term-line:nth-child(11) { width: 35%; background: #79c0ff; }
+
+/* Dashboard mockup — for finance/analytics projects */
+.preview-dashboard {
+  background: #111827;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dash-topbar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dash-topbar span {
+  height: 8px;
+  border-radius: 4px;
+  opacity: 0.4;
+}
+
+.dash-topbar span:nth-child(1) { width: 50px; background: #36cfcc; opacity: 0.8; }
+.dash-topbar span:nth-child(2) { width: 30px; background: #6b7280; }
+.dash-topbar span:nth-child(3) { width: 30px; background: #6b7280; }
+.dash-topbar span:nth-child(4) { width: 30px; background: #6b7280; margin-left: auto; }
+
+.dash-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  flex: 1;
+  padding-top: 8px;
+}
+
+.dash-bar {
+  flex: 1;
+  border-radius: 3px 3px 0 0;
+  min-height: 10px;
+  opacity: 0.7;
+}
+
+.dash-bar:nth-child(1) { height: 40%; background: #36cfcc; }
+.dash-bar:nth-child(2) { height: 65%; background: #36cfcc; }
+.dash-bar:nth-child(3) { height: 45%; background: #36cfcc; }
+.dash-bar:nth-child(4) { height: 80%; background: #36cfcc; opacity: 1; }
+.dash-bar:nth-child(5) { height: 55%; background: #36cfcc; }
+.dash-bar:nth-child(6) { height: 70%; background: #36cfcc; }
+.dash-bar:nth-child(7) { height: 35%; background: #36cfcc; }
+.dash-bar:nth-child(8) { height: 90%; background: #36cfcc; opacity: 1; }
+.dash-bar:nth-child(9) { height: 50%; background: #36cfcc; }
+.dash-bar:nth-child(10) { height: 60%; background: #36cfcc; }
+
+/* Canvas mockup — for collaborative/whiteboard tools */
+.preview-canvas {
+  background: #1a1a2e;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.canvas-note {
+  position: absolute;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.canvas-note:nth-child(1) { width: 45px; height: 35px; background: #fbbf24; top: 15%; left: 10%; transform: rotate(-3deg); }
+.canvas-note:nth-child(2) { width: 50px; height: 30px; background: #60a5fa; top: 20%; left: 55%; transform: rotate(2deg); }
+.canvas-note:nth-child(3) { width: 40px; height: 40px; background: #34d399; top: 55%; left: 30%; transform: rotate(-1deg); }
+.canvas-note:nth-child(4) { width: 48px; height: 28px; background: #f472b6; top: 60%; left: 70%; transform: rotate(4deg); }
+.canvas-note:nth-child(5) { width: 35px; height: 32px; background: #a78bfa; top: 35%; left: 40%; transform: rotate(-2deg); }
+
+/* Editor mockup — for writing/content platforms */
+.preview-editor {
+  background: #1e1e2e;
+  display: flex;
+  height: 100%;
+}
+
+.editor-sidebar {
+  width: 30px;
+  background: rgba(255,255,255,0.03);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 0;
+  gap: 8px;
+}
+
+.editor-sidebar span {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.1);
+}
+
+.editor-sidebar span:first-child { background: #8b5cf6; opacity: 0.7; }
+
+.editor-body {
+  flex: 1;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.editor-line {
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.12);
+}
+
+.editor-line:nth-child(1) { width: 60%; background: rgba(139,92,246,0.4); height: 5px; }
+.editor-line:nth-child(2) { width: 90%; margin-top: 4px; }
+.editor-line:nth-child(3) { width: 75%; }
+.editor-line:nth-child(4) { width: 85%; }
+.editor-line:nth-child(5) { width: 45%; }
+.editor-line:nth-child(6) { width: 0; height: 6px; }
+.editor-line:nth-child(7) { width: 70%; }
+.editor-line:nth-child(8) { width: 80%; }
+.editor-line:nth-child(9) { width: 55%; }
+
+/* Stream mockup — for event/data streaming projects */
+.preview-stream {
+  background: #0f172a;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.stream-event {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 4px;
+  border-left: 2px solid;
+}
+
+.stream-event span {
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.15);
+}
+
+.stream-event:nth-child(1) { border-color: #22c55e; }
+.stream-event:nth-child(1) span:first-child { width: 20px; background: #22c55e; opacity: 0.6; }
+.stream-event:nth-child(1) span:last-child { width: 60px; }
+.stream-event:nth-child(2) { border-color: #f59e0b; }
+.stream-event:nth-child(2) span:first-child { width: 25px; background: #f59e0b; opacity: 0.6; }
+.stream-event:nth-child(2) span:last-child { width: 45px; }
+.stream-event:nth-child(3) { border-color: #ef4444; }
+.stream-event:nth-child(3) span:first-child { width: 18px; background: #ef4444; opacity: 0.6; }
+.stream-event:nth-child(3) span:last-child { width: 55px; }
+.stream-event:nth-child(4) { border-color: #3b82f6; }
+.stream-event:nth-child(4) span:first-child { width: 22px; background: #3b82f6; opacity: 0.6; }
+.stream-event:nth-child(4) span:last-child { width: 50px; }
+.stream-event:nth-child(5) { border-color: #22c55e; }
+.stream-event:nth-child(5) span:first-child { width: 15px; background: #22c55e; opacity: 0.6; }
+.stream-event:nth-child(5) span:last-child { width: 65px; }
+
+/* Cloud mockup — for infrastructure/AWS projects */
+.preview-cloud {
+  background: #0c1222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.cloud-node {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 0.7;
+}
+
+.cloud-node::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  width: 12px;
+  height: 1.5px;
+  background: rgba(255,255,255,0.15);
+}
+
+.cloud-node:last-child::after { display: none; }
+
+.cloud-node:nth-child(1) { border-color: #f59e0b; background: rgba(245,158,11,0.1); }
+.cloud-node:nth-child(2) { border-color: #3b82f6; background: rgba(59,130,246,0.1); }
+.cloud-node:nth-child(3) { border-color: #10b981; background: rgba(16,185,129,0.1); }
+.cloud-node:nth-child(4) { border-color: #8b5cf6; background: rgba(139,92,246,0.1); }
+
+.cloud-inner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.cloud-node:nth-child(1) .cloud-inner { background: #f59e0b; }
+.cloud-node:nth-child(2) .cloud-inner { background: #3b82f6; }
+.cloud-node:nth-child(3) .cloud-inner { background: #10b981; }
+.cloud-node:nth-child(4) .cloud-inner { background: #8b5cf6; }
+
 /* When a real screenshot is used instead of gradient */
 .project-preview img.preview-screenshot {
   width: 100%;

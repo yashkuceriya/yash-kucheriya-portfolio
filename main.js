@@ -150,6 +150,15 @@ window.onscroll = function () {
 
 
 
+// Card glow follow effect
+document.addEventListener('mousemove', function(e) {
+  document.querySelectorAll('.project-card').forEach(function(card) {
+    var rect = card.getBoundingClientRect();
+    card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+    card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+  });
+});
+
 // For custom cursor
 document.addEventListener('DOMContentLoaded', function() {
   const cursorInner = document.querySelector('.cursor-inner');

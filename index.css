@@ -1389,10 +1389,10 @@ noscript {
   height: auto;
   display: flex;
   flex-direction: column;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: all 0.35s var(--ease-out);
   position: relative;
   border-radius: var(--radius-lg);
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -1403,19 +1403,38 @@ noscript {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), #8b5cf6);
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-out);
+  z-index: 2;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out);
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(34, 211, 238, 0.06), transparent 40%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--border-default);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.15);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(34, 211, 238, 0.05);
   background: var(--surface-2);
 }
 
 .project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover::after {
   opacity: 1;
 }
 
@@ -1426,6 +1445,8 @@ noscript {
   align-items: flex-start;
   gap: var(--space-md);
   padding: var(--space-lg) var(--space-lg);
+  position: relative;
+  z-index: 2;
 }
 
 .projects-section-div {
@@ -1727,20 +1748,23 @@ noscript {
 .tech-tag {
   font-size: 1rem;
   font-weight: 500;
-  padding: 2px 10px;
+  padding: 3px 12px;
   border-radius: var(--radius-full);
   background: var(--surface-2);
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   letter-spacing: 0.2px;
-  transition: all var(--duration-fast) var(--ease-out);
+  transition: all 0.2s var(--ease-out);
   white-space: nowrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
 }
 
 .tech-tag:hover {
   background: var(--accent-muted);
   border-color: var(--accent);
   color: var(--accent);
+  transform: translateY(-1px);
 }
 
 /* Show More / Show Less button */
@@ -1826,26 +1850,39 @@ noscript {
 .preview-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
   opacity: 0;
-  transition: opacity var(--duration-normal) var(--ease-out);
+  transition: all 0.35s var(--ease-out);
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+}
+
+.preview-overlay svg {
+  transition: transform 0.3s var(--ease-out);
 }
 
 .project-preview:hover .preview-overlay {
   opacity: 1;
 }
 
+.project-preview:hover .preview-overlay svg {
+  transform: scale(1.15);
+}
+
 .project-preview:hover .preview-gradient {
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+.project-preview:hover .preview-mockup {
+  transform: scale(1.03);
+  transition: transform 0.5s var(--ease-out);
 }
 
 /* Mini mockup previews */
@@ -2127,21 +2164,38 @@ noscript {
 
 /* Live demo link */
 .live-demo-link {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--accent);
   text-decoration: none;
-  padding: 4px 14px;
-  border: 1px solid var(--accent);
+  padding: 5px 16px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
   border-radius: var(--radius-full);
-  transition: all var(--duration-normal) var(--ease-out);
-  letter-spacing: 0.3px;
+  transition: all 0.25s var(--ease-out);
+  letter-spacing: 0.4px;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.live-demo-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: translateX(-101%);
+  transition: transform 0.3s var(--ease-out);
+  z-index: -1;
 }
 
 .live-demo-link:hover {
-  background: var(--accent);
   color: #0c0c0f;
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.live-demo-link:hover::before {
+  transform: translateX(0);
 }
 
 

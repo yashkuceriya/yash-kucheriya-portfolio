@@ -155,6 +155,30 @@ window.addEventListener('scroll', function() {
 
 
 
+// Animated stat counters
+(function() {
+  var counted = false;
+  var statsRow = document.querySelector('.stats-row');
+  if (!statsRow) return;
+  var observer = new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting && !counted) {
+      counted = true;
+      document.querySelectorAll('.stat-number').forEach(function(el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var current = 0;
+        var step = Math.max(1, Math.floor(target / 30));
+        var interval = setInterval(function() {
+          current += step;
+          if (current >= target) { current = target; clearInterval(interval); }
+          el.textContent = current;
+        }, 50);
+      });
+      observer.disconnect();
+    }
+  }, { threshold: 0.3 });
+  observer.observe(statsRow);
+})();
+
 // Custom reveal system (replaces AOS)
 function initReveal() {
   var reveals = document.querySelectorAll('.reveal');
@@ -176,14 +200,31 @@ var scrollProgressEl = document.createElement('div');
 scrollProgressEl.className = 'scroll-progress';
 document.body.appendChild(scrollProgressEl);
 
-// Card glow follow effect
+// Card glow follow + subtle tilt effect
+var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 document.addEventListener('mousemove', function(e) {
   document.querySelectorAll('.project-card').forEach(function(card) {
     var rect = card.getBoundingClientRect();
     card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
     card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+
+    if (!isTouchDevice) {
+      var centerX = rect.left + rect.width / 2;
+      var centerY = rect.top + rect.height / 2;
+      var rotateX = ((e.clientY - centerY) / rect.height) * -4;
+      var rotateY = ((e.clientX - centerX) / rect.width) * 4;
+      card.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-4px)';
+    }
   });
 });
+
+if (!isTouchDevice) {
+  document.querySelectorAll('.project-card').forEach(function(card) {
+    card.addEventListener('mouseleave', function() {
+      card.style.transform = '';
+    });
+  });
+}
 
 // Contact form validation & submission
 document.addEventListener('DOMContentLoaded', function() {

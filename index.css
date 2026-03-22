@@ -707,9 +707,36 @@ noscript {
   align-items: flex-end;
   color: var(--text-secondary);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  line-height: 5px;
+  line-height: 1.4;
   margin-bottom: var(--space-xl);
   letter-spacing: 1px;
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typeIn 1.8s steps(14) 0.5s forwards;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--accent);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes typeIn {
+  to { width: 14ch; }
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @-webkit-keyframes vibrate-1 {
@@ -1215,6 +1242,46 @@ noscript {
   opacity: 0.5;
 }
 
+/* Stats row in about section */
+.stats-row {
+  display: flex;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-suffix {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
 /* about section ends
  */
 /* skills section starts */
@@ -1502,6 +1569,52 @@ noscript {
 #experience .project-boxes-div {
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+/* Experience timeline connector */
+#experience .project-boxes-div {
+  position: relative;
+  padding-left: 32px;
+}
+
+#experience .project-boxes-div::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: var(--border-default);
+}
+
+#experience .project-box-wrapper {
+  position: relative;
+}
+
+#experience .project-box-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-tertiary);
+  border: 2px solid var(--surface-1);
+  z-index: 1;
+}
+
+/* Pulsing accent dot for current role (first entry) */
+#experience .project-box-wrapper:first-child::before {
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-muted);
+  animation: pulse-timeline 2s ease-in-out infinite;
+}
+
+@keyframes pulse-timeline {
+  0%, 100% { box-shadow: 0 0 0 4px var(--accent-muted); }
+  50% { box-shadow: 0 0 0 8px rgba(34, 211, 238, 0.05); }
 }
 
 .project-box {

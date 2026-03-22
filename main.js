@@ -56,8 +56,8 @@ function visualmode() {
     });
 }
 window.addEventListener("load", function () {
-  (loader.style.display = "none"),
-    document.querySelector(".hey").classList.add("popup");
+  loader.classList.add("loaded");
+  document.querySelector(".hey").classList.add("popup");
 });
 
 
@@ -122,6 +122,12 @@ window.addEventListener('scroll', function() {
         navbar.style.top = scrollTop > lastScrollTop ? '-80px' : '0';
       }
       lastScrollTop = scrollTop;
+
+      // Hide scroll indicator after first scroll
+      var scrollInd = document.getElementById('scroll-indicator');
+      if (scrollInd && scrollTop > 100) {
+        scrollInd.classList.add('hidden');
+      }
 
       // Scroll progress bar
       var docHeight = document.documentElement.scrollHeight - window.innerHeight;

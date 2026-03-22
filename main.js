@@ -14,7 +14,7 @@ function toggleMoreProjects() {
     container.classList.add('more-projects-visible');
     btnText.textContent = 'Show Less';
     arrow.style.transform = 'rotate(180deg)';
-    AOS.refresh();
+    initReveal();
   } else {
     container.classList.remove('more-projects-visible');
     container.classList.add('more-projects-hidden');
@@ -123,6 +123,11 @@ window.addEventListener('scroll', function() {
       }
       lastScrollTop = scrollTop;
 
+      // Scroll progress bar
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      scrollProgressEl.style.width = progress + '%';
+
       // Back to top button
       mybutton.style.display = scrollTop > 400 ? 'flex' : 'none';
 
@@ -149,6 +154,27 @@ window.addEventListener('scroll', function() {
 });
 
 
+
+// Custom reveal system (replaces AOS)
+function initReveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  if (!reveals.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(function(el) { observer.observe(el); });
+}
+initReveal();
+
+// Scroll progress bar
+var scrollProgressEl = document.createElement('div');
+scrollProgressEl.className = 'scroll-progress';
+document.body.appendChild(scrollProgressEl);
 
 // Card glow follow effect
 document.addEventListener('mousemove', function(e) {

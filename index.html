@@ -81,6 +81,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-55P7S77D');</script>
 <!-- End Google Tag Manager -->
+    <!-- Flash-prevention: restore saved theme before paint -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+          document.documentElement.style.setProperty('--preload-bg', '#fafafa');
+          document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('light-mode');
+            document.getElementById('switchforvisualmode').checked = true;
+            document.querySelectorAll('.needtobeinvert').forEach(function(e) { e.classList.add('invertapplied'); });
+          });
+        }
+      })();
+    </script>
   </head>
 
   <body class="body">
@@ -1364,7 +1378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script data-name="BMC-Widget"
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="yash_kucheriya" data-description="Support me on Buy me a coffee!"
-      data-message="" data-color="#00D9FF" data-position="left" data-x_margin="18"
+      data-message="" data-color="#22d3ee" data-position="left" data-x_margin="18"
       data-y_margin="18" async></script>
   </body>
 

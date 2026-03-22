@@ -50,10 +50,12 @@ function playpause() {
 
 
 function visualmode() {
-  document.body.classList.toggle("light-mode"),
-    document.querySelectorAll(".needtobeinvert").forEach(function (e) {
-      e.classList.toggle("invertapplied");
-    });
+  document.body.classList.toggle("light-mode");
+  document.querySelectorAll(".needtobeinvert").forEach(function (e) {
+    e.classList.toggle("invertapplied");
+  });
+  var isLight = document.body.classList.contains("light-mode");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
 }
 window.addEventListener("load", function () {
   loader.classList.add("loaded");

@@ -1,8 +1,3 @@
-@font-face {
-  font-family: neon;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -90,10 +85,21 @@ html {
   --border-subtle: rgba(255,255,255,0.06);
   --border-default: rgba(255,255,255,0.1);
   --text-primary: #ededed;
-  --text-secondary: #a1a1aa;
-  --text-tertiary: #71717a;
+  --text-secondary: #d4d4d8;
+  --text-tertiary: #a1a1aa;
   --accent: #22d3ee;
   --accent-muted: rgba(34, 211, 238, 0.1);
+
+  /* Type scale (Major Third 1.25) */
+  --text-xs: 1.05rem;
+  --text-sm: 1.2rem;
+  --text-base: 1.4rem;
+  --text-lg: 1.6rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4.5rem;
+  --text-5xl: 6.5rem;
 
   /* Content width – use more of viewport, reduce side gaps */
   --content-width: min(92%, 1400px);
@@ -2617,20 +2623,6 @@ footer {
   letter-spacing: -0.5px;
 }
 
-@keyframes neon {
-  0%,
-  100% {
-    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
-      0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
-    color: #fed128;
-  }
-
-  50% {
-    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
-      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
-    color: #806914;
-  }
-}
 
 .logos {
   display: flex;
@@ -2820,7 +2812,7 @@ footer {
   }
 }
 
-/* Fix social icon fills in light mode */
+/* Light mode depth & polish */
 .light-mode .SocialHandle,
 .light-mode #GmailLogo {
   fill: #18181b;
@@ -2828,6 +2820,37 @@ footer {
 
 .light-mode .github-redirect img {
   filter: invert(1) brightness(0.2);
+}
+
+.light-mode {
+  background-color: #fafafa;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(8, 145, 178, 0.06), transparent 50%),
+    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
+}
+
+.light-mode .project-card,
+.light-mode .project-box {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.light-mode .project-card:hover,
+.light-mode .project-box:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 12px 40px rgba(0,0,0,0.06);
+}
+
+.light-mode .navbar {
+  background: rgba(250, 250, 250, 0.8);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.light-mode .tech-stack-box {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.light-mode #preloader {
+  background-color: #fafafa;
 }
 
 /* responsive code below*/

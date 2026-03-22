@@ -24,22 +24,8 @@ function toggleMoreProjects() {
   }
 }
 
-var lastScrollTop; // This Varibale will store the top position
-navbar = document.getElementById('navbar'); // Get The NavBar
-window.addEventListener('scroll',function(){
- //on every scroll this funtion will be called  
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //This line will get the location on scroll
-  if(this.window.innerWidth <= 768)
-  if(scrollTop > lastScrollTop){ //if it will be greater than the previous    
-    navbar.style.top='-80px';
-    //set the value to the negetive of height of navbar 
-  }  
-  else{
-    navbar.style.top='0';
-  }  
-  lastScrollTop = scrollTop; //New Position Stored
-});
+const navbar = document.getElementById('navbar');
+let lastScrollTop = 0;
 
 
 //FOr setting toggle menu
@@ -75,8 +61,7 @@ window.addEventListener("load", function () {
 });
 
 
-let emptyArea = document.getElementById("emptyarea"),
-  mobileTogglemenu = document.getElementById("mobiletogglemenu");
+const mobileTogglemenu = document.getElementById("mobiletogglemenu");
 function hamburgerMenu() {
   document.body.classList.toggle("stopscrolling"),
     document
@@ -114,39 +99,54 @@ const sections = document.querySelectorAll("section"),
   mobilenavLi = document.querySelectorAll(
     ".mobiletogglemenu .mobile-navbar-tabs-ul li"
   );
-window.addEventListener("scroll", () => {
-  let e = "";
-  sections.forEach((t) => {
-    let o = t.offsetTop;
-    t.clientHeight, pageYOffset >= o - 200 && (e = t.getAttribute("id"));
-  }),
-    mobilenavLi.forEach((t) => {
-      t.classList.remove("activeThismobiletab"),
-        t.classList.contains(e) && t.classList.add("activeThismobiletab");
-    }),
-    navLi.forEach((t) => {
-      t.classList.remove("activeThistab"),
-        t.classList.contains(e) && t.classList.add("activeThistab");
-    });
-}),
-  console.log(
-    "%c Designed and Developed by Yash Vijay Kucheriya",
-    "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;"
-  );
 
-//back to top button
-let mybutton = document.getElementById("backtotopbutton");
-function scrollFunction() {
-  document.body.scrollTop > 400 || document.documentElement.scrollTop > 400
-    ? (mybutton.style.display = "flex")
-    : (mybutton.style.display = "none");
-}
+console.log(
+  "%c Designed and Developed by Yash Vijay Kucheriya",
+  "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;"
+);
+
+const mybutton = document.getElementById("backtotopbutton");
 function scrolltoTopfunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-window.onscroll = function () {
-  scrollFunction();
-};
+
+// Single rAF-throttled scroll handler for all scroll logic
+let scrollTicking = false;
+window.addEventListener('scroll', function() {
+  if (!scrollTicking) {
+    requestAnimationFrame(function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Navbar hide/show on mobile
+      if (window.innerWidth <= 768) {
+        navbar.style.top = scrollTop > lastScrollTop ? '-80px' : '0';
+      }
+      lastScrollTop = scrollTop;
+
+      // Back to top button
+      mybutton.style.display = scrollTop > 400 ? 'flex' : 'none';
+
+      // Active section highlighting
+      let currentSection = '';
+      sections.forEach(function(section) {
+        if (scrollTop >= section.offsetTop - 200) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      mobilenavLi.forEach(function(li) {
+        li.classList.remove('activeThismobiletab');
+        if (li.classList.contains(currentSection)) li.classList.add('activeThismobiletab');
+      });
+      navLi.forEach(function(li) {
+        li.classList.remove('activeThistab');
+        if (li.classList.contains(currentSection)) li.classList.add('activeThistab');
+      });
+
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
+});
 
 
 
@@ -156,6 +156,69 @@ document.addEventListener('mousemove', function(e) {
     var rect = card.getBoundingClientRect();
     card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
     card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+  });
+});
+
+// Contact form validation & submission
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  const fields = {
+    name: { el: document.getElementById('contact-name'), err: document.getElementById('name-error'), validate: v => v.trim() ? '' : 'Please enter your name' },
+    email: { el: document.getElementById('contact-email'), err: document.getElementById('email-error'), validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? '' : 'Please enter a valid email' },
+    message: { el: document.getElementById('contact-message'), err: document.getElementById('message-error'), validate: v => v.trim() ? '' : 'Please enter a message' }
+  };
+
+  const feedback = document.getElementById('form-feedback');
+  const submitBtn = document.getElementById('contact-submit');
+
+  Object.values(fields).forEach(f => {
+    f.el.addEventListener('blur', () => {
+      const msg = f.validate(f.el.value);
+      f.err.textContent = msg;
+      f.el.classList.toggle('invalid', !!msg);
+    });
+    f.el.addEventListener('input', () => {
+      if (f.el.classList.contains('invalid')) {
+        const msg = f.validate(f.el.value);
+        f.err.textContent = msg;
+        f.el.classList.toggle('invalid', !!msg);
+      }
+    });
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+    Object.values(fields).forEach(f => {
+      const msg = f.validate(f.el.value);
+      f.err.textContent = msg;
+      f.el.classList.toggle('invalid', !!msg);
+      if (msg) valid = false;
+    });
+    if (!valid) return;
+
+    submitBtn.classList.add('loading');
+    feedback.textContent = '';
+    feedback.className = 'form-feedback';
+
+    const data = new FormData(form);
+    const name = data.get('name');
+    const email = data.get('email');
+    const subject = data.get('subject') || 'Portfolio Contact';
+    const message = data.get('message');
+    const mailtoLink = 'mailto:ykucheri@asu.edu?subject=' + encodeURIComponent(subject + ' - from ' + name) + '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message);
+
+    // Open mailto as fallback, show success
+    window.open(mailtoLink, '_self');
+    setTimeout(function() {
+      submitBtn.classList.remove('loading');
+      feedback.textContent = 'Opening your email client... If nothing happened, email ykucheri@asu.edu directly.';
+      feedback.className = 'form-feedback success';
+      form.reset();
+      Object.values(fields).forEach(f => { f.el.classList.remove('invalid'); f.err.textContent = ''; });
+    }, 500);
   });
 });
 

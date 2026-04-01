@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0c0c0f" />
+    <meta name="theme-color" content="#faf8f6" />
     <meta name="description"
       content="Yash Vijay Kucheriya | Software Developer — Backend, AI/ML & Data. 3+ years building scalable systems with Spring Boot, AWS, PyTorch. MS Computer Science @ ASU." />
     <meta name="keywords"
       content="Yash Kucheriya, Yash Vijay Kucheriya, portfolio, Software Developer, Backend Engineer, AI ML, AWS, Spring Boot, Python, Java, ASU, MS Computer Science" />
     <meta name="author" content="Yash Vijay Kucheriya" />
-    <meta property="og:image" content="og-image.png" />
+    <meta property="og:image" content="https://yashkucheriya.com/og-image.png" />
     <meta property="og:title" content="Yash Vijay Kucheriya | Portfolio" />
     <meta property="og:description"
       content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS, Spring Boot. MS CS @ ASU." />
 
-    <meta property="og:url" content="https://yashkuceriya.github.io/yash-kucheriya-portfolio/" />
+    <meta property="og:url" content="https://yashkucheriya.com" />
     <meta property="og:site_name" content="Yash Vijay Kucheriya Portfolio" />
 
-    <meta name="twitter:image:src" content="og-image.png" />
+    <meta name="twitter:image:src" content="https://yashkucheriya.com/og-image.png" />
     <meta name="twitter:site" content="@Portfolio" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Yash Vijay Kucheriya | Portfolio" />
     <meta name="twitter:description"
       content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS. MS CS @ ASU." />
-    <link rel="canonical" href="https://yashkuceriya.github.io/yash-kucheriya-portfolio/" />
+    <link rel="canonical" href="https://yashkucheriya.com" />
     <title>Yash Vijay Kucheriya | Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32"
       href="src/png/favicon_io/favicon-32x32.png?v=2" />
@@ -38,13 +38,14 @@
       href="src/png/favicon_io/favicon-32x32.png?v=2" />
     <!-- preload critical stylesheet -->
     <link rel="preload" href="index.css" as="style" />
-    <!-- reveal animations handled by custom IntersectionObserver -->
+    <!-- AOS - Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css?v=3" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -54,7 +55,7 @@
           "@type": "Person",
           "name": "Yash Vijay Kucheriya",
           "jobTitle": "Software Developer",
-          "url": "https://yashkuceriya.github.io/yash-kucheriya-portfolio/",
+          "url": "https://yashkucheriya.com",
           "email": "ykucheri@asu.edu",
           "sameAs": [
             "https://www.linkedin.com/in/yash-kucheriya-b05a17162/",
@@ -69,7 +70,7 @@
         {
           "@type": "WebSite",
           "name": "Yash Vijay Kucheriya Portfolio",
-          "url": "https://yashkuceriya.github.io/yash-kucheriya-portfolio/"
+          "url": "https://yashkucheriya.com"
         }
       ]
     }
@@ -81,16 +82,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-55P7S77D');</script>
 <!-- End Google Tag Manager -->
-    <!-- Flash-prevention: restore saved theme before paint -->
+    <!-- Flash-prevention: light mode default, restore saved theme before paint -->
     <script>
       (function() {
         var saved = localStorage.getItem('theme');
-        if (saved === 'light') {
-          document.documentElement.style.setProperty('--preload-bg', '#fafafa');
+        if (saved !== 'dark') {
+          document.documentElement.style.setProperty('--preload-bg', '#faf8f6');
           document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.add('light-mode');
-            document.getElementById('switchforvisualmode').checked = true;
             document.querySelectorAll('.needtobeinvert').forEach(function(e) { e.classList.add('invertapplied'); });
+            var toggle = document.getElementById('switchforvisualmode');
+            if (toggle) toggle.checked = true;
           });
         }
       })();
@@ -248,14 +250,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="blob"></div>
 
         <div class="text-content">
-          <div class="status-badge reveal">
+          <div class="status-badge" data-aos="fade-down" data-aos-delay="0">
             <span class="status-dot"></span>
             Currently building AI systems @ Gauntlet AI
           </div>
-          <article id="hello-friend" class="reveal typing-container">
-            <span class="typing-text">Namaste(); I'm</span><span class="typing-cursor"></span>
+          <article id="hello-friend" class="typing-container" data-aos="fade-up" data-aos-delay="100">
+            <span class="typing-text">Hi, I'm</span><span class="typing-cursor"></span>
           </article>
-          <article id="name" class="reveal" style="--delay: 1.8s">
+          <article id="name" data-aos="fade-up" data-aos-delay="200">
             <span class="jello">Y</span>
             <span class="jello">a</span>
             <span class="jello">s</span>
@@ -273,54 +275,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="jello">.</span>
           </article>
 
-          <article id="work" class="reveal" style="--delay: 2s">
+          <article id="work" data-aos="fade-up" data-aos-delay="400">
             <div>
-              <span class="jello">d</span>
-              <span class="jello">r</span>
-              <span class="jello">e</span>
+              <span class="jello">B</span>
               <span class="jello">a</span>
-              <span class="jello">m</span>
-            </div>
-            <div>
-              <span class="jello">b</span>
-              <span class="jello">u</span>
-              <span class="jello">i</span>
-              <span class="jello">l</span>
-              <span class="jello">d</span>
-            </div>
-            <div>
               <span class="jello">c</span>
-              <span class="jello">r</span>
-              <span class="jello">a</span>
-              <span class="jello">f</span>
-              <span class="jello">t</span>
-            </div>
-            <div>
-              <span class="jello">a</span>
+              <span class="jello">k</span>
+              <span class="jello">e</span>
               <span class="jello">n</span>
               <span class="jello">d</span>
             </div>
             <div>
-              <span class="jello">a</span>
-              <span class="jello">c</span>
-              <span class="jello">h</span>
+              <span class="jello">&</span>
+            </div>
+            <div>
+              <span class="jello">A</span>
+              <span class="jello">I</span>
+            </div>
+            <div>
+              <span class="jello">E</span>
+              <span class="jello">n</span>
+              <span class="jello">g</span>
               <span class="jello">i</span>
+              <span class="jello">n</span>
               <span class="jello">e</span>
-              <span class="jello">v</span>
               <span class="jello">e</span>
+              <span class="jello">r</span>
               <span class="jello">.</span>
             </div>
           </article>
-          <p id="info-para" class="reveal">
+          <p id="info-para" data-aos="fade-up" data-aos-delay="500">
             Software Developer — Backend, AI/ML & Data. Building scalable systems with Python, Java, AWS & Spring Boot. MS Computer Science @ ASU.
           </p>
-          <div class="contact-btn-div reveal">
-            <a href="mailto:ykucheri@asu.edu" class="letsTalkBtn" aria-label="Send email to Yash">
+          <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="600">
+            <a href="mailto:ykucheri@asu.edu" class="letsTalkBtn magnetic" aria-label="Send email to Yash">
                 <span class="letsTalkBtn-text">Let's Talk!</span>
                 <span class="letsTalkBtn-BG"></span>
             </a>
-            <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="LinkedIn">LinkedIn</a>
-            <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer" class="hero-link magnetic" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer" class="hero-link magnetic" aria-label="GitHub">GitHub</a>
             <div class="setting-container" id="setting-container">
               <input type="checkbox" id="switchforsetting"
                 onclick="settingtoggle()" />
@@ -360,9 +353,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </section>
       <!-- landing page ends here -->
+
+      <!-- Credibility bar -->
+      <div class="credibility-bar" data-aos="fade-up" data-aos-delay="100">
+        <span class="credibility-label">Previously at</span>
+        <div class="credibility-logos">
+          <img src="src/png/gauntlet-logo.svg" alt="Gauntlet AI" class="credibility-logo" loading="lazy" />
+          <img src="src/png/infosys-logo.jpeg" alt="Infosys" class="credibility-logo" loading="lazy" />
+          <img src="src/png/buildoor-logo.jpeg" alt="Buildoors Lab" class="credibility-logo" loading="lazy" />
+          <img src="src/png/asu-logo.jpeg" alt="Arizona State University" class="credibility-logo" loading="lazy" />
+        </div>
+      </div>
+
       <section class="about-section-container" id="about">
         <div class="about-section">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0"
               aria-label="About me heading">
               About Me
@@ -371,9 +376,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="info-dp-section">
-            <div class="about-info">
+            <div class="about-info" data-aos="fade-right">
               <p tabindex="0">
-                Software Developer with 3 years of experience spanning backend engineering, AI engineering, and data science/analytics. Strong expertise in Python and Java, with hands-on experience building scalable backend systems using Spring Boot, RESTful APIs, and cloud-native architectures on AWS. Experienced in developing AI and data-driven applications, productionizing ML models, and leveraging AI-assisted development tools to accelerate delivery. Adept at working across the full lifecycle from system design to deployment and optimization in a fast-paced, collaborative environment.
+                I build backend systems and AI applications that scale. 3+ years across <strong>Gauntlet AI</strong>, <strong>Infosys</strong>, and startups in the US, UK, and India.
+              </p>
+              <p class="about-detail">
+                Python, Java, Spring Boot, AWS, PyTorch &mdash; from system design to production deployment. MS Computer Science from Arizona State University (3.8 GPA).
               </p>
               <!-- Resume button -->
               <button class="resume-btn" id="resume-btn" onclick="openURL()" aria-label="Download resume (PDF)">
@@ -388,7 +396,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </button>
             </div>
 
-            <div class="stats-row reveal">
+            <div class="stats-row" data-aos="fade-up" data-aos-delay="200">
               <div class="stat-item">
                 <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
                 <span class="stat-label">Years Experience</span>
@@ -403,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <div class="dp reveal">
+            <div class="dp" data-aos="fade-left">
               <img src="src/webp/yash-profile.jpg" alt="Yash Vijay Kucheriya" loading="lazy" tabindex="0"
                 aria-label="image of Yash Vijay Kucheriya" />
             </div>
@@ -414,7 +422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <section class="skills-section-container" id="skills">
         <div class="skills-section">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0"
               aria-label="skills heading">
               Skills
@@ -423,138 +431,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="frontend-dev-section">
-            <h3 class="frontend-dev-heading reveal" tabindex="0"
+            <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
               aria-label="Software engineer tech stack and programming skills">
               Tech Stack
             </h3>
             <ul class="tech-stack-wrapper">
               <li class="tech-stack-category">Languages</li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">PYTHON</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java language skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">JAVA</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="./src/png/jslogo.png" alt="JavaScript skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">JAVASCRIPT</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
                 <img src="./src/png/typescriptlogo.png" alt="typescript skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">TYPESCRIPT</span>
               </li>
 
               <li class="tech-stack-category">Frameworks</li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
                 <img src="./src/png/reactlogo.png" alt="react skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">REACT</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="250">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg" alt="angularjs skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">ANGULARJS</span>
               </li>
 
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="300">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="spring boot skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">SPRING BOOT</span>
               </li>
 
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="350">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="postgresql skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">POSTGRESQL</span>
               </li>
 
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" alt="react native skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">REACT NATIVE</span>
               </li>
 
               <li class="tech-stack-category">Cloud & DevOps</li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">AWS</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-plain.svg" alt="azure devops skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">AZURE</span>
               </li>
 
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="terraform skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">TERRAFORM</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-plain.svg" alt="ansible skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">ANSIBLE</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="250">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" alt="docker skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">DOCKER</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="300">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="kubernetes skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">KUBERNETES</span>
               </li>
 
               <li class="tech-stack-category">ML & Data</li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="350">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">PYTORCH</span>
               </li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">TENSORFLOW</span>
               </li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Kafka skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">KAFKA</span>
               </li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">GO</span>
               </li>
 
               <li class="tech-stack-category">Tools</li>
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
                 <img src="./src/png/gitlogo.png" alt="git skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">GIT</span>
               </li>
 
-              <li class="tech-stack-box">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
                 <img src="./src/png/githublogo.png" alt="github skill"
                   class="tech-stack-logo needtobeinvert" loading="lazy" />
                 <span class="tooltip">GITHUB</span>
@@ -569,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- education section starts -->
       <section class="projects-section-container" id="education">
         <div class="projects-section-div">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0"
               aria-label="Education heading">
               Education
@@ -579,7 +587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <div class="project-boxes-div">
             <!-- Arizona State University - Master's -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box education-box1" id="education-box1">
                 <div class="info-div">
                   <article class="ProjectHeading">Arizona State University</article>
@@ -599,7 +607,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Walchand Institute of Technology - Bachelor's -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box education-box2" id="education-box2">
                 <div class="info-div">
                   <article class="ProjectHeading">Walchand Institute of Technology</article>
@@ -625,7 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- experience section starts -->
       <section class="projects-section-container" id="experience">
         <div class="projects-section-div">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0"
               aria-label="Experience heading">
               Experience
@@ -635,7 +643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <div class="project-boxes-div">
             <!-- Gauntlet AI -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box project-box2" id="experience-box0">
                 <div class="info-div">
                   <article class="ProjectHeading">Gauntlet AI</article>
@@ -656,7 +664,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ZenZiee (YesTech Corp) -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box project-box2" id="experience-box1">
                 <div class="info-div">
                   <article class="ProjectHeading">ZenZiee (YesTech Corp.)</article>
@@ -676,7 +684,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Buildoors Lab Ltd -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box project-box5" id="experience-box2">
                 <div class="info-div">
                   <article class="ProjectHeading">Buildoors Lab Ltd</article>
@@ -696,7 +704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Infosys Ltd -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-box project-box2" id="experience-box3">
                 <div class="info-div">
                   <article class="ProjectHeading">Infosys Ltd</article>
@@ -721,7 +729,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
       <section class="projects-section-container" id="projects">
         <div class="projects-section-div">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0"
               aria-label="My projects starts from here">
               Projects
@@ -732,7 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="project-boxes-div">
 
             <!-- ===== FEATURED PROJECT 0a: LegacyLens ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-legacylens">
                 <div class="project-preview" onclick="openProjectPreview('https://legacylens.up.railway.app/')">
                   <div class="preview-mockup preview-rag">
@@ -790,7 +798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 0b: GhostGuide ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-ghostguide">
                 <div class="project-preview" onclick="openProjectPreview('https://ghostfolio-ghostguide.up.railway.app')">
                   <div class="preview-mockup preview-finance">
@@ -806,7 +814,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       </div>
                       <div class="fin-chart-area">
                         <svg class="fin-line-chart" viewBox="0 0 200 50" preserveAspectRatio="none">
-                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="none" stroke="#22d3ee" stroke-width="2"/>
+                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="none" stroke="#d97756" stroke-width="2"/>
                           <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="url(#finGrad)" stroke="none"/>
                           <defs><linearGradient id="finGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(34,211,238,0.3)"/><stop offset="1" stop-color="rgba(34,211,238,0)"/></linearGradient></defs>
                         </svg>
@@ -850,7 +858,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-collabboard">
                 <div class="project-preview" onclick="openProjectPreview('https://collabboard-five.vercel.app')">
                   <div class="preview-mockup preview-whiteboard">
@@ -902,7 +910,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-eventiq">
                 <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/EventIQ-Platform')">
                   <div class="preview-mockup preview-pipeline">
@@ -962,7 +970,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 3: LexivoAI ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-lexivoai">
                 <div class="project-preview" onclick="openProjectPreview('https://v0-word-wise-ai.vercel.app')">
                   <div class="preview-mockup preview-writer">
@@ -1024,7 +1032,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 4: Cloud-Based Face Recognition ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-facerecog">
                 <div class="project-preview">
                   <div class="preview-mockup preview-cloud">
@@ -1055,7 +1063,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== FEATURED PROJECT 5: Logical Language Modeling ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-llm">
                 <div class="project-preview" onclick="openProjectPreview('https://github.com/abhiramvad/nlp-project')">
                   <div class="preview-mockup preview-terminal">
@@ -1110,7 +1118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="project-boxes-div more-projects-hidden" id="more-projects">
 
             <!-- ===== MORE 1: ReadEaseAI ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-readeaseai">
                 <div class="project-preview">
                   <div class="preview-mockup preview-editor">
@@ -1138,7 +1146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-graphanalytics">
                 <div class="project-preview">
                   <div class="preview-mockup preview-stream">
@@ -1167,7 +1175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 3: Store Sales Forecasting ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-salesforecast">
                 <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project')">
                   <div class="preview-mockup preview-dashboard">
@@ -1207,7 +1215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 4: Fake News Detection ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-fakenews">
                 <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb')">
                   <div class="preview-mockup preview-terminal">
@@ -1246,7 +1254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 5: Income Prediction Insights ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-income">
                 <div class="project-preview">
                   <div class="preview-mockup preview-dashboard">
@@ -1275,7 +1283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-houseasp">
                 <div class="project-preview">
                   <div class="preview-mockup preview-cloud">
@@ -1303,7 +1311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- ===== MORE 7: Network RTT Analysis ===== -->
-            <div class="project-box-wrapper reveal">
+            <div class="project-box-wrapper" data-aos="fade-up">
               <div class="project-card" id="project-rtt">
                 <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE-534-project')">
                   <div class="preview-mockup preview-cloud">
@@ -1348,13 +1356,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Contact Section -->
       <section class="contact-section" id="contact">
         <div class="contact-section-div">
-          <div class="section-heading reveal">
+          <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0" aria-label="Contact heading">
               Contact
             </h2>
             <p class="sectionHeadingP"></p>
           </div>
-          <form class="contact-form reveal" id="contact-form" novalidate>
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="100" id="contact-form" novalidate>
             <div class="contact-form-row">
               <div class="form-field">
                 <label for="contact-name" class="sr-only">Your Name</label>
@@ -1453,12 +1461,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
     <!-- footer ends here -->
 
-    <script src="main.js"></script>
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart', once: false, mirror: true });</script>
+    <script src="main.js?v=4"></script>
     <script>function openURL(){window.open("./src/pdf/Yash_Vijay_Kucheriya_Resume.pdf","_blank")}</script>
     <script data-name="BMC-Widget"
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="yash_kucheriya" data-description="Support me on Buy me a coffee!"
-      data-message="" data-color="#22d3ee" data-position="left" data-x_margin="18"
+      data-message="" data-color="#d97756" data-position="left" data-x_margin="18"
       data-y_margin="18" async></script>
   </body>
 

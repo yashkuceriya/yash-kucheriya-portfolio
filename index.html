@@ -1,1465 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Yash Vijay Kucheriya — Software Developer specializing in Backend, AI/ML & Data. 3+ years building scalable systems with Spring Boot, AWS, PyTorch. MS Computer Science @ ASU." />
+  <meta name="keywords" content="Yash Kucheriya, Software Developer, Backend Engineer, AI ML, AWS, Spring Boot, Python, Java, ASU" />
+  <meta name="author" content="Yash Vijay Kucheriya" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yashkucheriya.com/og-image.png" />
+  <meta property="og:title" content="Yash Vijay Kucheriya | Portfolio" />
+  <meta property="og:description" content="Software Developer — Backend, AI/ML & Data. Building scalable systems with Python, Java, AWS. MS CS @ ASU." />
+  <meta property="og:url" content="https://yashkucheriya.com" />
+  <meta property="og:site_name" content="Yash Vijay Kucheriya Portfolio" />
+  <meta name="twitter:image:src" content="https://yashkucheriya.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yash Vijay Kucheriya | Portfolio" />
+  <meta name="twitter:description" content="Software Developer — Backend, AI/ML & Data. Building scalable systems with Python, Java, AWS. MS CS @ ASU." />
+  <link rel="canonical" href="https://yashkucheriya.com" />
+  <title>Yash Vijay Kucheriya | Portfolio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="src/png/favicon_io/favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="src/png/favicon_io/favicon-16x16.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/png/favicon_io/apple-touch-icon.png?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Yash Vijay Kucheriya",
+        "jobTitle": "Software Developer",
+        "url": "https://yashkucheriya.com",
+        "email": "ykucheri@asu.edu",
+        "sameAs": [
+          "https://www.linkedin.com/in/yash-kucheriya-b05a17162/",
+          "https://github.com/yashkuceriya"
+        ],
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Arizona State University" },
+        "knowsAbout": ["Python","Java","Spring Boot","AWS","AI/ML","Data Science","Backend Engineering"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Yash Vijay Kucheriya Portfolio",
+        "url": "https://yashkucheriya.com"
+      }
+    ]
+  }
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-55P7S77D');</script>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55P7S77D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0c0c0f" />
-    <meta name="description"
-      content="Yash Vijay Kucheriya | Software Developer — Backend, AI/ML & Data. 3+ years building scalable systems with Spring Boot, AWS, PyTorch. MS Computer Science @ ASU." />
-    <meta name="keywords"
-      content="Yash Kucheriya, Yash Vijay Kucheriya, portfolio, Software Developer, Backend Engineer, AI ML, AWS, Spring Boot, Python, Java, ASU, MS Computer Science" />
-    <meta name="author" content="Yash Vijay Kucheriya" />
-    <meta property="og:image" content="og-image.png" />
-    <meta property="og:title" content="Yash Vijay Kucheriya | Portfolio" />
-    <meta property="og:description"
-      content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS, Spring Boot. MS CS @ ASU." />
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-brand">YK</div>
+  </div>
 
-    <meta property="og:url" content="https://yashkuceriya.github.io/yash-kucheriya-portfolio/" />
-    <meta property="og:site_name" content="Yash Vijay Kucheriya Portfolio" />
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-    <meta name="twitter:image:src" content="og-image.png" />
-    <meta name="twitter:site" content="@Portfolio" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Yash Vijay Kucheriya | Portfolio" />
-    <meta name="twitter:description"
-      content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS. MS CS @ ASU." />
-    <link rel="canonical" href="https://yashkuceriya.github.io/yash-kucheriya-portfolio/" />
-    <title>Yash Vijay Kucheriya | Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32"
-      href="src/png/favicon_io/favicon-32x32.png?v=2" />
-    <link rel="icon" type="image/png" sizes="16x16"
-      href="src/png/favicon_io/favicon-16x16.png?v=2" />
-    <link rel="apple-touch-icon" sizes="180x180"
-      href="src/png/favicon_io/apple-touch-icon.png?v=2" />
-    <link rel="shortcut icon" type="image/png" sizes="32x32"
-      href="src/png/favicon_io/favicon-32x32.png?v=2" />
-    <!-- preload critical stylesheet -->
-    <link rel="preload" href="index.css" as="style" />
-    <!-- reveal animations handled by custom IntersectionObserver -->
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="index.css" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "name": "Yash Vijay Kucheriya",
-          "jobTitle": "Software Developer",
-          "url": "https://yashkuceriya.github.io/yash-kucheriya-portfolio/",
-          "email": "ykucheri@asu.edu",
-          "sameAs": [
-            "https://www.linkedin.com/in/yash-kucheriya-b05a17162/",
-            "https://github.com/yashkuceriya"
-          ],
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Arizona State University"
-          },
-          "knowsAbout": ["Python", "Java", "Spring Boot", "AWS", "AI/ML", "Data Science", "Backend Engineering"]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Yash Vijay Kucheriya Portfolio",
-          "url": "https://yashkuceriya.github.io/yash-kucheriya-portfolio/"
-        }
-      ]
-    }
-    </script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-55P7S77D');</script>
-<!-- End Google Tag Manager -->
-    <!-- Flash-prevention: restore saved theme before paint -->
-    <script>
-      (function() {
-        var saved = localStorage.getItem('theme');
-        if (saved === 'light') {
-          document.documentElement.style.setProperty('--preload-bg', '#fafafa');
-          document.addEventListener('DOMContentLoaded', function() {
-            document.body.classList.add('light-mode');
-            document.getElementById('switchforvisualmode').checked = true;
-            document.querySelectorAll('.needtobeinvert').forEach(function(e) { e.classList.add('invertapplied'); });
-          });
-        }
-      })();
-    </script>
-  </head>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-  <body class="body">
-    <a href="#about" class="skip-link">Skip to main content</a>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55P7S77D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <audio loop id="audioPlayer" style="display: none">
-      <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-    </audio>
-
-    <div id="preloader">
-      <div class="preloader-brand">YK</div>
+  <!-- Navigation -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#home" class="nav-logo">YK</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
     </div>
-    <noscript>Allow Javascript</noscript>
+    <div class="nav-actions">
+      <a href="./src/pdf/Yash_Vijay_Kucheriya_Resume.pdf" target="_blank" rel="noopener" class="nav-resume-btn">Resume</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <div class="cursor-inner"></div>
-    <div class="cursor-outer"></div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#home" class="mobile-link" onclick="closeMobile()">Home</a>
+    <a href="#about" class="mobile-link" onclick="closeMobile()">About</a>
+    <a href="#experience" class="mobile-link" onclick="closeMobile()">Experience</a>
+    <a href="#projects" class="mobile-link" onclick="closeMobile()">Projects</a>
+    <a href="#skills" class="mobile-link" onclick="closeMobile()">Skills</a>
+    <a href="#contact" class="mobile-link" onclick="closeMobile()">Contact</a>
+    <a href="./src/pdf/Yash_Vijay_Kucheriya_Resume.pdf" target="_blank" rel="noopener" class="mobile-resume">Resume</a>
+  </div>
 
-    <header>
+  <main id="main">
 
-      <div class="navbar breath" id="navbar">
-        <div class="hey">Hey!</div>
-        <div class="logo" tabindex="0" aria-label="Yash Vijay Kucheriya logo">
-          <div class="logo-top memoji-avatar-wrap">
-            <img src="src/png/avatar-sticker-header.png" alt="Yash" id="nav-avatar" class="header-footer-avatar sticker-avatar" />
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="hero-badge-dot"></span>
+          Building AI systems @ Gauntlet AI
+        </div>
+        <h1 class="hero-name reveal" data-delay="0.1">
+          Yash Kucheriya<span class="hero-period">.</span>
+        </h1>
+        <h2 class="hero-title reveal" data-delay="0.2">
+          I architect <span class="hero-rotate-wrap"><span class="hero-rotate" id="hero-rotate">backend systems</span></span>
+        </h2>
+        <p class="hero-desc reveal" data-delay="0.3">
+          Software Developer with 3+ years in backend engineering, AI/ML, and data.
+          Building scalable systems with Python, Java, AWS & Spring Boot. MS CS @ Arizona State University.
+        </p>
+        <div class="hero-cta reveal" data-delay="0.4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="mailto:ykucheri@asu.edu" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-social reveal" data-delay="0.5">
+          <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:ykucheri@asu.edu" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-image-wrap">
+              <img src="photo.jpg" alt="Yash Kucheriya" loading="lazy" />
+              <div class="about-image-border"></div>
+            </div>
+            <div class="about-status-card">
+              <span class="about-status-number" data-target="3">0</span><span class="about-status-suffix">+</span>
+              <span class="about-status-label">Years Experience</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-label reveal">About Me</span>
+            <h2 class="section-title reveal" data-delay="0.1">
+              Backend engineer who builds<br /><span class="text-gradient">intelligent systems</span>
+            </h2>
+            <p class="about-text reveal" data-delay="0.2">
+              Software Developer with 3+ years spanning backend engineering, AI engineering, and data science.
+              Strong expertise in Python and Java, with hands-on experience building scalable backend systems
+              using Spring Boot, RESTful APIs, and cloud-native architectures on AWS.
+            </p>
+            <p class="about-text reveal" data-delay="0.25">
+              Experienced in developing AI and data-driven applications, productionizing ML models,
+              and leveraging AI-assisted development tools to accelerate delivery. Currently building
+              advanced AI systems at Gauntlet AI.
+            </p>
+            <div class="about-highlights reveal" data-delay="0.3">
+              <div class="about-highlight">
+                <span class="about-highlight-number" data-target="15">0</span><span class="about-highlight-suffix">+</span>
+                <span class="about-highlight-label">Projects</span>
+              </div>
+              <div class="about-highlight">
+                <span class="about-highlight-number" data-target="4">0</span>
+                <span class="about-highlight-label">Live Demos</span>
+              </div>
+              <div class="about-highlight">
+                <span class="about-highlight-number" data-target="99">0</span><span class="about-highlight-suffix">.9%</span>
+                <span class="about-highlight-label">Uptime Built</span>
+              </div>
+            </div>
+            <div class="about-tags reveal" data-delay="0.35">
+              <span class="tag">Backend Systems</span>
+              <span class="tag">AI/ML Engineering</span>
+              <span class="tag">Cloud Architecture</span>
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">Data Pipelines</span>
+            </div>
           </div>
         </div>
-        <div class="navbar-tabs box-shadow" id="navbar-tabs">
-          <ul class="navbar-tabs-ul">
-            <li class="home activeThistab navbar-tabs-li"
-             >
-              <a href="#home" tabindex="0" aria-label="Home menu button">
-                Home
-              </a>
-            </li>
-
-            <li class="about navbar-tabs-li"
-             >
-              <a href="#about" aria-label="about menu button">
-                About
-              </a>
-            </li>
-
-            <li class="skills navbar-tabs-li"
-             >
-              <a href="#skills" aria-label="skills menu button">
-                Skills
-              </a>
-            </li>
-
-            <li class="education navbar-tabs-li"
-             >
-              <a href="#education" aria-label="education menu button">
-                Education
-              </a>
-            </li>
-
-            <li class="experience navbar-tabs-li"
-             >
-              <a href="#experience" aria-label="experience menu button">
-                Experience
-              </a>
-            </li>
-
-            <li class="projects navbar-tabs-li"
-             >
-              <a href="#projects" aria-label="projects menu button">
-                Projects
-              </a>
-            </li>
-
-            <li class="contact navbar-tabs-li"
-             >
-              <a href="#contact" aria-label="contact menu button">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- navbar tabs ends -->
       </div>
-    </header>
-    <!-- header ends here -->
+    </section>
 
-    <main>
-      <!-- hamburger -->
-      <div class="hamburger" id="hamburger">
-        <div class="hamburgerbase">
-          <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0"
-            aria-label="Menu Button">
-            <span class="burger-bar" id="burger-bar1"></span>
-            <span class="burger-bar" id="burger-bar2"></span>
-            <span class="burger-bar" id="burger-bar3"></span>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <span class="section-label reveal">Career Path</span>
+        <h2 class="section-title reveal" data-delay="0.1">Where I've <span class="text-gradient">worked</span></h2>
+
+        <div class="exp-grid">
+          <!-- Education -->
+          <div class="exp-sidebar reveal" data-delay="0.2">
+            <h3 class="exp-sidebar-title">Education</h3>
+            <div class="edu-card">
+              <img src="src/png/asu-logo.png" alt="ASU" class="edu-logo" loading="lazy" />
+              <div>
+                <h4 class="edu-degree">MS Computer Science</h4>
+                <p class="edu-school">Arizona State University</p>
+                <p class="edu-meta">Jan 2024 - Dec 2025 &middot; GPA 3.8/4.0</p>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-logo-placeholder">BE</div>
+              <div>
+                <h4 class="edu-degree">BE Computer Science</h4>
+                <p class="edu-school">Walchand Institute of Technology</p>
+                <p class="edu-meta">Jun 2016 - May 2020 &middot; GPA 9.23/10</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item reveal" data-delay="0.15">
+              <div class="timeline-dot active"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-date">Feb 2026 - Present</span>
+                    <h3 class="timeline-role">AI Engineer</h3>
+                    <p class="timeline-company">Gauntlet AI <span class="timeline-loc">&middot; Austin, TX</span></p>
+                  </div>
+                  <img src="src/png/gauntlet-logo.svg" alt="Gauntlet AI" class="timeline-logo" loading="lazy" />
+                </div>
+                <ul class="timeline-list">
+                  <li>Deep hands-on development with AI-accelerated tools, frameworks, and real production challenges</li>
+                  <li>Mastering full-stack AI workflows, end-to-end agentic development, and scalable model integrations</li>
+                  <li>Rapid iteration and real software delivery under real constraints</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>LangChain</span><span>Claude</span><span>Python</span><span>Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal" data-delay="0.15">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-date">Jun - Dec 2025</span>
+                    <h3 class="timeline-role">Software Engineer</h3>
+                    <p class="timeline-company">ZenZiee (YesTech Corp.) <span class="timeline-loc">&middot; NJ, USA</span></p>
+                  </div>
+                </div>
+                <ul class="timeline-list">
+                  <li>Built gamified social app with real-time APIs, analytics dashboards for 100+ beta users</li>
+                  <li>Deployed containerized microservices on AWS ECS/ECR achieving <strong>99.9% uptime</strong></li>
+                  <li>Designed event-driven pipelines with DynamoDB Streams & Lambda, reducing latency by <strong>60%</strong></li>
+                  <li>Embedded emotion classification with ML/frontend teams, increasing engagement by <strong>25%</strong></li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>AWS</span><span>DynamoDB</span><span>Lambda</span><span>Docker</span><span>Node.js</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal" data-delay="0.15">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-date">Jan - Dec 2023</span>
+                    <h3 class="timeline-role">Data Scientist</h3>
+                    <p class="timeline-company">Buildoors Lab Ltd <span class="timeline-loc">&middot; London, UK</span></p>
+                  </div>
+                  <img src="src/png/buildoor-logo.jpeg" alt="Buildoors" class="timeline-logo" loading="lazy" />
+                </div>
+                <ul class="timeline-list">
+                  <li>Developed blockchain-based fraud detection, reducing risk exposure by <strong>35%</strong></li>
+                  <li>Automated ETL pipelines and built compliance dashboards with Pandas, SQL, Tableau</li>
+                  <li>Deployed ML models on AWS SageMaker with automated retraining workflows</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Python</span><span>SageMaker</span><span>Tableau</span><span>SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal" data-delay="0.15">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-date">Nov 2020 - Jul 2022</span>
+                    <h3 class="timeline-role">Software Engineer</h3>
+                    <p class="timeline-company">Infosys Ltd <span class="timeline-loc">&middot; Pune, India</span></p>
+                  </div>
+                  <img src="src/png/infosys-logo.jpeg" alt="Infosys" class="timeline-logo" loading="lazy" />
+                </div>
+                <ul class="timeline-list">
+                  <li>Designed Java Spring Boot microservices & REST APIs, reducing manual effort by <strong>50%</strong></li>
+                  <li>Improved backend performance by <strong>35%</strong> through MSSQL query optimization</li>
+                  <li>Managed <strong>1M+ EDI transactions/month</strong> using IBM Sterling</li>
+                  <li>Implemented CI/CD pipelines reducing release cycles by <strong>45%</strong></li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Java</span><span>Spring Boot</span><span>MSSQL</span><span>CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <span class="section-label reveal">Selected Work</span>
+        <h2 class="section-title reveal" data-delay="0.1">Things I've <span class="text-gradient">built</span></h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: LegacyLens -->
+          <div class="project-card featured reveal" data-delay="0.1">
+            <div class="project-image">
+              <img src="src/webp/ScioScribe-landing.gif" alt="LegacyLens" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://legacylens.up.railway.app/" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/yashkuceriya/LegacyLens" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">AI / Information Retrieval</span>
+                <span class="project-date">Mar 2026</span>
+              </div>
+              <h3 class="project-name">LegacyLens</h3>
+              <p class="project-desc">RAG-powered semantic search over 150K+ lines of legacy Fortran code. 8 analysis modes including dependency mapping, impact analysis, and documentation generation. Sub-3s answers at ~$0.001/query.</p>
+              <div class="project-tags">
+                <span>FastAPI</span><span>ChromaDB</span><span>LangChain</span><span>Gemini</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: GhostGuide -->
+          <div class="project-card featured reveal" data-delay="0.15">
+            <div class="project-image">
+              <img src="src/webp/Grootscafe.png" alt="GhostGuide" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://ghostfolio-ghostguide.up.railway.app" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/yashkuceriya/ghostfolio" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Full-Stack AI Agent</span>
+                <span class="project-date">Feb - Mar 2026</span>
+              </div>
+              <h3 class="project-name">GhostGuide</h3>
+              <p class="project-desc">AI agent layer on Ghostfolio with natural-language portfolio insights. 25 specialized tools for analysis, performance metrics, market data, and compliance. Multi-layer hallucination verification.</p>
+              <div class="project-tags">
+                <span>NestJS</span><span>Angular</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: CollabBoard -->
+          <div class="project-card reveal" data-delay="0.1">
+            <div class="project-image">
+              <img src="src/webp/Bestbuy.png" alt="CollabBoard" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://collabboard-five.vercel.app" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/yashkuceriya/collabboard" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Full-Stack Collaborative</span>
+                <span class="project-date">Feb 2026</span>
+              </div>
+              <h3 class="project-name">CollabBoard</h3>
+              <p class="project-desc">Real-time collaborative whiteboard with infinite canvas, live multiplayer cursors, and AI-powered assistant for retrospectives and onboarding plans.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: EventIQ -->
+          <div class="project-card reveal" data-delay="0.15">
+            <div class="project-image">
+              <img src="src/webp/elementalecho.png" alt="EventIQ" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://github.com/yashkuceriya/EventIQ-Platform" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Distributed Systems</span>
+                <span class="project-date">Jul 2025 - Jan 2026</span>
+              </div>
+              <h3 class="project-name">EventIQ</h3>
+              <p class="project-desc">Distributed event-processing system handling 1,247 events/sec. Kafka-based streaming with GPT-4 for anomaly detection, trend analysis, and event summarization.</p>
+              <div class="project-tags">
+                <span>Kafka</span><span>GPT-4</span><span>PostgreSQL</span><span>Redis</span><span>Terraform</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: LexivoAI -->
+          <div class="project-card reveal" data-delay="0.2">
+            <div class="project-image">
+              <img src="src/webp/wordwise_ai.png" alt="LexivoAI" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://v0-word-wise-ai.vercel.app" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/yashkuceriya/LexivoAI" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">AI Writing Platform</span>
+                <span class="project-date">Jan - Feb 2026</span>
+              </div>
+              <h3 class="project-name">LexivoAI</h3>
+              <p class="project-desc">Full-stack AI writing platform with real-time grammar checking, style suggestions, Instagram carousel generation, and brand voice analysis.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>OpenAI</span><span>Supabase</span><span>Clerk</span><span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Cloud Face Recognition -->
+          <div class="project-card reveal" data-delay="0.25">
+            <div class="project-image">
+              <img src="src/webp/pitsnap.png" alt="Cloud Face Recognition" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener" class="project-overlay-btn" aria-label="Source code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Cloud / Edge ML</span>
+                <span class="project-date">Aug - Dec 2024</span>
+              </div>
+              <h3 class="project-name">Cloud Face Recognition</h3>
+              <p class="project-desc">Multi-stage cloud-to-edge architecture with custom autoscaling up to 15 EC2 instances. Serverless inference via Lambda + edge deployment with IoT Greengrass.</p>
+              <div class="project-tags">
+                <span>AWS</span><span>PyTorch</span><span>Docker</span><span>OpenCV</span><span>Flask</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- More Projects Toggle -->
+        <div class="more-projects-section">
+          <button class="btn btn-outline more-projects-btn" id="show-more-btn" onclick="toggleMoreProjects()">
+            <span id="show-more-text">Show More Projects</span>
+            <svg id="show-more-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition:transform 0.3s"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
         </div>
-      </div>
-      <!-- hamburger -->
-      <div class="mobiletogglemenu" id="mobiletogglemenu">
-        <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-          <li id="home-mobile-tab"
-            class="mobile-navbar-tabs-li home activeThismobiletab"
-            onclick="hidemenubyli()">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              Home
-            </a>
-          </li>
 
-          <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"
-            onclick="hidemenubyli()">
-            <a href="#about" tabindex="0" aria-label="about menu button">
-              About
-            </a>
-          </li>
-          <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"
-            onclick="hidemenubyli()">
-            <a href="#skills" tabindex="0" aria-label="skills menu button">
-              Skills
-            </a>
-          </li>
-          <li id="education-mobile-tab" class="mobile-navbar-tabs-li education"
-            onclick="hidemenubyli()">
-            <a href="#education" tabindex="0" aria-label="education menu button">
-              Education
-            </a>
-          </li>
-          <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience"
-            onclick="hidemenubyli()">
-            <a href="#experience" tabindex="0" aria-label="experience menu button">
-              Experience
-            </a>
-          </li>
-          <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects"
-            onclick="hidemenubyli()">
-            <a href="#projects" tabindex="0" aria-label="projects menu button">
-              Projects
-            </a>
-          </li>
-          <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact"
-            onclick="hidemenubyli()">
-            <a href="#contact" tabindex="0" aria-label="contact menu button">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- mobile toggle menu ends -->
-
-      <section class="landing-page-container" id="home">
-        <div class="blob"></div>
-
-        <div class="text-content">
-          <div class="status-badge reveal">
-            <span class="status-dot"></span>
-            Currently building AI systems @ Gauntlet AI
+        <div class="more-projects-hidden" id="more-projects">
+          <div class="projects-grid" style="margin-top: 2rem">
+            <div class="project-card reveal">
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-type">LLM Research</span>
+                  <span class="project-date">Jan - May 2025</span>
+                </div>
+                <h3 class="project-name">LLaMA Fine-Tuning for Reasoning</h3>
+                <p class="project-desc">Continually pretrained LLaMA 3.2 on OpenWebMath. Boosted LogiQA accuracy by 28% with custom loss reweighting targeting logical connectors.</p>
+                <div class="project-tags">
+                  <span>PyTorch</span><span>Hugging Face</span><span>LLaMA</span><span>NLP</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card reveal">
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-type">Graph Analytics</span>
+                  <span class="project-date">Jan - May 2025</span>
+                </div>
+                <h3 class="project-name">Real-Time Graph Analytics</h3>
+                <p class="project-desc">Kafka + Neo4j + Kubernetes pipeline with PageRank, BFS algorithms, processing 1,500+ graph relationships in real-time.</p>
+                <div class="project-tags">
+                  <span>Kafka</span><span>Neo4j</span><span>Kubernetes</span><span>Helm</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card reveal">
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-type">Hackathon</span>
+                  <span class="project-date">Nov 2025</span>
+                </div>
+                <h3 class="project-name">ReadEaseAI</h3>
+                <p class="project-desc">Anthropic Hackathon project. NLP-driven system for simplifying complex text for non-native English speakers using Claude.</p>
+                <div class="project-tags">
+                  <span>Claude</span><span>NLP</span><span>Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card reveal">
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-type">ML / Deep Learning</span>
+                  <span class="project-date">Aug - Dec 2024</span>
+                </div>
+                <h3 class="project-name">Store Sales Forecasting</h3>
+                <p class="project-desc">Compared 15+ models including XGBoost, LightGBM, ARIMA, LSTM, GRU for time-series sales prediction.</p>
+                <div class="project-tags">
+                  <span>XGBoost</span><span>LSTM</span><span>TensorFlow</span><span>Pandas</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <article id="hello-friend" class="reveal typing-container">
-            <span class="typing-text">Namaste(); I'm</span><span class="typing-cursor"></span>
-          </article>
-          <article id="name" class="reveal" style="--delay: 1.8s">
-            <span class="jello">Y</span>
-            <span class="jello">a</span>
-            <span class="jello">s</span>
-            <span class="jello">h</span>
-            &nbsp;
-            <span class="jello">K</span>
-            <span class="jello">u</span>
-            <span class="jello">c</span>
-            <span class="jello">h</span>
-            <span class="jello">e</span>
-            <span class="jello">r</span>
-            <span class="jello">i</span>
-            <span class="jello">y</span>
-            <span class="jello">a</span>
-            <span class="jello">.</span>
-          </article>
+        </div>
+      </div>
+    </section>
 
-          <article id="work" class="reveal" style="--delay: 2s">
-            <div>
-              <span class="jello">d</span>
-              <span class="jello">r</span>
-              <span class="jello">e</span>
-              <span class="jello">a</span>
-              <span class="jello">m</span>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <span class="section-label reveal">Core Competencies</span>
+        <h2 class="section-title reveal" data-delay="0.1">My <span class="text-gradient">toolkit</span></h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal" data-delay="0.1">
+            <h3 class="skill-group-title">Languages</h3>
+            <div class="skill-items">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">Java</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">Go</span>
             </div>
-            <div>
-              <span class="jello">b</span>
-              <span class="jello">u</span>
-              <span class="jello">i</span>
-              <span class="jello">l</span>
-              <span class="jello">d</span>
+          </div>
+          <div class="skill-group reveal" data-delay="0.15">
+            <h3 class="skill-group-title">Frameworks</h3>
+            <div class="skill-items">
+              <span class="skill-item">Spring Boot</span>
+              <span class="skill-item">FastAPI</span>
+              <span class="skill-item">React</span>
+              <span class="skill-item">Next.js</span>
+              <span class="skill-item">NestJS</span>
+              <span class="skill-item">Angular</span>
             </div>
-            <div>
-              <span class="jello">c</span>
-              <span class="jello">r</span>
-              <span class="jello">a</span>
-              <span class="jello">f</span>
-              <span class="jello">t</span>
+          </div>
+          <div class="skill-group reveal" data-delay="0.2">
+            <h3 class="skill-group-title">Cloud & DevOps</h3>
+            <div class="skill-items">
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Kubernetes</span>
+              <span class="skill-item">Terraform</span>
+              <span class="skill-item">CI/CD</span>
+              <span class="skill-item">Azure DevOps</span>
             </div>
-            <div>
-              <span class="jello">a</span>
-              <span class="jello">n</span>
-              <span class="jello">d</span>
+          </div>
+          <div class="skill-group reveal" data-delay="0.25">
+            <h3 class="skill-group-title">AI / ML</h3>
+            <div class="skill-items">
+              <span class="skill-item">PyTorch</span>
+              <span class="skill-item">TensorFlow</span>
+              <span class="skill-item">LangChain</span>
+              <span class="skill-item">Hugging Face</span>
+              <span class="skill-item">OpenAI</span>
+              <span class="skill-item">ChromaDB</span>
             </div>
-            <div>
-              <span class="jello">a</span>
-              <span class="jello">c</span>
-              <span class="jello">h</span>
-              <span class="jello">i</span>
-              <span class="jello">e</span>
-              <span class="jello">v</span>
-              <span class="jello">e</span>
-              <span class="jello">.</span>
+          </div>
+          <div class="skill-group reveal" data-delay="0.3">
+            <h3 class="skill-group-title">Databases</h3>
+            <div class="skill-items">
+              <span class="skill-item">PostgreSQL</span>
+              <span class="skill-item">DynamoDB</span>
+              <span class="skill-item">Redis</span>
+              <span class="skill-item">Neo4j</span>
+              <span class="skill-item">Supabase</span>
             </div>
-          </article>
-          <p id="info-para" class="reveal">
-            Software Developer — Backend, AI/ML & Data. Building scalable systems with Python, Java, AWS & Spring Boot. MS Computer Science @ ASU.
+          </div>
+          <div class="skill-group reveal" data-delay="0.35">
+            <h3 class="skill-group-title">Tools & Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-item">Git</span>
+              <span class="skill-item">Kafka</span>
+              <span class="skill-item">Vercel</span>
+              <span class="skill-item">Railway</span>
+              <span class="skill-item">Tableau</span>
+              <span class="skill-item">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <span class="section-label reveal">Get in Touch</span>
+          <h2 class="contact-title reveal" data-delay="0.1">
+            Let's build something<br /><span class="text-gradient">great together.</span>
+          </h2>
+          <p class="contact-desc reveal" data-delay="0.2">
+            I'm currently open to new opportunities in backend engineering, AI/ML, and full-stack development.
+            Whether you have a project in mind or just want to connect, my inbox is always open.
           </p>
-          <div class="contact-btn-div reveal">
-            <a href="mailto:ykucheri@asu.edu" class="letsTalkBtn" aria-label="Send email to Yash">
-                <span class="letsTalkBtn-text">Let's Talk!</span>
-                <span class="letsTalkBtn-BG"></span>
+          <div class="contact-cta reveal" data-delay="0.3">
+            <a href="mailto:ykucheri@asu.edu" class="btn btn-primary btn-large">
+              Say Hello
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="LinkedIn">LinkedIn</a>
-            <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="GitHub">GitHub</a>
-            <div class="setting-container" id="setting-container">
-              <input type="checkbox" id="switchforsetting"
-                onclick="settingtoggle()" />
-
-              <label for="switchforsetting" class="needtobeinvert"
-                id="labelforsetting" tabindex="0"
-                aria-label="settings for sound and appearance"></label>
-
-              <div class="visualmodetogglebuttoncontainer"
-                id="visualmodetogglebuttoncontainer">
-                <input type="checkbox" id="switchforvisualmode"
-                  onclick="visualmode()" />
-                <label for="switchforvisualmode" id="labelforvisualmode"
-                  tabindex="0"
-                  aria-label="switch appearance"></label>
-              </div>
-
-              <div class="soundtogglebuttoncontainer"
-                id="soundtogglebuttoncontainer">
-                <input type="checkbox" id="switchforsound"
-                  onclick="playpause()" />
-                <label for="switchforsound" id="labelforsound" tabindex="0"
-                  aria-label="switch sound"
-                  class="needtobeinvert"></label>
-              </div>
-            </div>
-            <!-- setting div ends -->
           </div>
-          <!-- contact-btn-div -->
-        </div>
-
-        <div class="scroll-indicator" id="scroll-indicator">
-          <div class="scroll-mouse">
-            <div class="scroll-wheel"></div>
-          </div>
-        </div>
-
-      </section>
-      <!-- landing page ends here -->
-      <section class="about-section-container" id="about">
-        <div class="about-section">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="About me heading">
-              About Me
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="info-dp-section">
-            <div class="about-info">
-              <p tabindex="0">
-                Software Developer with 3 years of experience spanning backend engineering, AI engineering, and data science/analytics. Strong expertise in Python and Java, with hands-on experience building scalable backend systems using Spring Boot, RESTful APIs, and cloud-native architectures on AWS. Experienced in developing AI and data-driven applications, productionizing ML models, and leveraging AI-assisted development tools to accelerate delivery. Adept at working across the full lifecycle from system design to deployment and optimization in a fast-paced, collaborative environment.
-              </p>
-              <!-- Resume button -->
-              <button class="resume-btn" id="resume-btn" onclick="openURL()" aria-label="Download resume (PDF)">
-                <div class="sign">
-                  <svg viewBox="0 0 640 512">
-                    <path
-                      d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-                  </svg>
-                </div>
-
-                <div class="text">Resume</div>
-              </button>
-            </div>
-
-            <div class="stats-row reveal">
-              <div class="stat-item">
-                <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
-                <span class="stat-label">Years Experience</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
-                <span class="stat-label">Projects</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="4">0</span>
-                <span class="stat-label">Live Demos</span>
-              </div>
-            </div>
-
-            <div class="dp reveal">
-              <img src="src/webp/yash-profile.jpg" alt="Yash Vijay Kucheriya" loading="lazy" tabindex="0"
-                aria-label="image of Yash Vijay Kucheriya" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- about section ends  -->
-
-      <section class="skills-section-container" id="skills">
-        <div class="skills-section">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="skills heading">
-              Skills
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="frontend-dev-section">
-            <h3 class="frontend-dev-heading reveal" tabindex="0"
-              aria-label="Software engineer tech stack and programming skills">
-              Tech Stack
-            </h3>
-            <ul class="tech-stack-wrapper">
-              <li class="tech-stack-category">Languages</li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">PYTHON</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java language skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">JAVA</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="./src/png/jslogo.png" alt="JavaScript skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">JAVASCRIPT</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="./src/png/typescriptlogo.png" alt="typescript skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">TYPESCRIPT</span>
-              </li>
-
-              <li class="tech-stack-category">Frameworks</li>
-              <li class="tech-stack-box">
-                <img src="./src/png/reactlogo.png" alt="react skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">REACT</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg" alt="angularjs skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">ANGULARJS</span>
-              </li>
-
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="spring boot skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">SPRING BOOT</span>
-              </li>
-
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="postgresql skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">POSTGRESQL</span>
-              </li>
-
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" alt="react native skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">REACT NATIVE</span>
-              </li>
-
-              <li class="tech-stack-category">Cloud & DevOps</li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">AWS</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-plain.svg" alt="azure devops skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">AZURE</span>
-              </li>
-
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="terraform skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">TERRAFORM</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-plain.svg" alt="ansible skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">ANSIBLE</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" alt="docker skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">DOCKER</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="kubernetes skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">KUBERNETES</span>
-              </li>
-
-              <li class="tech-stack-category">ML & Data</li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">PYTORCH</span>
-              </li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">TENSORFLOW</span>
-              </li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Kafka skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">KAFKA</span>
-              </li>
-              <li class="tech-stack-box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">GO</span>
-              </li>
-
-              <li class="tech-stack-category">Tools</li>
-              <li class="tech-stack-box">
-                <img src="./src/png/gitlogo.png" alt="git skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">GIT</span>
-              </li>
-
-              <li class="tech-stack-box">
-                <img src="./src/png/githublogo.png" alt="github skill"
-                  class="tech-stack-logo needtobeinvert" loading="lazy" />
-                <span class="tooltip">GITHUB</span>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- skills section ends -->
-
-      <!-- education section starts -->
-      <section class="projects-section-container" id="education">
-        <div class="projects-section-div">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="Education heading">
-              Education
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="project-boxes-div">
-            <!-- Arizona State University - Master's -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box education-box1" id="education-box1">
-                <div class="info-div">
-                  <article class="ProjectHeading">Arizona State University</article>
-                  <p class="ProjectDescription">
-                    <strong>Master of Science in Computer Science</strong><br>
-                    <em>Jan 2024 – Dec 2025 | Tempe, AZ, USA</em><br><br>
-                    • <strong>GPA: 3.8/4.0</strong><br>
-                    • Coursework: Statistical ML, Algorithms, Cloud Computing, NLP, Data Mining, Networks<br>
-                    • Focus on AI/ML and scalable cloud architectures
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/asu-logo.jpeg"
-                    alt="Arizona State University logo" class="company-logo" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Walchand Institute of Technology - Bachelor's -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box education-box2" id="education-box2">
-                <div class="info-div">
-                  <article class="ProjectHeading">Walchand Institute of Technology</article>
-                  <p class="ProjectDescription">
-                    <strong>B.E. in Computer Science and Engineering</strong><br>
-                    <em>Jun 2016 – May 2020 | Solapur, India</em><br><br>
-                    • <strong>GPA: 9.23/10</strong><br>
-                    • Coursework: Data Structures, Operating Systems, Big Data, Web Development<br>
-                    • Strong foundation in computer science fundamentals
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/walchand-logo.jpeg"
-                    alt="Walchand Institute of Technology logo" class="company-logo work-icon" loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- education section ends -->
-      
-            <!-- experience section starts -->
-      <section class="projects-section-container" id="experience">
-        <div class="projects-section-div">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="Experience heading">
-              Experience
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="project-boxes-div">
-            <!-- Gauntlet AI -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box project-box2" id="experience-box0">
-                <div class="info-div">
-                  <article class="ProjectHeading">Gauntlet AI</article>
-                  <p class="ProjectDescription">
-                    <strong>AI Engineer</strong><br>
-                    <em>Feb 2026 – Present | Austin, TX, USA</em><br><br>
-                    • Rigorous 10-week intensive transforming experienced engineers into builders of advanced AI systems<br>
-                    • Deep hands-on development with AI-accelerated tools, frameworks, and real production challenges<br>
-                    • Mastering full-stack AI workflows, end-to-end <strong>agentic development</strong>, and scalable model integrations<br>
-                    • Emphasis on rapid iteration, real software delivery under real constraints, and preparation for high-impact AI engineering roles
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/gauntlet-logo.svg"
-                    alt="Gauntlet AI logo" class="company-logo" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- ZenZiee (YesTech Corp) -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box project-box2" id="experience-box1">
-                <div class="info-div">
-                  <article class="ProjectHeading">ZenZiee (YesTech Corp.)</article>
-                  <p class="ProjectDescription">
-                    <strong>Software Engineer</strong><br>
-                    <em>Jun – Dec 2025 | NJ, USA</em><br><br>
-                    • Built ZenZiee, a gamified social app with real-time APIs, analytics dashboards, and user sentiment tracking for 100+ beta users<br>
-                    • Deployed containerized microservices using <strong>AWS ECS/ECR, ALB, CloudWatch</strong>, achieving <strong>99.9% uptime</strong><br>
-                    • Designed event-driven pipelines with <strong>DynamoDB Streams, Lambda, S3</strong>, reducing processing latency by <strong>60%</strong>; collaborated with ML/frontend teams to embed emotion classification, increasing engagement by <strong>25%</strong>
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/zenziee-logo.jpeg"
-                    alt="ZenZiee/YesTech logo" class="company-logo work-icon" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Buildoors Lab Ltd -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box project-box5" id="experience-box2">
-                <div class="info-div">
-                  <article class="ProjectHeading">Buildoors Lab Ltd</article>
-                  <p class="ProjectDescription">
-                    <strong>Data Scientist</strong><br>
-                    <em>Jan – Dec 2023 | London, UK</em><br><br>
-                    • Developed blockchain-based fraud detection system, reducing risk exposure by <strong>35%</strong><br>
-                    • Automated ETL pipelines and built compliance dashboards using <strong>Pandas, SQL, Tableau, Power BI</strong><br>
-                    • Deployed ML models on <strong>AWS SageMaker</strong> with automated retraining and monitoring workflows
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/buildoor-logo.jpeg"
-                    alt="Buildoors Lab Ltd logo" class="company-logo" loading="lazy" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Infosys Ltd -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-box project-box2" id="experience-box3">
-                <div class="info-div">
-                  <article class="ProjectHeading">Infosys Ltd</article>
-                  <p class="ProjectDescription">
-                    <strong>Software Engineer</strong><br>
-                    <em>Nov 2020 – Jul 2022 | Pune, India</em><br><br>
-                    • Designed Java <strong>Spring Boot microservices</strong> and REST APIs for enterprise billing systems, reducing manual effort by <strong>50%</strong><br>
-                    • Improved backend performance by <strong>35%</strong> through MSSQL query optimization<br>
-                    • Managed <strong>1M+ EDI transactions</strong> per month using IBM Sterling; implemented CI/CD pipelines reducing release cycles by <strong>45%</strong>
-                  </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/infosys-logo.jpeg"
-                    alt="Infosys Ltd logo" class="company-logo" loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- experience section ends -->
-      
-      <section class="projects-section-container" id="projects">
-        <div class="projects-section-div">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="My projects starts from here">
-              Projects
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="project-boxes-div">
-
-            <!-- ===== FEATURED PROJECT 0a: LegacyLens ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-legacylens">
-                <div class="project-preview" onclick="openProjectPreview('https://legacylens.up.railway.app/')">
-                  <div class="preview-mockup preview-rag">
-                    <div class="rag-sidebar">
-                      <div class="rag-logo">LL</div>
-                      <span class="rag-nav-item active"></span>
-                      <span class="rag-nav-item"></span>
-                      <span class="rag-nav-item"></span>
-                    </div>
-                    <div class="rag-main">
-                      <div class="rag-search">
-                        <span class="rag-search-icon">&#x1F50D;</span>
-                        <div class="rag-search-text">How does DGEMM handle matrix…</div>
-                      </div>
-                      <div class="rag-results">
-                        <div class="rag-chunk"><span class="rag-tag">SUBROUTINE</span><span class="rag-match">DGEMM.f : 87</span></div>
-                        <div class="rag-chunk"><span class="rag-tag">FUNCTION</span><span class="rag-match">LSAME.f : 12</span></div>
-                        <div class="rag-chunk"><span class="rag-tag">EXPLAIN</span><span class="rag-match">Matrix multiply…</span></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">LegacyLens</article>
-                  <p class="ProjectSubheading">RAG-Powered Legacy Code Navigator</p>
-                  <p class="ProjectDescription">
-                    Semantic search system enabling natural language queries against <strong>150K+ lines of LAPACK Fortran</strong> using vector similarity and LLM analysis.
-                    8 analysis modes — explain, dependency mapping, impact analysis, documentation generation, bug search, and more.
-                    Syntax-aware Fortran chunking with <strong>ChromaDB</strong>, <strong>Voyage-code-3</strong> embeddings, and <strong>Gemini 2.5 Flash</strong> via OpenRouter.
-                    Interactive dependency graphs with vis-network. Sub-3s answer generation at ~$0.001/query.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">ChromaDB</span>
-                    <span class="tech-tag">LangChain</span>
-                    <span class="tech-tag">Gemini</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Docker</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/LegacyLens"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit LegacyLens on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://legacylens.up.railway.app/" target="_blank" class="live-demo-link" aria-label="Live demo of LegacyLens">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 0b: GhostGuide ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-ghostguide">
-                <div class="project-preview" onclick="openProjectPreview('https://ghostfolio-ghostguide.up.railway.app')">
-                  <div class="preview-mockup preview-finance">
-                    <div class="fin-sidebar">
-                      <div class="fin-logo">GG</div>
-                      <span class="fin-nav active"></span><span class="fin-nav"></span><span class="fin-nav"></span><span class="fin-nav"></span>
-                    </div>
-                    <div class="fin-main">
-                      <div class="fin-header">
-                        <div class="fin-metric"><span class="fin-val">$124,580</span><span class="fin-label">Portfolio</span></div>
-                        <div class="fin-metric"><span class="fin-val fin-green">+12.4%</span><span class="fin-label">Return</span></div>
-                        <div class="fin-metric"><span class="fin-val">25</span><span class="fin-label">Holdings</span></div>
-                      </div>
-                      <div class="fin-chart-area">
-                        <svg class="fin-line-chart" viewBox="0 0 200 50" preserveAspectRatio="none">
-                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="none" stroke="#22d3ee" stroke-width="2"/>
-                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="url(#finGrad)" stroke="none"/>
-                          <defs><linearGradient id="finGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(34,211,238,0.3)"/><stop offset="1" stop-color="rgba(34,211,238,0)"/></linearGradient></defs>
-                        </svg>
-                      </div>
-                      <div class="fin-chat-bubble">What's my best performer this month?</div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Feb – Mar 2026</span>
-                  <article class="ProjectHeading">GhostGuide</article>
-                  <p class="ProjectSubheading">AI-Powered Wealth Management Agent</p>
-                  <p class="ProjectDescription">
-                    Built an AI agent layer on top of <strong>Ghostfolio</strong> (open-source wealth management) with natural-language portfolio insights.
-                    <strong>25 specialized tools</strong> covering portfolio analysis, performance metrics, market data, and compliance checks.
-                    Multi-layer hallucination verification system with LLM output validation.
-                    <strong>NestJS + Angular</strong> full-stack with PostgreSQL, Prisma ORM, <strong>Redis</strong> caching, and LangSmith tracing. Pre-seeded with 200+ test transactions.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">NestJS</span>
-                    <span class="tech-tag">Angular</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">OpenRouter</span>
-                    <span class="tech-tag">Docker</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/ghostfolio"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit GhostGuide on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://ghostfolio-ghostguide.up.railway.app" target="_blank" class="live-demo-link" aria-label="Live demo of GhostGuide">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-collabboard">
-                <div class="project-preview" onclick="openProjectPreview('https://collabboard-five.vercel.app')">
-                  <div class="preview-mockup preview-whiteboard">
-                    <div class="wb-toolbar">
-                      <span class="wb-tool active">T</span><span class="wb-tool">&#9633;</span><span class="wb-tool">&#9675;</span><span class="wb-tool">&#47;</span>
-                    </div>
-                    <div class="wb-canvas">
-                      <div class="wb-sticky wb-s1">Sprint Goals<div class="wb-sticky-line"></div><div class="wb-sticky-line short"></div></div>
-                      <div class="wb-sticky wb-s2">API Design<div class="wb-sticky-line"></div></div>
-                      <div class="wb-sticky wb-s3">Deploy<div class="wb-sticky-line short"></div></div>
-                      <div class="wb-arrow"></div>
-                      <div class="wb-cursor wb-c1"><span></span></div>
-                      <div class="wb-cursor wb-c2"><span></span></div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Feb 2026 – Present</span>
-                  <article class="ProjectHeading">CollabBoard</article>
-                  <p class="ProjectSubheading">Real-Time Collaborative Whiteboard with AI Assistant</p>
-                  <p class="ProjectDescription">
-                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization.
-                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing.
-                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations.
-                    Designed auth, board sharing, and role-based access with <strong>Supabase Auth + RLS</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Vercel</span>
-                    <span class="tech-tag">AI</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/collabboard"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit CollabBoard on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://collabboard-five.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CollabBoard">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-eventiq">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/EventIQ-Platform')">
-                  <div class="preview-mockup preview-pipeline">
-                    <div class="pipe-header">
-                      <span class="pipe-badge pipe-live">LIVE</span>
-                      <span class="pipe-title">EventIQ Pipeline</span>
-                      <span class="pipe-count">1,247 events/s</span>
-                    </div>
-                    <div class="pipe-flow">
-                      <div class="pipe-node pipe-n1">Ingest</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n2">Validate</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n3">AI</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n4">Store</div>
-                    </div>
-                    <div class="pipe-events">
-                      <div class="pipe-evt"><span class="pipe-dot green"></span>anomaly_detected <span class="pipe-ts">2ms</span></div>
-                      <div class="pipe-evt"><span class="pipe-dot blue"></span>trend_analysis <span class="pipe-ts">5ms</span></div>
-                      <div class="pipe-evt"><span class="pipe-dot yellow"></span>event_classified <span class="pipe-ts">1ms</span></div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jul 2025 – Jan 2026</span>
-                  <article class="ProjectHeading">EventIQ</article>
-                  <p class="ProjectSubheading">AI-Powered Real-Time Event Intelligence Platform</p>
-                  <p class="ProjectDescription">
-                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics.
-                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing.
-                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization.
-                    Integrated <strong>PostgreSQL + Redis</strong> caching with rate limiting, dead-letter queues, and fault-tolerant workflows.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">GPT-4</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Terraform</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/EventIQ-Platform"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit EventIQ on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 3: LexivoAI ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-lexivoai">
-                <div class="project-preview" onclick="openProjectPreview('https://v0-word-wise-ai.vercel.app')">
-                  <div class="preview-mockup preview-writer">
-                    <div class="wr-sidebar">
-                      <div class="wr-logo">Lx</div>
-                      <span class="wr-doc active"></span><span class="wr-doc"></span><span class="wr-doc"></span>
-                    </div>
-                    <div class="wr-main">
-                      <div class="wr-toolbar">
-                        <span>B</span><span>I</span><span>U</span>
-                        <span class="wr-ai-btn">AI Assist</span>
-                      </div>
-                      <div class="wr-content">
-                        <div class="wr-line wr-heading"></div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line short"></div>
-                        <div class="wr-highlight">
-                          <span class="wr-suggestion">Style: More concise</span>
-                        </div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line short"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – Feb 2026</span>
-                  <article class="ProjectHeading">LexivoAI</article>
-                  <p class="ProjectSubheading">AI-Powered Writing Assistant &amp; Content Creation Platform</p>
-                  <p class="ProjectDescription">
-                    Built a full-stack AI writing platform with real-time <strong>grammar checking</strong>, style suggestions, and <strong>Instagram carousel generation</strong>.
-                    Integrated <strong>OpenAI API</strong> for intelligent content templates, brand voice analysis, and writing performance analytics.
-                    Designed multi-format document management with export to <strong>PDF, images, and ZIP</strong>.
-                    Auth via <strong>Clerk</strong>, data layer with <strong>Supabase (PostgreSQL)</strong>, deployed on <strong>Vercel</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">OpenAI</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Clerk</span>
-                    <span class="tech-tag">Tailwind</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/LexivoAI"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit LexivoAI on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://v0-word-wise-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of LexivoAI">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 4: Cloud-Based Face Recognition ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-facerecog">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">Cloud-Based Face Recognition</article>
-                  <p class="ProjectSubheading">Multi-Stage Cloud-to-Edge Architecture on AWS</p>
-                  <p class="ProjectDescription">
-                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>.
-                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>.
-                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT.
-                    Integrated <strong>OpenCV + facenet-pytorch</strong> for detection and recognition.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">AWS</span>
-                    <span class="tech-tag">EC2</span>
-                    <span class="tech-tag">Lambda</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Flask</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">PyTorch</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 5: Logical Language Modeling ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-llm">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/abhiramvad/nlp-project')">
-                  <div class="preview-mockup preview-terminal">
-                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Logical Language Modeling</article>
-                  <p class="ProjectSubheading">LLaMA Fine-Tuning for Reasoning</p>
-                  <p class="ProjectDescription">
-                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors.
-                    Designed soft and hard token reweighting to improve transformer attention mechanisms.
-                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench.
-                    Performed attention-head visualization to interpret model reasoning behavior.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">Hugging Face</span>
-                    <span class="tech-tag">LLaMA</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">GPU</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/abhiramvad/nlp-project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit LLM Reasoning on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End featured projects -->
-
-          <!-- Show More / Show Less toggle -->
-          <div class="show-more-container reveal">
-            <button class="show-more-btn" id="show-more-btn" onclick="toggleMoreProjects()">
-              <span id="show-more-text">Show More Projects</span>
-              <svg id="show-more-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Hidden projects (revealed by Show More) -->
-          <div class="project-boxes-div more-projects-hidden" id="more-projects">
-
-            <!-- ===== MORE 1: ReadEaseAI ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-readeaseai">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-editor">
-                    <div class="editor-sidebar"><span></span><span></span><span></span><span></span></div>
-                    <div class="editor-body"><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Nov 2025 &middot; Anthropic Hackathon</span>
-                  <article class="ProjectHeading">ReadEaseAI</article>
-                  <p class="ProjectSubheading">AI Reading Assistant for Accessible Content</p>
-                  <p class="ProjectDescription">
-                    Built at the <strong>Claude &times; Anthropic Hackathon</strong>. NLP-driven system that analyzes and rewrites complex text into clearer formats for non-native speakers and accessibility-focused audiences.
-                    Implemented AI-powered summarization using LLMs with prompt engineering for readability while preserving context.
-                    Interactive interface for real-time simplified outputs.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Prompt Engineering</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-graphanalytics">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-stream">
-                    <div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Real-Time Graph Analytics</article>
-                  <p class="ProjectSubheading">Kafka + Neo4j + Kubernetes Pipeline</p>
-                  <p class="ProjectDescription">
-                    Built a scalable pipeline transforming batch graph processing into real-time streaming.
-                    Modeled NYC Yellow Taxi data as graph relationships in <strong>Neo4j</strong>, executed <strong>PageRank and BFS</strong> via Graph Data Science.
-                    <strong>Kafka Connect</strong> for continuous ingestion generating <strong>1500+ graph relationships</strong> in real time.
-                    Orchestrated with <strong>Docker, Kubernetes (Minikube), and Helm</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Neo4j</span>
-                    <span class="tech-tag">Kubernetes</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Helm</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 3: Store Sales Forecasting ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-salesforecast">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project')">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">Store Sales Forecasting</article>
-                  <p class="ProjectSubheading">ML &amp; Deep Learning Time-Series</p>
-                  <p class="ProjectDescription">
-                    Compared <strong>15+ models</strong> — XGBoost, LightGBM, CatBoost, Random Forest, ARIMA, LSTM, GRU, and ensemble boosting. 
-                    Extensive feature engineering: lag features, rolling averages, temporal encoding, and categorical transforms. 
-                    Boosting and deep learning models significantly outperformed traditional statistical approaches across large-scale retail data.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">LSTM</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">TensorFlow</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Sales Forecasting on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 4: Fake News Detection ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-fakenews">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb')">
-                  <div class="preview-mockup preview-terminal">
-                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2024</span>
-                  <article class="ProjectHeading">Fake News Detection</article>
-                  <p class="ProjectSubheading">ML &amp; NLP Classification</p>
-                  <p class="ProjectDescription">
-                    End-to-end text classification using TF-IDF with Naive Bayes, Logistic Regression, SVM, Neural Networks, and <strong>XGBoost achieving ~99.7% accuracy</strong>. 
-                    Text preprocessing with NLTK — tokenization, stopword removal, feature engineering. 
-                    Visualization workflows analyzing model performance, boosting behavior, and loss convergence.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">TF-IDF</span>
-                    <span class="tech-tag">NLTK</span>
-                    <span class="tech-tag">Python</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Fake News Detection on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 5: Income Prediction Insights ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-income">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Income Prediction Insights</article>
-                  <p class="ProjectSubheading">Data Visualization &amp; Analytics</p>
-                  <p class="ProjectDescription">
-                    Analyzed U.S. Census data to understand socio-economic predictors of income.
-                    Designed interactive visualizations — mosaic plots, scatter plots, parallel coordinate plots.
-                    Identified key income drivers: <strong>education level, occupation type, age, and weekly hours</strong>.
-                    Generated actionable insights for marketing strategy, scholarship planning, and workforce analytics.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">Matplotlib</span>
-                    <span class="tech-tag">Data Viz</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-houseasp">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">House Reconfiguration Optimization</article>
-                  <p class="ProjectSubheading">Answer Set Programming (Clingo)</p>
-                  <p class="ProjectDescription">
-                    Constraint-based optimization system solving the House Reconfiguration Problem using <strong>ASP and Clingo</strong>. 
-                    Modeled spatial allocation constraints for items, cabinets, and rooms with declarative logic rules. 
-                    Cost-minimization prioritizing reuse over expansion. 
-                    Achieved optimal configurations in <strong>~0.005 seconds</strong>; applicable to warehouse layout and resource allocation.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">ASP</span>
-                    <span class="tech-tag">Clingo</span>
-                    <span class="tech-tag">Logic Programming</span>
-                    <span class="tech-tag">Optimization</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 7: Network RTT Analysis ===== -->
-            <div class="project-box-wrapper reveal">
-              <div class="project-card" id="project-rtt">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE-534-project')">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2024</span>
-                  <article class="ProjectHeading">Analyzing Network RTT</article>
-                  <p class="ProjectSubheading">FABRIC Testbed Cloud Networking</p>
-                  <p class="ProjectDescription">
-                    Designed controlled networking experiments across distributed nodes on <strong>FABRIC research infrastructure</strong> to measure RTT behavior. 
-                    Investigated impact of topology, routing paths, and infrastructure configuration on latency. 
-                    Built automated experiment workflows and visualization pipelines to interpret performance bottlenecks.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">FABRIC</span>
-                    <span class="tech-tag">Networking</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Cloud</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE-534-project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit RTT Analysis on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- End more-projects -->
-
-        </div>
-      </section>
-      <!-- Contact Section -->
-      <section class="contact-section" id="contact">
-        <div class="contact-section-div">
-          <div class="section-heading reveal">
-            <h2 class="section-heading-article" tabindex="0" aria-label="Contact heading">
-              Contact
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-          <form class="contact-form reveal" id="contact-form" novalidate>
-            <div class="contact-form-row">
-              <div class="form-field">
-                <label for="contact-name" class="sr-only">Your Name</label>
-                <input type="text" id="contact-name" name="name" placeholder="Your Name" required autocomplete="name" />
-                <span class="field-error" id="name-error"></span>
-              </div>
-              <div class="form-field">
-                <label for="contact-email" class="sr-only">Your Email</label>
-                <input type="email" id="contact-email" name="email" placeholder="Your Email" required autocomplete="email" />
-                <span class="field-error" id="email-error"></span>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="contact-subject" class="sr-only">Subject</label>
-              <input type="text" id="contact-subject" name="subject" placeholder="Subject" />
-            </div>
-            <div class="form-field">
-              <label for="contact-message" class="sr-only">Your Message</label>
-              <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
-              <span class="field-error" id="message-error"></span>
-            </div>
-            <button type="submit" class="contact-submit" id="contact-submit">
-              <span class="submit-text">Send Message</span>
-              <span class="submit-spinner" aria-hidden="true"></span>
-            </button>
-            <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
-          </form>
-        </div>
-      </section>
-
-    </main>
-    <!-- main ends here -->
-
-    <footer id="footer">
-      <button id="backtotopbutton" onclick="scrolltoTopfunction()" aria-label="Back to top" title="Back to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-      </button>
-
-      <div class="footer-background">
-        <div class="footer-blob"></div>
-      </div>
-      <div class="footer-foreground">
-        <div class="footercontainer">
-
-          <div class="two-words">
-            <article tabindex="0"
-              aria-label="Research, Scan, and Execute. My Syntax">
-              "Research, Scan, and Execute."
-            </article>
-          </div>
-
-          <div class="social-media-container">
-            <div class="neon">
-              <article>Get in Touch</article>
-            </div>
-
-            <div class="logos">
-              <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/"
-                target="_blank"
-                aria-label="My LinkedIn"><svg class="SocialHandle"
-                  viewBox="0 0 448 512">
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                </svg></a>
-
-              <a href="https://github.com/yashkuceriya" target="_blank"
-                aria-label="My github"><svg viewBox="0 0 496 512"
-                  class="SocialHandle">
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                </svg></a>
-
-              <a href="mailto:ykucheri@asu.edu" target="_blank"
-                aria-label="My G mail"><svg id="GmailLogo"
-                  viewBox="0 0 512 512">
-                  <path
-                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-                </svg></a>
-            </div>
-          </div>
-
-          <div class="footer-avatar-container">
-            <img src="src/png/avatar-sticker-footer.png" alt="Yash" id="footer-wala-avatar" class="header-footer-avatar footer-avatar-img sticker-avatar" loading="lazy" />
-          </div>
-          <div class="footer-bottom">
-            <article>
-              Design & Built by Yash Vijay Kucheriya
-              &#169; twentytwentysix
-            </article>
-
+          <div class="contact-links reveal" data-delay="0.4">
+            <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:ykucheri@asu.edu" class="contact-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+              <span>ykucheri@asu.edu</span>
+            </a>
+            <a href="https://www.buymeacoffee.com/yash_kucheriya" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-1.001-1.379-.197-.069-.42-.098-.57-.241-.152-.143-.196-.366-.231-.572-.065-.378-.125-.756-.192-1.133-.057-.325-.102-.69-.25-.987-.195-.4-.597-.634-.996-.788a5.723 5.723 0 00-.626-.194c-1-.263-2.05-.36-3.077-.416a25.834 25.834 0 00-3.7.062c-.915.083-1.88.184-2.75.5-.318.116-.646.256-.888.501-.297.302-.393.77-.177 1.146.154.267.415.456.692.58.36.162.737.284 1.123.366 1.075.238 2.189.331 3.287.37 1.218.05 2.437.01 3.65-.118.299-.033.598-.073.896-.119.352-.054.578-.513.474-.834-.124-.383-.457-.531-.834-.473-.466.074-.96.108-1.382.146-1.177.08-2.358.082-3.536.006a22.228 22.228 0 01-1.157-.107c-.086-.01-.18-.025-.258-.036-.243-.036-.484-.08-.724-.13-.111-.027-.111-.185 0-.212h.005c.277-.06.557-.108.838-.147h.002c.131-.009.263-.032.394-.048a25.076 25.076 0 013.426-.12c.674.019 1.347.062 2.014.13l.04.005c.294.038.59.092.88.159.1.023.196.052.294.084.04.013.097.028.12.064.027.042.013.063 0 .105-.016.054-.03.108-.046.162-.052.18-.108.356-.175.53-.115.293-.37.514-.665.593-1.123.305-2.344.29-3.466.098-.138-.025-.276-.052-.412-.083-.09-.02-.176-.04-.264-.063-.114-.03-.224-.07-.336-.105-.054-.017-.11-.027-.158-.058-.084-.054-.084-.178 0-.232.081-.052.184-.04.273-.017.322.085.652.155.985.197.706.09 1.42.09 2.127.01.214-.024.428-.054.64-.092.156-.028.308-.065.461-.105.113-.03.205-.076.283-.164.063-.072.094-.17.094-.267 0-.061-.008-.12-.024-.178h0a.675.675 0 00-.337-.39 3.323 3.323 0 00-.492-.18c-.577-.153-1.167-.243-1.762-.283a17.662 17.662 0 00-2.502.013c-.446.03-.89.076-1.33.143h-.005a3.65 3.65 0 00-.532.116l-.04.012c-.052.015-.098.028-.15.045-.174.059-.333.166-.396.346-.075.22-.03.455.098.642a1.1 1.1 0 00.506.38c.174.08.36.136.549.18.5.118 1.024.177 1.537.21a18.07 18.07 0 002.833-.074c.252-.032.503-.07.753-.115.081-.015.162-.031.242-.05.081-.02.148-.067.162-.148.016-.093-.04-.163-.133-.159-.023.001-.045.005-.068.01-.09.015-.18.033-.27.047a17.87 17.87 0 01-1.727.172c-.637.035-1.276.032-1.913-.01-.177-.01-.353-.027-.528-.05-.015-.002-.03-.004-.046-.008-.095-.018-.095-.156 0-.174.094-.017.189-.027.284-.038.514-.06 1.03-.091 1.548-.098.517-.007 1.035.01 1.55.052.195.016.39.037.584.065.068.01.144.014.2.058.06.046.085.115.082.186-.003.072-.038.142-.088.194-.114.119-.289.16-.447.183-.498.073-1.005.098-1.508.098-.507 0-1.013-.025-1.515-.098-.158-.023-.333-.064-.447-.183-.05-.052-.085-.122-.088-.194-.003-.071.022-.14.082-.186z"/><path d="M4.5 11.75v7.5c0 .69.56 1.25 1.25 1.25h12.5c.69 0 1.25-.56 1.25-1.25v-7.5H4.5zm8.75 3.25a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+              <span>Buy Me a Coffee</span>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer ends here -->
+    </section>
 
-    <script src="main.js"></script>
-    <script>function openURL(){window.open("./src/pdf/Yash_Vijay_Kucheriya_Resume.pdf","_blank")}</script>
-    <script data-name="BMC-Widget"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="yash_kucheriya" data-description="Support me on Buy me a coffee!"
-      data-message="" data-color="#22d3ee" data-position="left" data-x_margin="18"
-      data-y_margin="18" async></script>
-  </body>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">YK</span>
+        <p class="footer-copy">Designed & Built by Yash Kucheriya</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/yashkuceriya" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yash-kucheriya-b05a17162/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ykucheri@asu.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
 </html>

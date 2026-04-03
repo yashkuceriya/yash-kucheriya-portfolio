@@ -131,12 +131,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="home activeThistab navbar-tabs-li">
               <a href="#home" tabindex="0" aria-label="Home menu button">Home</a>
             </li>
-            <li class="projects navbar-tabs-li">
-              <a href="#projects" aria-label="projects menu button">Projects</a>
-            </li>
-            <li class="experience navbar-tabs-li">
-              <a href="#experience" aria-label="experience menu button">Experience</a>
-            </li>
             <li class="about navbar-tabs-li">
               <a href="#about" aria-label="about menu button">About</a>
             </li>
@@ -145,6 +139,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
             <li class="education navbar-tabs-li">
               <a href="#education" aria-label="education menu button">Education</a>
+            </li>
+            <li class="experience navbar-tabs-li">
+              <a href="#experience" aria-label="experience menu button">Experience</a>
+            </li>
+            <li class="projects navbar-tabs-li">
+              <a href="#projects" aria-label="projects menu button">Projects</a>
             </li>
             <li class="contact navbar-tabs-li">
               <a href="#contact" aria-label="contact menu button">Contact</a>
@@ -174,12 +174,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
             <a href="#home" tabindex="0" aria-label="Home menu button">Home</a>
           </li>
-          <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-            <a href="#projects" tabindex="0" aria-label="projects menu button">Projects</a>
-          </li>
-          <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
-            <a href="#experience" tabindex="0" aria-label="experience menu button">Experience</a>
-          </li>
           <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
             <a href="#about" tabindex="0" aria-label="about menu button">About</a>
           </li>
@@ -188,6 +182,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </li>
           <li id="education-mobile-tab" class="mobile-navbar-tabs-li education" onclick="hidemenubyli()">
             <a href="#education" tabindex="0" aria-label="education menu button">Education</a>
+          </li>
+          <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+            <a href="#experience" tabindex="0" aria-label="experience menu button">Experience</a>
+          </li>
+          <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+            <a href="#projects" tabindex="0" aria-label="projects menu button">Projects</a>
           </li>
           <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact" onclick="hidemenubyli()">
             <a href="#contact" tabindex="0" aria-label="contact menu button">Contact</a>
@@ -316,66 +316,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
 
-      <section class="projects-section-container" id="projects">
+      
+      
+
+
+      <!-- Highlighted Work — right after hero -->
+      <section class="projects-section-container" id="highlighted-work">
         <div class="projects-section-div">
           <div class="section-heading" data-aos="fade-right">
-            <h2 class="section-heading-article" tabindex="0"
-              aria-label="My projects starts from here">
-              Projects
-            </h2>
+            <h2 class="section-heading-article" tabindex="0">Highlighted Work</h2>
             <p class="sectionHeadingP"></p>
           </div>
+          <div class="project-boxes-div" id="highlighted-grid">
 
-          <!-- Featured live projects banner -->
-          <div class="live-projects-banner" data-aos="fade-up">
-            <div class="live-banner-header">
-              <span class="live-pulse"></span>
-              <span class="live-banner-label">Live &amp; Deployed — try them now</span>
-            </div>
-            <div class="live-banner-grid">
-              <a href="https://legacylens.up.railway.app/" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">LegacyLens</span>
-                <span class="live-banner-desc">RAG search over 150K lines of Fortran</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://ghostfolio-ghostguide.up.railway.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">GhostGuide</span>
-                <span class="live-banner-desc">AI wealth management with 25 tools</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://collabboard-five.vercel.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">CollabBoard</span>
-                <span class="live-banner-desc">Real-time whiteboard with AI assistant</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://v0-word-wise-ai.vercel.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">LexivoAI</span>
-                <span class="live-banner-desc">AI writing platform with grammar &amp; style</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://session-analysis-omega.vercel.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">Session Analysis</span>
-                <span class="live-banner-desc">In-browser face tracking &amp; engagement AI</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://k8s-bundle-analyser.vercel.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">K8s Analyser</span>
-                <span class="live-banner-desc">Kubernetes diagnostics with 3D topology</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-              <a href="https://cap-man-ai.vercel.app" target="_blank" rel="noopener" class="live-banner-card magnetic">
-                <span class="live-banner-name">CapManAI</span>
-                <span class="live-banner-desc">AI options trading trainer with Socratic probing</span>
-                <span class="live-banner-cta">Try it &rarr;</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-boxes-div">
-
-            <!-- ===== FEATURED PROJECT 0a: LegacyLens ===== -->
             <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-legacylens">
+              <div class="project-card" id="hl-project-jarvis">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-terminal">
+                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Jarvis</article>
+                  <p class="ProjectSubheading">Production-Grade Real-Time Voice Assistant</p>
+                  <p class="ProjectDescription">
+                    Real-time voice assistant with <strong>adaptive jitter buffering</strong>, spectral analysis, and AGC-normalized audio capture for sub-second conversational latency.
+                    Features <strong>24 integrated tools</strong> (GitHub, utilities, memory), a 6-state orchestrator, Whisper STT, and local TTS via edge-tts.
+                    Full audio health diagnostics panel with FFT spectral analyzer.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Whisper STT</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Jarvis" target="_blank" class="github-redirect" aria-label="Visit Jarvis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="hl-project-legacylens">
                 <div class="project-preview" onclick="openProjectPreview('https://legacylens.up.railway.app/')">
                   <div class="preview-mockup preview-rag">
                     <div class="rag-sidebar">
@@ -431,9 +420,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <!-- ===== FEATURED PROJECT 0b: GhostGuide ===== -->
             <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-ghostguide">
+              <div class="project-card" id="hl-project-session-analysis">
+                <div class="project-preview" onclick="openProjectPreview('https://session-analysis-omega.vercel.app')">
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Session Analysis</article>
+                  <p class="ProjectSubheading">Privacy-First AI Engagement Analytics</p>
+                  <p class="ProjectDescription">
+                    Real-time engagement analytics for live tutoring using <strong>in-browser MediaPipe Face Mesh</strong> (468 landmarks), 52 facial blendshapes, and speech pattern detection.
+                    Delivers <strong>live coaching nudges</strong> to tutors and shareable progress reports. All video/audio processing happens in-browser — zero data leaves the device.
+                    WebRTC-powered with AI-generated session summaries.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">WebRTC</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">TypeScript</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Session-Analysis" target="_blank" class="github-redirect" aria-label="Visit Session Analysis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://session-analysis-omega.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of Session Analysis">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="hl-project-ghostguide">
                 <div class="project-preview" onclick="openProjectPreview('https://ghostfolio-ghostguide.up.railway.app')">
                   <div class="preview-mockup preview-finance">
                     <div class="fin-sidebar">
@@ -491,370 +518,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
             <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-collabboard">
-                <div class="project-preview" onclick="openProjectPreview('https://collabboard-five.vercel.app')">
-                  <div class="preview-mockup preview-whiteboard">
-                    <div class="wb-toolbar">
-                      <span class="wb-tool active">T</span><span class="wb-tool">&#9633;</span><span class="wb-tool">&#9675;</span><span class="wb-tool">&#47;</span>
-                    </div>
-                    <div class="wb-canvas">
-                      <div class="wb-sticky wb-s1">Sprint Goals<div class="wb-sticky-line"></div><div class="wb-sticky-line short"></div></div>
-                      <div class="wb-sticky wb-s2">API Design<div class="wb-sticky-line"></div></div>
-                      <div class="wb-sticky wb-s3">Deploy<div class="wb-sticky-line short"></div></div>
-                      <div class="wb-arrow"></div>
-                      <div class="wb-cursor wb-c1"><span></span></div>
-                      <div class="wb-cursor wb-c2"><span></span></div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Feb 2026 – Present</span>
-                  <article class="ProjectHeading">CollabBoard</article>
-                  <p class="ProjectSubheading">Real-Time Collaborative Whiteboard with AI Assistant</p>
-                  <p class="ProjectDescription">
-                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization.
-                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing.
-                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations.
-                    Designed auth, board sharing, and role-based access with <strong>Supabase Auth + RLS</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Vercel</span>
-                    <span class="tech-tag">AI</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/collabboard"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit CollabBoard on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://collabboard-five.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CollabBoard">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-eventiq">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/EventIQ-Platform')">
-                  <div class="preview-mockup preview-pipeline">
-                    <div class="pipe-header">
-                      <span class="pipe-badge pipe-live">LIVE</span>
-                      <span class="pipe-title">EventIQ Pipeline</span>
-                      <span class="pipe-count">1,247 events/s</span>
-                    </div>
-                    <div class="pipe-flow">
-                      <div class="pipe-node pipe-n1">Ingest</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n2">Validate</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n3">AI</div>
-                      <div class="pipe-connector"><span></span><span></span><span></span></div>
-                      <div class="pipe-node pipe-n4">Store</div>
-                    </div>
-                    <div class="pipe-events">
-                      <div class="pipe-evt"><span class="pipe-dot green"></span>anomaly_detected <span class="pipe-ts">2ms</span></div>
-                      <div class="pipe-evt"><span class="pipe-dot blue"></span>trend_analysis <span class="pipe-ts">5ms</span></div>
-                      <div class="pipe-evt"><span class="pipe-dot yellow"></span>event_classified <span class="pipe-ts">1ms</span></div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jul 2025 – Jan 2026</span>
-                  <article class="ProjectHeading">EventIQ</article>
-                  <p class="ProjectSubheading">AI-Powered Real-Time Event Intelligence Platform</p>
-                  <p class="ProjectDescription">
-                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics.
-                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing.
-                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization.
-                    Integrated <strong>PostgreSQL + Redis</strong> caching with rate limiting, dead-letter queues, and fault-tolerant workflows.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">GPT-4</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Terraform</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/EventIQ-Platform"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit EventIQ on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 3: LexivoAI ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-lexivoai">
-                <div class="project-preview" onclick="openProjectPreview('https://v0-word-wise-ai.vercel.app')">
-                  <div class="preview-mockup preview-writer">
-                    <div class="wr-sidebar">
-                      <div class="wr-logo">Lx</div>
-                      <span class="wr-doc active"></span><span class="wr-doc"></span><span class="wr-doc"></span>
-                    </div>
-                    <div class="wr-main">
-                      <div class="wr-toolbar">
-                        <span>B</span><span>I</span><span>U</span>
-                        <span class="wr-ai-btn">AI Assist</span>
-                      </div>
-                      <div class="wr-content">
-                        <div class="wr-line wr-heading"></div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line short"></div>
-                        <div class="wr-highlight">
-                          <span class="wr-suggestion">Style: More concise</span>
-                        </div>
-                        <div class="wr-line"></div>
-                        <div class="wr-line short"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – Feb 2026</span>
-                  <article class="ProjectHeading">LexivoAI</article>
-                  <p class="ProjectSubheading">AI-Powered Writing Assistant &amp; Content Creation Platform</p>
-                  <p class="ProjectDescription">
-                    Built a full-stack AI writing platform with real-time <strong>grammar checking</strong>, style suggestions, and <strong>Instagram carousel generation</strong>.
-                    Integrated <strong>OpenAI API</strong> for intelligent content templates, brand voice analysis, and writing performance analytics.
-                    Designed multi-format document management with export to <strong>PDF, images, and ZIP</strong>.
-                    Auth via <strong>Clerk</strong>, data layer with <strong>Supabase (PostgreSQL)</strong>, deployed on <strong>Vercel</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">OpenAI</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Clerk</span>
-                    <span class="tech-tag">Tailwind</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/LexivoAI"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit LexivoAI on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://v0-word-wise-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of LexivoAI">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 4: Cloud-Based Face Recognition ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-facerecog">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">Cloud-Based Face Recognition</article>
-                  <p class="ProjectSubheading">Multi-Stage Cloud-to-Edge Architecture on AWS</p>
-                  <p class="ProjectDescription">
-                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>.
-                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>.
-                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT.
-                    Integrated <strong>OpenCV + facenet-pytorch</strong> for detection and recognition.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">AWS</span>
-                    <span class="tech-tag">EC2</span>
-                    <span class="tech-tag">Lambda</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Flask</span>
-                    <span class="tech-tag">OpenCV</span>
-                    <span class="tech-tag">PyTorch</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== FEATURED PROJECT 5: Logical Language Modeling ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-llm">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/abhiramvad/nlp-project')">
-                  <div class="preview-mockup preview-terminal">
-                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Logical Language Modeling</article>
-                  <p class="ProjectSubheading">LLaMA Fine-Tuning for Reasoning</p>
-                  <p class="ProjectDescription">
-                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors.
-                    Designed soft and hard token reweighting to improve transformer attention mechanisms.
-                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench.
-                    Performed attention-head visualization to interpret model reasoning behavior.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">Hugging Face</span>
-                    <span class="tech-tag">LLaMA</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">GPU</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/abhiramvad/nlp-project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit LLM Reasoning on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End featured projects -->
-
-          <!-- ===== NEW FEATURED PROJECTS ===== -->
-          <div class="project-boxes-div">
-
-            <!-- Jarvis — Voice Assistant -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-jarvis">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-terminal">
-                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">Jarvis</article>
-                  <p class="ProjectSubheading">Production-Grade Real-Time Voice Assistant</p>
-                  <p class="ProjectDescription">
-                    Real-time voice assistant with <strong>adaptive jitter buffering</strong>, spectral analysis, and AGC-normalized audio capture for sub-second conversational latency.
-                    Features <strong>24 integrated tools</strong> (GitHub, utilities, memory), a 6-state orchestrator, Whisper STT, and local TTS via edge-tts.
-                    Full audio health diagnostics panel with FFT spectral analyzer.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Whisper STT</span>
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Docker</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/Jarvis" target="_blank" class="github-redirect" aria-label="Visit Jarvis on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Session-Analysis -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-session-analysis">
-                <div class="project-preview" onclick="openProjectPreview('https://session-analysis-omega.vercel.app')">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">Session Analysis</article>
-                  <p class="ProjectSubheading">Privacy-First AI Engagement Analytics</p>
-                  <p class="ProjectDescription">
-                    Real-time engagement analytics for live tutoring using <strong>in-browser MediaPipe Face Mesh</strong> (468 landmarks), 52 facial blendshapes, and speech pattern detection.
-                    Delivers <strong>live coaching nudges</strong> to tutors and shareable progress reports. All video/audio processing happens in-browser — zero data leaves the device.
-                    WebRTC-powered with AI-generated session summaries.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">MediaPipe</span>
-                    <span class="tech-tag">WebRTC</span>
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">TypeScript</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/Session-Analysis" target="_blank" class="github-redirect" aria-label="Visit Session Analysis on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://session-analysis-omega.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of Session Analysis">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Regulatory-Engine -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-regulatory-engine">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">Regulatory Engine</article>
-                  <p class="ProjectSubheading">Buildability Assessment for SoCal Parcels</p>
-                  <p class="ProjectDescription">
-                    Enter any Southern California address and get <strong>full ADU buildability analysis in under 5 seconds</strong>. 9-step async pipeline with deterministic zoning rule engine,
-                    <strong>Shapely geometry</strong> for buildable envelope computation, <strong>Mapbox GL</strong> 3D visualization, LLM-powered explanations, and PDF export.
-                    Multi-jurisdiction design supporting CP-7150 and LAMC regulations.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">Shapely</span>
-                    <span class="tech-tag">Mapbox</span>
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">TypeScript</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/Regulatory-Engine" target="_blank" class="github-redirect" aria-label="Visit Regulatory Engine on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- K8s-Bundle-Analyser -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-k8s-analyser">
+              <div class="project-card" id="hl-project-k8s-analyser">
                 <div class="project-preview" onclick="openProjectPreview('https://k8s-bundle-analyser.vercel.app')">
                   <div class="preview-mockup preview-terminal">
                     <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
@@ -891,345 +556,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
 
-            <!-- CapManAI -->
             <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-capmanai">
-                <div class="project-preview" onclick="openProjectPreview('https://cap-man-ai.vercel.app')">
-                  <div class="preview-mockup preview-finance">
-                    <div class="fin-sidebar">
-                      <div class="fin-logo">CM</div>
-                      <span class="fin-nav active"></span><span class="fin-nav"></span><span class="fin-nav"></span>
-                    </div>
-                    <div class="fin-main">
-                      <div class="fin-header">
-                        <div class="fin-metric"><span class="fin-val">AAPL</span><span class="fin-label">Underlying</span></div>
-                        <div class="fin-metric"><span class="fin-val fin-green">+4.2%</span><span class="fin-label">P&L</span></div>
-                      </div>
-                      <div class="fin-chart-area">
-                        <svg class="fin-line-chart" viewBox="0 0 200 50">
-                          <polyline points="0,40 30,35 60,20 90,30 120,15 150,25 180,10 200,18" fill="none" stroke="#d97756" stroke-width="2"/>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                    <span>Live Preview</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">CapManAI</article>
-                  <p class="ProjectSubheading">AI-Powered Options Trading Trainer</p>
-                  <p class="ProjectDescription">
-                    Gamified training platform where students face <strong>dynamic trading scenarios</strong>, get probed on reasoning by an AI agent using <strong>multi-turn Socratic questioning</strong>,
-                    and receive mastery-based grades (MTSS framework). Real market data from Financial Modeling Prep API.
-                    Educators monitor skill progression through dashboards with cost tracing via LangSmith.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">LangSmith</span>
-                    <span class="tech-tag">OpenRouter</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CapManAI" target="_blank" class="github-redirect" aria-label="Visit CapManAI on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                    <a href="https://cap-man-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CapManAI">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Ad-Generation -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-ad-generation">
+              <div class="project-card" id="hl-project-regulatory-engine">
                 <div class="project-preview">
-                  <div class="preview-mockup preview-editor">
-                    <div class="editor-sidebar"><span></span><span></span><span></span><span></span></div>
-                    <div class="editor-body"><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div></div>
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
                   </div>
                 </div>
                 <div class="info-div">
                   <span class="project-date">Mar 2026</span>
-                  <article class="ProjectHeading">Ad Generation Engine</article>
-                  <p class="ProjectSubheading">Autonomous AI Ad Creation with Quality Evaluation</p>
+                  <article class="ProjectHeading">Regulatory Engine</article>
+                  <p class="ProjectSubheading">Buildability Assessment for SoCal Parcels</p>
                   <p class="ProjectDescription">
-                    Autonomous ad generation system with <strong>iterative AI quality evaluation</strong> across 5 dimensions with weighted scoring and early stopping.
-                    Features DB-backed cost ledger, <strong>human review workflows</strong>, insight memory that learns from past runs,
-                    and experiment orchestration for A/B testing. Full trust center with compliance and audit signals.
+                    Enter any Southern California address and get <strong>full ADU buildability analysis in under 5 seconds</strong>. 9-step async pipeline with deterministic zoning rule engine,
+                    <strong>Shapely geometry</strong> for buildable envelope computation, <strong>Mapbox GL</strong> 3D visualization, LLM-powered explanations, and PDF export.
+                    Multi-jurisdiction design supporting CP-7150 and LAMC regulations.
                   </p>
                   <div class="project-tech-tags">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Shapely</span>
+                    <span class="tech-tag">Mapbox</span>
+                    <span class="tech-tag">Claude</span>
                     <span class="tech-tag">React</span>
-                    <span class="tech-tag">Gemini</span>
-                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">TypeScript</span>
                   </div>
                   <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/Ad-Generation" target="_blank" class="github-redirect" aria-label="Visit Ad Generation on GitHub">
+                    <a href="https://github.com/yashkuceriya/Regulatory-Engine" target="_blank" class="github-redirect" aria-label="Visit Regulatory Engine on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
+          
           </div>
-          <!-- End new featured projects -->
-
-          <!-- Show More / Show Less toggle -->
-          <div class="show-more-container reveal">
-            <button class="show-more-btn" id="show-more-btn" onclick="toggleMoreProjects()">
-              <span id="show-more-text">Show More Projects</span>
-              <svg id="show-more-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Hidden projects (revealed by Show More) -->
-          <div class="project-boxes-div more-projects-hidden" id="more-projects">
-
-            <!-- ===== MORE 1: ReadEaseAI ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-readeaseai">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-editor">
-                    <div class="editor-sidebar"><span></span><span></span><span></span><span></span></div>
-                    <div class="editor-body"><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Nov 2025 &middot; Anthropic Hackathon</span>
-                  <article class="ProjectHeading">ReadEaseAI</article>
-                  <p class="ProjectSubheading">AI Reading Assistant for Accessible Content</p>
-                  <p class="ProjectDescription">
-                    Built at the <strong>Claude &times; Anthropic Hackathon</strong>. NLP-driven system that analyzes and rewrites complex text into clearer formats for non-native speakers and accessibility-focused audiences.
-                    Implemented AI-powered summarization using LLMs with prompt engineering for readability while preserving context.
-                    Interactive interface for real-time simplified outputs.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Claude</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Prompt Engineering</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-graphanalytics">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-stream">
-                    <div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Real-Time Graph Analytics</article>
-                  <p class="ProjectSubheading">Kafka + Neo4j + Kubernetes Pipeline</p>
-                  <p class="ProjectDescription">
-                    Built a scalable pipeline transforming batch graph processing into real-time streaming.
-                    Modeled NYC Yellow Taxi data as graph relationships in <strong>Neo4j</strong>, executed <strong>PageRank and BFS</strong> via Graph Data Science.
-                    <strong>Kafka Connect</strong> for continuous ingestion generating <strong>1500+ graph relationships</strong> in real time.
-                    Orchestrated with <strong>Docker, Kubernetes (Minikube), and Helm</strong>.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Kafka</span>
-                    <span class="tech-tag">Neo4j</span>
-                    <span class="tech-tag">Kubernetes</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Helm</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 3: Store Sales Forecasting ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-salesforecast">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project')">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">Store Sales Forecasting</article>
-                  <p class="ProjectSubheading">ML &amp; Deep Learning Time-Series</p>
-                  <p class="ProjectDescription">
-                    Compared <strong>15+ models</strong> — XGBoost, LightGBM, CatBoost, Random Forest, ARIMA, LSTM, GRU, and ensemble boosting. 
-                    Extensive feature engineering: lag features, rolling averages, temporal encoding, and categorical transforms. 
-                    Boosting and deep learning models significantly outperformed traditional statistical approaches across large-scale retail data.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">LSTM</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">TensorFlow</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Sales Forecasting on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 4: Fake News Detection ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-fakenews">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb')">
-                  <div class="preview-mockup preview-terminal">
-                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2024</span>
-                  <article class="ProjectHeading">Fake News Detection</article>
-                  <p class="ProjectSubheading">ML &amp; NLP Classification</p>
-                  <p class="ProjectDescription">
-                    End-to-end text classification using TF-IDF with Naive Bayes, Logistic Regression, SVM, Neural Networks, and <strong>XGBoost achieving ~99.7% accuracy</strong>. 
-                    Text preprocessing with NLTK — tokenization, stopword removal, feature engineering. 
-                    Visualization workflows analyzing model performance, boosting behavior, and loss convergence.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">TF-IDF</span>
-                    <span class="tech-tag">NLTK</span>
-                    <span class="tech-tag">Python</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit Fake News Detection on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 5: Income Prediction Insights ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-income">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-dashboard">
-                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
-                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2025</span>
-                  <article class="ProjectHeading">Income Prediction Insights</article>
-                  <p class="ProjectSubheading">Data Visualization &amp; Analytics</p>
-                  <p class="ProjectDescription">
-                    Analyzed U.S. Census data to understand socio-economic predictors of income.
-                    Designed interactive visualizations — mosaic plots, scatter plots, parallel coordinate plots.
-                    Identified key income drivers: <strong>education level, occupation type, age, and weekly hours</strong>.
-                    Generated actionable insights for marketing strategy, scholarship planning, and workforce analytics.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">Matplotlib</span>
-                    <span class="tech-tag">Data Viz</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-houseasp">
-                <div class="project-preview">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Aug – Dec 2024</span>
-                  <article class="ProjectHeading">House Reconfiguration Optimization</article>
-                  <p class="ProjectSubheading">Answer Set Programming (Clingo)</p>
-                  <p class="ProjectDescription">
-                    Constraint-based optimization system solving the House Reconfiguration Problem using <strong>ASP and Clingo</strong>. 
-                    Modeled spatial allocation constraints for items, cabinets, and rooms with declarative logic rules. 
-                    Cost-minimization prioritizing reuse over expansion. 
-                    Achieved optimal configurations in <strong>~0.005 seconds</strong>; applicable to warehouse layout and resource allocation.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">ASP</span>
-                    <span class="tech-tag">Clingo</span>
-                    <span class="tech-tag">Logic Programming</span>
-                    <span class="tech-tag">Optimization</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- ===== MORE 7: Network RTT Analysis ===== -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-card" id="project-rtt">
-                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE-534-project')">
-                  <div class="preview-mockup preview-cloud">
-                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
-                  </div>
-                  <div class="preview-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>View on GitHub</span>
-                  </div>
-                </div>
-                <div class="info-div">
-                  <span class="project-date">Jan – May 2024</span>
-                  <article class="ProjectHeading">Analyzing Network RTT</article>
-                  <p class="ProjectSubheading">FABRIC Testbed Cloud Networking</p>
-                  <p class="ProjectDescription">
-                    Designed controlled networking experiments across distributed nodes on <strong>FABRIC research infrastructure</strong> to measure RTT behavior. 
-                    Investigated impact of topology, routing paths, and infrastructure configuration on latency. 
-                    Built automated experiment workflows and visualization pipelines to interpret performance bottlenecks.
-                  </p>
-                  <div class="project-tech-tags">
-                    <span class="tech-tag">FABRIC</span>
-                    <span class="tech-tag">Networking</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Cloud</span>
-                  </div>
-                  <div class="project-buttons">
-                    <a href="https://github.com/yashkuceriya/CSE-534-project"
-                      target="_blank" class="github-redirect"
-                      aria-label="Visit RTT Analysis on GitHub">
-                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- End more-projects -->
-
-
         </div>
       </section>
 
@@ -1593,10 +955,892 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </section>
-      <!-- experience section ends -->
-      
       <!-- Contact Section -->
-      <section class="contact-section" id="contact">
+
+
+<section class="projects-section-container" id="projects">
+        <div class="projects-section-div">
+          <div class="section-heading" data-aos="fade-right">
+            <h2 class="section-heading-article" tabindex="0"
+              aria-label="My projects starts from here">
+              Projects
+            </h2>
+            <p class="sectionHeadingP"></p>
+          </div>
+
+          <div class="project-boxes-div">
+
+            <!-- Jarvis — Voice Assistant -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-jarvis">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-terminal">
+                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Jarvis</article>
+                  <p class="ProjectSubheading">Production-Grade Real-Time Voice Assistant</p>
+                  <p class="ProjectDescription">
+                    Real-time voice assistant with <strong>adaptive jitter buffering</strong>, spectral analysis, and AGC-normalized audio capture for sub-second conversational latency.
+                    Features <strong>24 integrated tools</strong> (GitHub, utilities, memory), a 6-state orchestrator, Whisper STT, and local TTS via edge-tts.
+                    Full audio health diagnostics panel with FFT spectral analyzer.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Whisper STT</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Jarvis" target="_blank" class="github-redirect" aria-label="Visit Jarvis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Session-Analysis -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-legacylens">
+                <div class="project-preview" onclick="openProjectPreview('https://legacylens.up.railway.app/')">
+                  <div class="preview-mockup preview-rag">
+                    <div class="rag-sidebar">
+                      <div class="rag-logo">LL</div>
+                      <span class="rag-nav-item active"></span>
+                      <span class="rag-nav-item"></span>
+                      <span class="rag-nav-item"></span>
+                    </div>
+                    <div class="rag-main">
+                      <div class="rag-search">
+                        <span class="rag-search-icon">&#x1F50D;</span>
+                        <div class="rag-search-text">How does DGEMM handle matrix…</div>
+                      </div>
+                      <div class="rag-results">
+                        <div class="rag-chunk"><span class="rag-tag">SUBROUTINE</span><span class="rag-match">DGEMM.f : 87</span></div>
+                        <div class="rag-chunk"><span class="rag-tag">FUNCTION</span><span class="rag-match">LSAME.f : 12</span></div>
+                        <div class="rag-chunk"><span class="rag-tag">EXPLAIN</span><span class="rag-match">Matrix multiply…</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">LegacyLens</article>
+                  <p class="ProjectSubheading">RAG-Powered Legacy Code Navigator</p>
+                  <p class="ProjectDescription">
+                    Semantic search system enabling natural language queries against <strong>150K+ lines of LAPACK Fortran</strong> using vector similarity and LLM analysis.
+                    8 analysis modes — explain, dependency mapping, impact analysis, documentation generation, bug search, and more.
+                    Syntax-aware Fortran chunking with <strong>ChromaDB</strong>, <strong>Voyage-code-3</strong> embeddings, and <strong>Gemini 2.5 Flash</strong> via OpenRouter.
+                    Interactive dependency graphs with vis-network. Sub-3s answer generation at ~$0.001/query.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">ChromaDB</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Gemini</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/LegacyLens"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit LegacyLens on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://legacylens.up.railway.app/" target="_blank" class="live-demo-link" aria-label="Live demo of LegacyLens">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 0b: GhostGuide ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-session-analysis">
+                <div class="project-preview" onclick="openProjectPreview('https://session-analysis-omega.vercel.app')">
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Session Analysis</article>
+                  <p class="ProjectSubheading">Privacy-First AI Engagement Analytics</p>
+                  <p class="ProjectDescription">
+                    Real-time engagement analytics for live tutoring using <strong>in-browser MediaPipe Face Mesh</strong> (468 landmarks), 52 facial blendshapes, and speech pattern detection.
+                    Delivers <strong>live coaching nudges</strong> to tutors and shareable progress reports. All video/audio processing happens in-browser — zero data leaves the device.
+                    WebRTC-powered with AI-generated session summaries.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">WebRTC</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">TypeScript</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Session-Analysis" target="_blank" class="github-redirect" aria-label="Visit Session Analysis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://session-analysis-omega.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of Session Analysis">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Regulatory-Engine -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-ghostguide">
+                <div class="project-preview" onclick="openProjectPreview('https://ghostfolio-ghostguide.up.railway.app')">
+                  <div class="preview-mockup preview-finance">
+                    <div class="fin-sidebar">
+                      <div class="fin-logo">GG</div>
+                      <span class="fin-nav active"></span><span class="fin-nav"></span><span class="fin-nav"></span><span class="fin-nav"></span>
+                    </div>
+                    <div class="fin-main">
+                      <div class="fin-header">
+                        <div class="fin-metric"><span class="fin-val">$124,580</span><span class="fin-label">Portfolio</span></div>
+                        <div class="fin-metric"><span class="fin-val fin-green">+12.4%</span><span class="fin-label">Return</span></div>
+                        <div class="fin-metric"><span class="fin-val">25</span><span class="fin-label">Holdings</span></div>
+                      </div>
+                      <div class="fin-chart-area">
+                        <svg class="fin-line-chart" viewBox="0 0 200 50" preserveAspectRatio="none">
+                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="none" stroke="#d97756" stroke-width="2"/>
+                          <polyline points="0,40 20,35 40,38 60,25 80,28 100,15 120,20 140,12 160,18 180,8 200,10" fill="url(#finGrad)" stroke="none"/>
+                          <defs><linearGradient id="finGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(34,211,238,0.3)"/><stop offset="1" stop-color="rgba(34,211,238,0)"/></linearGradient></defs>
+                        </svg>
+                      </div>
+                      <div class="fin-chat-bubble">What's my best performer this month?</div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Feb – Mar 2026</span>
+                  <article class="ProjectHeading">GhostGuide</article>
+                  <p class="ProjectSubheading">AI-Powered Wealth Management Agent</p>
+                  <p class="ProjectDescription">
+                    Built an AI agent layer on top of <strong>Ghostfolio</strong> (open-source wealth management) with natural-language portfolio insights.
+                    <strong>25 specialized tools</strong> covering portfolio analysis, performance metrics, market data, and compliance checks.
+                    Multi-layer hallucination verification system with LLM output validation.
+                    <strong>NestJS + Angular</strong> full-stack with PostgreSQL, Prisma ORM, <strong>Redis</strong> caching, and LangSmith tracing. Pre-seeded with 200+ test transactions.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">NestJS</span>
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">OpenRouter</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/ghostfolio"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit GhostGuide on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://ghostfolio-ghostguide.up.railway.app" target="_blank" class="live-demo-link" aria-label="Live demo of GhostGuide">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 1: CollabBoard ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-k8s-analyser">
+                <div class="project-preview" onclick="openProjectPreview('https://k8s-bundle-analyser.vercel.app')">
+                  <div class="preview-mockup preview-terminal">
+                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">K8s Bundle Analyser</article>
+                  <p class="ProjectSubheading">Kubernetes Diagnostics with 3D Topology</p>
+                  <p class="ProjectDescription">
+                    Upload Kubernetes support bundles and get <strong>structured root-cause analysis</strong> with remediation guidance.
+                    <strong>26 heuristic detectors</strong> for common K8s failure modes, RAG pipeline with ChromaDB for semantic search across bundles,
+                    <strong>3D cluster topology</strong> visualization (Three.js), log correlation, and auto-generated preflight checks.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">ChromaDB</span>
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/K8s-Bundle-Analyser" target="_blank" class="github-redirect" aria-label="Visit K8s Bundle Analyser on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://k8s-bundle-analyser.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of K8s Bundle Analyser">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CapManAI -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-regulatory-engine">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Regulatory Engine</article>
+                  <p class="ProjectSubheading">Buildability Assessment for SoCal Parcels</p>
+                  <p class="ProjectDescription">
+                    Enter any Southern California address and get <strong>full ADU buildability analysis in under 5 seconds</strong>. 9-step async pipeline with deterministic zoning rule engine,
+                    <strong>Shapely geometry</strong> for buildable envelope computation, <strong>Mapbox GL</strong> 3D visualization, LLM-powered explanations, and PDF export.
+                    Multi-jurisdiction design supporting CP-7150 and LAMC regulations.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Shapely</span>
+                    <span class="tech-tag">Mapbox</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Regulatory-Engine" target="_blank" class="github-redirect" aria-label="Visit Regulatory Engine on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End featured projects (top 6) -->
+
+          <!-- Show More / Show Less toggle -->
+          <div class="show-more-container reveal">
+            <button class="show-more-btn" id="show-more-btn" onclick="toggleMoreProjects()">
+              <span id="show-more-text">Show More Projects</span>
+              <svg id="show-more-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hidden projects (revealed by Show More) -->
+          <div class="project-boxes-div more-projects-hidden" id="more-projects">
+
+            <!-- LLaMA Fine-Tuning -->
+            <div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-llm">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/abhiramvad/nlp-project')">
+                  <div class="preview-mockup preview-terminal">
+                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Logical Language Modeling</article>
+                  <p class="ProjectSubheading">LLaMA Fine-Tuning for Reasoning</p>
+                  <p class="ProjectDescription">
+                    Continually pretrained <strong>LLaMA 3.2 (1B &amp; 3B)</strong> on OpenWebMath with custom loss reweighting targeting logical connectors.
+                    Boosted <strong>LogiQA accuracy by 28%</strong> and improved non-monotonic reasoning on LogicBench.
+                    Attention-head visualization for model behavior interpretation.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Hugging Face</span>
+                    <span class="tech-tag">LLaMA</span>
+                    <span class="tech-tag">NLP</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/abhiramvad/nlp-project" target="_blank" class="github-redirect" aria-label="Visit LLM Reasoning on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 1: ReadEaseAI ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-collabboard">
+                <div class="project-preview" onclick="openProjectPreview('https://collabboard-five.vercel.app')">
+                  <div class="preview-mockup preview-whiteboard">
+                    <div class="wb-toolbar">
+                      <span class="wb-tool active">T</span><span class="wb-tool">&#9633;</span><span class="wb-tool">&#9675;</span><span class="wb-tool">&#47;</span>
+                    </div>
+                    <div class="wb-canvas">
+                      <div class="wb-sticky wb-s1">Sprint Goals<div class="wb-sticky-line"></div><div class="wb-sticky-line short"></div></div>
+                      <div class="wb-sticky wb-s2">API Design<div class="wb-sticky-line"></div></div>
+                      <div class="wb-sticky wb-s3">Deploy<div class="wb-sticky-line short"></div></div>
+                      <div class="wb-arrow"></div>
+                      <div class="wb-cursor wb-c1"><span></span></div>
+                      <div class="wb-cursor wb-c2"><span></span></div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Feb 2026 – Present</span>
+                  <article class="ProjectHeading">CollabBoard</article>
+                  <p class="ProjectSubheading">Real-Time Collaborative Whiteboard with AI Assistant</p>
+                  <p class="ProjectDescription">
+                    Built a real-time collaborative whiteboard with <strong>infinite canvas</strong>, live multiplayer presence tracking, and cursor synchronization.
+                    Implemented state sync using <strong>Supabase Realtime</strong> for low-latency multi-user editing.
+                    AI-powered assistant generates structured outputs — retrospectives, onboarding plans, and interview simulations.
+                    Designed auth, board sharing, and role-based access with <strong>Supabase Auth + RLS</strong>.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Vercel</span>
+                    <span class="tech-tag">AI</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/collabboard"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit CollabBoard on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://collabboard-five.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CollabBoard">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 2: EventIQ ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-eventiq">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/EventIQ-Platform')">
+                  <div class="preview-mockup preview-pipeline">
+                    <div class="pipe-header">
+                      <span class="pipe-badge pipe-live">LIVE</span>
+                      <span class="pipe-title">EventIQ Pipeline</span>
+                      <span class="pipe-count">1,247 events/s</span>
+                    </div>
+                    <div class="pipe-flow">
+                      <div class="pipe-node pipe-n1">Ingest</div>
+                      <div class="pipe-connector"><span></span><span></span><span></span></div>
+                      <div class="pipe-node pipe-n2">Validate</div>
+                      <div class="pipe-connector"><span></span><span></span><span></span></div>
+                      <div class="pipe-node pipe-n3">AI</div>
+                      <div class="pipe-connector"><span></span><span></span><span></span></div>
+                      <div class="pipe-node pipe-n4">Store</div>
+                    </div>
+                    <div class="pipe-events">
+                      <div class="pipe-evt"><span class="pipe-dot green"></span>anomaly_detected <span class="pipe-ts">2ms</span></div>
+                      <div class="pipe-evt"><span class="pipe-dot blue"></span>trend_analysis <span class="pipe-ts">5ms</span></div>
+                      <div class="pipe-evt"><span class="pipe-dot yellow"></span>event_classified <span class="pipe-ts">1ms</span></div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jul 2025 – Jan 2026</span>
+                  <article class="ProjectHeading">EventIQ</article>
+                  <p class="ProjectSubheading">AI-Powered Real-Time Event Intelligence Platform</p>
+                  <p class="ProjectDescription">
+                    Built a distributed event-processing system with independent microservices for ingestion, validation, AI analysis, and analytics.
+                    Implemented <strong>Kafka-based streaming (Redpanda)</strong> for scalable real-time processing.
+                    AI analysis service leverages <strong>GPT-4</strong> for anomaly detection, trend analysis, and event summarization.
+                    Integrated <strong>PostgreSQL + Redis</strong> caching with rate limiting, dead-letter queues, and fault-tolerant workflows.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Kafka</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">GPT-4</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Terraform</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/EventIQ-Platform"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit EventIQ on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 3: LexivoAI ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-lexivoai">
+                <div class="project-preview" onclick="openProjectPreview('https://v0-word-wise-ai.vercel.app')">
+                  <div class="preview-mockup preview-writer">
+                    <div class="wr-sidebar">
+                      <div class="wr-logo">Lx</div>
+                      <span class="wr-doc active"></span><span class="wr-doc"></span><span class="wr-doc"></span>
+                    </div>
+                    <div class="wr-main">
+                      <div class="wr-toolbar">
+                        <span>B</span><span>I</span><span>U</span>
+                        <span class="wr-ai-btn">AI Assist</span>
+                      </div>
+                      <div class="wr-content">
+                        <div class="wr-line wr-heading"></div>
+                        <div class="wr-line"></div>
+                        <div class="wr-line"></div>
+                        <div class="wr-line short"></div>
+                        <div class="wr-highlight">
+                          <span class="wr-suggestion">Style: More concise</span>
+                        </div>
+                        <div class="wr-line"></div>
+                        <div class="wr-line short"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – Feb 2026</span>
+                  <article class="ProjectHeading">LexivoAI</article>
+                  <p class="ProjectSubheading">AI-Powered Writing Assistant &amp; Content Creation Platform</p>
+                  <p class="ProjectDescription">
+                    Built a full-stack AI writing platform with real-time <strong>grammar checking</strong>, style suggestions, and <strong>Instagram carousel generation</strong>.
+                    Integrated <strong>OpenAI API</strong> for intelligent content templates, brand voice analysis, and writing performance analytics.
+                    Designed multi-format document management with export to <strong>PDF, images, and ZIP</strong>.
+                    Auth via <strong>Clerk</strong>, data layer with <strong>Supabase (PostgreSQL)</strong>, deployed on <strong>Vercel</strong>.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">Clerk</span>
+                    <span class="tech-tag">Tailwind</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/LexivoAI"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit LexivoAI on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://v0-word-wise-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of LexivoAI">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 4: Cloud-Based Face Recognition ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-facerecog">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-cloud">
+                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
+                  <article class="ProjectHeading">Cloud-Based Face Recognition</article>
+                  <p class="ProjectSubheading">Multi-Stage Cloud-to-Edge Architecture on AWS</p>
+                  <p class="ProjectDescription">
+                    Built an IaaS system using <strong>EC2, S3, SQS, SimpleDB</strong> with custom autoscaling supporting up to <strong>15 EC2 instances</strong>.
+                    Implemented serverless inference via containerized <strong>AWS Lambda + ECR</strong>.
+                    Designed edge-to-cloud inference with <strong>AWS IoT Greengrass</strong> enabling real-time face detection on edge devices with secure MQTT.
+                    Integrated <strong>OpenCV + facenet-pytorch</strong> for detection and recognition.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">EC2</span>
+                    <span class="tech-tag">Lambda</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">PyTorch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== FEATURED PROJECT 5: Logical Language Modeling ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-capmanai">
+                <div class="project-preview" onclick="openProjectPreview('https://cap-man-ai.vercel.app')">
+                  <div class="preview-mockup preview-finance">
+                    <div class="fin-sidebar">
+                      <div class="fin-logo">CM</div>
+                      <span class="fin-nav active"></span><span class="fin-nav"></span><span class="fin-nav"></span>
+                    </div>
+                    <div class="fin-main">
+                      <div class="fin-header">
+                        <div class="fin-metric"><span class="fin-val">AAPL</span><span class="fin-label">Underlying</span></div>
+                        <div class="fin-metric"><span class="fin-val fin-green">+4.2%</span><span class="fin-label">P&L</span></div>
+                      </div>
+                      <div class="fin-chart-area">
+                        <svg class="fin-line-chart" viewBox="0 0 200 50">
+                          <polyline points="0,40 30,35 60,20 90,30 120,15 150,25 180,10 200,18" fill="none" stroke="#d97756" stroke-width="2"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <span>Live Preview</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">CapManAI</article>
+                  <p class="ProjectSubheading">AI-Powered Options Trading Trainer</p>
+                  <p class="ProjectDescription">
+                    Gamified training platform where students face <strong>dynamic trading scenarios</strong>, get probed on reasoning by an AI agent using <strong>multi-turn Socratic questioning</strong>,
+                    and receive mastery-based grades (MTSS framework). Real market data from Financial Modeling Prep API.
+                    Educators monitor skill progression through dashboards with cost tracing via LangSmith.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">LangSmith</span>
+                    <span class="tech-tag">OpenRouter</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CapManAI" target="_blank" class="github-redirect" aria-label="Visit CapManAI on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                    <a href="https://cap-man-ai.vercel.app" target="_blank" class="live-demo-link" aria-label="Live demo of CapManAI">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ad-Generation -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-ad-generation">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-editor">
+                    <div class="editor-sidebar"><span></span><span></span><span></span><span></span></div>
+                    <div class="editor-body"><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Mar 2026</span>
+                  <article class="ProjectHeading">Ad Generation Engine</article>
+                  <p class="ProjectSubheading">Autonomous AI Ad Creation with Quality Evaluation</p>
+                  <p class="ProjectDescription">
+                    Autonomous ad generation system with <strong>iterative AI quality evaluation</strong> across 5 dimensions with weighted scoring and early stopping.
+                    Features DB-backed cost ledger, <strong>human review workflows</strong>, insight memory that learns from past runs,
+                    and experiment orchestration for A/B testing. Full trust center with compliance and audit signals.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Gemini</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/Ad-Generation" target="_blank" class="github-redirect" aria-label="Visit Ad Generation on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-readeaseai">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-editor">
+                    <div class="editor-sidebar"><span></span><span></span><span></span><span></span></div>
+                    <div class="editor-body"><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div><div class="editor-line"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Nov 2025 &middot; Anthropic Hackathon</span>
+                  <article class="ProjectHeading">ReadEaseAI</article>
+                  <p class="ProjectSubheading">AI Reading Assistant for Accessible Content</p>
+                  <p class="ProjectDescription">
+                    Built at the <strong>Claude &times; Anthropic Hackathon</strong>. NLP-driven system that analyzes and rewrites complex text into clearer formats for non-native speakers and accessibility-focused audiences.
+                    Implemented AI-powered summarization using LLMs with prompt engineering for readability while preserving context.
+                    Interactive interface for real-time simplified outputs.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Prompt Engineering</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 2: Real-Time Graph Analytics ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-graphanalytics">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-stream">
+                    <div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div><div class="stream-event"><span></span><span></span></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Real-Time Graph Analytics</article>
+                  <p class="ProjectSubheading">Kafka + Neo4j + Kubernetes Pipeline</p>
+                  <p class="ProjectDescription">
+                    Built a scalable pipeline transforming batch graph processing into real-time streaming.
+                    Modeled NYC Yellow Taxi data as graph relationships in <strong>Neo4j</strong>, executed <strong>PageRank and BFS</strong> via Graph Data Science.
+                    <strong>Kafka Connect</strong> for continuous ingestion generating <strong>1500+ graph relationships</strong> in real time.
+                    Orchestrated with <strong>Docker, Kubernetes (Minikube), and Helm</strong>.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Kafka</span>
+                    <span class="tech-tag">Neo4j</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Helm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 3: Store Sales Forecasting ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-salesforecast">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project')">
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
+                  <article class="ProjectHeading">Store Sales Forecasting</article>
+                  <p class="ProjectSubheading">ML &amp; Deep Learning Time-Series</p>
+                  <p class="ProjectDescription">
+                    Compared <strong>15+ models</strong> — XGBoost, LightGBM, CatBoost, Random Forest, ARIMA, LSTM, GRU, and ensemble boosting. 
+                    Extensive feature engineering: lag features, rolling averages, temporal encoding, and categorical transforms. 
+                    Boosting and deep learning models significantly outperformed traditional statistical approaches across large-scale retail data.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">LSTM</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">TensorFlow</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CSE572-DataMining/tree/main/Group_22_Project"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Sales Forecasting on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 4: Fake News Detection ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-fakenews">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb')">
+                  <div class="preview-mockup preview-terminal">
+                    <div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div><div class="term-line"></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2024</span>
+                  <article class="ProjectHeading">Fake News Detection</article>
+                  <p class="ProjectSubheading">ML &amp; NLP Classification</p>
+                  <p class="ProjectDescription">
+                    End-to-end text classification using TF-IDF with Naive Bayes, Logistic Regression, SVM, Neural Networks, and <strong>XGBoost achieving ~99.7% accuracy</strong>. 
+                    Text preprocessing with NLTK — tokenization, stopword removal, feature engineering. 
+                    Visualization workflows analyzing model performance, boosting behavior, and loss convergence.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">TF-IDF</span>
+                    <span class="tech-tag">NLTK</span>
+                    <span class="tech-tag">Python</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CSE575-project/blob/main/Code/SML_Project.ipynb"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit Fake News Detection on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 5: Income Prediction Insights ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-income">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-dashboard">
+                    <div class="dash-topbar"><span></span><span></span><span></span><span></span></div>
+                    <div class="dash-chart"><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div><div class="dash-bar"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2025</span>
+                  <article class="ProjectHeading">Income Prediction Insights</article>
+                  <p class="ProjectSubheading">Data Visualization &amp; Analytics</p>
+                  <p class="ProjectDescription">
+                    Analyzed U.S. Census data to understand socio-economic predictors of income.
+                    Designed interactive visualizations — mosaic plots, scatter plots, parallel coordinate plots.
+                    Identified key income drivers: <strong>education level, occupation type, age, and weekly hours</strong>.
+                    Generated actionable insights for marketing strategy, scholarship planning, and workforce analytics.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Data Viz</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 6: House Reconfiguration (ASP) ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-houseasp">
+                <div class="project-preview">
+                  <div class="preview-mockup preview-cloud">
+                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Aug – Dec 2024</span>
+                  <article class="ProjectHeading">House Reconfiguration Optimization</article>
+                  <p class="ProjectSubheading">Answer Set Programming (Clingo)</p>
+                  <p class="ProjectDescription">
+                    Constraint-based optimization system solving the House Reconfiguration Problem using <strong>ASP and Clingo</strong>. 
+                    Modeled spatial allocation constraints for items, cabinets, and rooms with declarative logic rules. 
+                    Cost-minimization prioritizing reuse over expansion. 
+                    Achieved optimal configurations in <strong>~0.005 seconds</strong>; applicable to warehouse layout and resource allocation.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">ASP</span>
+                    <span class="tech-tag">Clingo</span>
+                    <span class="tech-tag">Logic Programming</span>
+                    <span class="tech-tag">Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== MORE 7: Network RTT Analysis ===== -->
+            
+<div class="project-box-wrapper" data-aos="fade-up">
+              <div class="project-card" id="project-rtt">
+                <div class="project-preview" onclick="openProjectPreview('https://github.com/yashkuceriya/CSE-534-project')">
+                  <div class="preview-mockup preview-cloud">
+                    <div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div><div class="cloud-node"><div class="cloud-inner"></div></div>
+                  </div>
+                  <div class="preview-overlay">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>View on GitHub</span>
+                  </div>
+                </div>
+                <div class="info-div">
+                  <span class="project-date">Jan – May 2024</span>
+                  <article class="ProjectHeading">Analyzing Network RTT</article>
+                  <p class="ProjectSubheading">FABRIC Testbed Cloud Networking</p>
+                  <p class="ProjectDescription">
+                    Designed controlled networking experiments across distributed nodes on <strong>FABRIC research infrastructure</strong> to measure RTT behavior. 
+                    Investigated impact of topology, routing paths, and infrastructure configuration on latency. 
+                    Built automated experiment workflows and visualization pipelines to interpret performance bottlenecks.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">FABRIC</span>
+                    <span class="tech-tag">Networking</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Cloud</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yashkuceriya/CSE-534-project"
+                      target="_blank" class="github-redirect"
+                      aria-label="Visit RTT Analysis on GitHub">
+                      <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End more-projects -->
+
+
+        </div>
+      </section>
+
+            <section class="contact-section" id="contact">
         <div class="contact-section-div">
           <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0" aria-label="Contact heading">

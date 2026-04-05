@@ -321,6 +321,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // ============================================
+// ARCHIVE TABLE TOGGLE
+// ============================================
+function toggleArchive() {
+  var more = document.getElementById('archive-more');
+  var text = document.getElementById('archive-toggle-text');
+  var arrow = document.getElementById('archive-toggle-arrow');
+  if (more.classList.contains('archive-more-hidden')) {
+    more.classList.remove('archive-more-hidden');
+    more.classList.add('archive-more-visible');
+    text.textContent = 'Show Less';
+    arrow.style.transform = 'rotate(180deg)';
+  } else {
+    more.classList.remove('archive-more-visible');
+    more.classList.add('archive-more-hidden');
+    text.textContent = 'Show More';
+    arrow.style.transform = 'rotate(0deg)';
+  }
+}
+
+
+// ============================================
 // 1. LENIS SMOOTH SCROLL
 // ============================================
 (function() {
@@ -371,6 +392,36 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() { btn.style.transition = ''; }, 400);
     });
   });
+})();
+
+
+// ============================================
+// ROTATING HERO PROOF POINTS
+// ============================================
+(function() {
+  var el = document.getElementById('hero-proof');
+  if (!el) return;
+
+  var proofs = [
+    'I ship production AI \u2014 7 apps live right now.',
+    'Built a voice assistant with sub-second latency.',
+    'Processed 1M+ EDI transactions/month at Infosys.',
+    'RAG search over 150K lines of legacy code.',
+    'K8s diagnostics with 3D cluster topology.',
+    'Reduced processing latency by 60% with event-driven pipelines.'
+  ];
+  var index = 0;
+
+  setInterval(function() {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(8px)';
+    setTimeout(function() {
+      index = (index + 1) % proofs.length;
+      el.textContent = proofs[index];
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }, 400);
+  }, 4000);
 })();
 
 

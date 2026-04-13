@@ -3360,12 +3360,12 @@ noscript {
   color: var(--text-primary);
 }
 
-.archive-more-hidden {
-  display: none;
+#archive-more.archive-more-hidden {
+  display: none !important;
 }
 
-.archive-more-visible {
-  display: grid;
+#archive-more.archive-more-visible {
+  display: grid !important;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
   width: 100%;

@@ -3366,8 +3366,10 @@ noscript {
 
 .archive-more-visible {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  width: 100%;
+  padding-top: var(--space-md);
 }
 
 .archive-toggle-btn {

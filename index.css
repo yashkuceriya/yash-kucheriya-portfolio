@@ -3365,7 +3365,9 @@ noscript {
 }
 
 .archive-more-visible {
-  display: table-row-group;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-lg);
 }
 
 .archive-toggle-btn {

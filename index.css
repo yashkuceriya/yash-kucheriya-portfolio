@@ -3369,7 +3369,13 @@ noscript {
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
   width: 100%;
-  padding-top: var(--space-md);
+  padding: var(--space-xl) 0;
+}
+
+@media screen and (max-width: 860px) {
+  #archive-more.archive-more-visible {
+    grid-template-columns: 1fr;
+  }
 }
 
 .archive-toggle-btn {

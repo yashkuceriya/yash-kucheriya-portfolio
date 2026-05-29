@@ -8,14 +8,14 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#faf8f6" />
     <meta name="description"
-      content="Yash Vijay Kucheriya | Software Developer — Backend, AI/ML & Data. 3+ years building scalable systems with Spring Boot, AWS, PyTorch. MS Computer Science @ ASU." />
+      content="Yash Vijay Kucheriya | AI Engineer and backend software engineer with 3+ years building production AI systems, cloud-native services, RAG apps, agentic workflows, and scalable APIs." />
     <meta name="keywords"
-      content="Yash Kucheriya, Yash Vijay Kucheriya, portfolio, Software Developer, Backend Engineer, AI ML, AWS, Spring Boot, Python, Java, ASU, MS Computer Science" />
+      content="Yash Kucheriya, Yash Vijay Kucheriya, portfolio, AI Engineer, Backend Engineer, RAG, Agentic Workflows, AWS, FastAPI, Spring Boot, Python, Java, TypeScript, ASU, MS Computer Science" />
     <meta name="author" content="Yash Vijay Kucheriya" />
     <meta property="og:image" content="https://yashkucheriya.com/og-image.png" />
     <meta property="og:title" content="Yash Vijay Kucheriya | Portfolio" />
     <meta property="og:description"
-      content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS, Spring Boot. MS CS @ ASU." />
+      content="AI Engineer and backend software engineer with 3+ years building production AI systems, RAG apps, agentic workflows, APIs, and cloud-native services." />
 
     <meta property="og:url" content="https://yashkucheriya.com" />
     <meta property="og:site_name" content="Yash Vijay Kucheriya Portfolio" />
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Yash Vijay Kucheriya | Portfolio" />
     <meta name="twitter:description"
-      content="Software Developer with 3+ years in backend, AI/ML & data. Building scalable systems with Python, Java, AWS. MS CS @ ASU." />
+      content="AI Engineer and backend software engineer building production AI systems, RAG apps, agentic workflows, APIs, and cloud-native services." />
     <link rel="canonical" href="https://yashkucheriya.com" />
     <title>Yash Vijay Kucheriya | Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32"
@@ -37,11 +37,11 @@
     <link rel="shortcut icon" type="image/png" sizes="32x32"
       href="src/png/favicon_io/favicon-32x32.png?v=2" />
     <!-- preload critical stylesheet -->
-    <link rel="preload" href="index.css" as="style" />
+    <link rel="preload" href="index.css?v=4" as="style" />
     <!-- AOS - Animate on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="index.css?v=3" />
+    <link rel="stylesheet" href="index.css?v=4" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,7 @@
         {
           "@type": "Person",
           "name": "Yash Vijay Kucheriya",
-          "jobTitle": "Software Developer",
+          "jobTitle": "AI Engineer",
           "url": "https://yashkucheriya.com",
           "email": "ykucheri@asu.edu",
           "sameAs": [
@@ -65,7 +65,7 @@
             "@type": "CollegeOrUniversity",
             "name": "Arizona State University"
           },
-          "knowsAbout": ["Python", "Java", "Spring Boot", "AWS", "AI/ML", "Data Science", "Backend Engineering"]
+          "knowsAbout": ["Python", "Java", "TypeScript", "Go", "FastAPI", "Spring Boot", "AWS", "RAG", "Agentic Workflows", "PostgreSQL", "Docker", "Kubernetes", "Backend Engineering", "Cloud Infrastructure"]
         },
         {
           "@type": "WebSite",
@@ -116,6 +116,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="cursor-inner"></div>
     <div class="cursor-outer"></div>
+
+    <!-- Case Study Drawer -->
+    <div class="case-study-overlay" id="case-study-overlay" aria-hidden="true">
+      <aside class="case-study-drawer" id="case-study-drawer" role="dialog" aria-modal="true" aria-labelledby="case-study-title" tabindex="-1">
+        <header class="case-study-header">
+          <div class="case-study-eyebrow" id="case-study-eyebrow">CASE STUDY</div>
+          <h2 class="case-study-title" id="case-study-title">Project</h2>
+          <p class="case-study-tagline" id="case-study-tagline"></p>
+          <button class="case-study-close" id="case-study-close" aria-label="Close case study">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </header>
+        <div class="case-study-body" id="case-study-body"></div>
+      </aside>
+    </div>
+
+    <!-- Command Palette -->
+    <div class="cmd-palette-overlay" id="cmd-palette-overlay">
+      <div class="cmd-palette" id="cmd-palette">
+        <div class="cmd-palette-input-wrap">
+          <svg class="cmd-palette-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" class="cmd-palette-input" id="cmd-palette-input" placeholder="Search sections, projects, links..." autocomplete="off" />
+          <kbd class="cmd-palette-kbd">ESC</kbd>
+        </div>
+        <ul class="cmd-palette-results" id="cmd-palette-results"></ul>
+        <div class="cmd-palette-footer">
+          <span><kbd>↑↓</kbd> navigate</span>
+          <span><kbd>↵</kbd> open</span>
+          <span><kbd>esc</kbd> close</span>
+        </div>
+      </div>
+    </div>
 
     <header>
 
@@ -197,12 +229,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- mobile toggle menu ends -->
 
       <section class="landing-page-container" id="home">
+        <canvas id="hero-particles"></canvas>
         <div class="blob"></div>
 
         <div class="text-content">
           <div class="status-badge" data-aos="fade-down" data-aos-delay="0">
             <span class="status-dot"></span>
-            Currently building AI systems @ Gauntlet AI
+            Currently building AI systems @ ST6 Partners
           </div>
           <article id="hello-friend" class="typing-container" data-aos="fade-up" data-aos-delay="100">
             <span class="typing-text">Hi, I'm</span><span class="typing-cursor"></span>
@@ -226,11 +259,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </article>
 
           <article id="work" data-aos="fade-up" data-aos-delay="400">
-            <span class="hero-proof" id="hero-proof">I ship production AI &mdash; 12 apps live right now.</span>
+            <span class="hero-proof" id="hero-proof">I build AI systems that actually ship &mdash; and I ship them fast.</span>
           </article>
           <p id="info-para" data-aos="fade-up" data-aos-delay="500">
-            I build things that work at scale &mdash; and I put them in production. Backend systems, AI agents, real-time pipelines &mdash; Python, Java, AWS, PyTorch.
+            AI engineer and backend builder across production AI systems, cloud-native APIs, RAG applications, agentic workflows, and real-time tools. I care about reliability, latency, cost, and maintainable systems that actually ship.
           </p>
+
+          <div class="hero-ticker" id="hero-ticker" data-aos="fade-up" data-aos-delay="550" aria-label="Selected production metrics">
+            <div class="hero-ticker-track">
+              <span class="hero-ticker-item"><strong>12</strong> apps live in production</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>150K+</strong> LOC of legacy Fortran indexed with RAG</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>&lt;3s</strong> RAG answers at ~$0.001/query</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>24</strong> tools wired into a real-time voice agent</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>26</strong> heuristic K8s detectors + 3D topology</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>12</strong> apps live in production</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>150K+</strong> LOC of legacy Fortran indexed with RAG</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>&lt;3s</strong> RAG answers at ~$0.001/query</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>24</strong> tools wired into a real-time voice agent</span>
+              <span class="hero-ticker-dot"></span>
+              <span class="hero-ticker-item"><strong>26</strong> heuristic K8s detectors + 3D topology</span>
+              <span class="hero-ticker-dot"></span>
+            </div>
+          </div>
+
+          <div class="hero-availability" data-aos="fade-up" data-aos-delay="580">
+            <span class="hero-avail-dot"></span>
+            <span>Open to full-time SWE / AI Engineer roles &mdash; U.S. (remote or relocate) · Summer / Fall 2026</span>
+          </div>
+
           <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="600">
             <a href="mailto:ykucheri@asu.edu" class="letsTalkBtn magnetic" aria-label="Send email to Yash">
                 <span class="letsTalkBtn-text">Let's Talk!</span>
@@ -329,6 +393,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="tech-tag">Docker</span>
                   </div>
                   <div class="project-buttons">
+                    <button type="button" class="case-study-btn" data-case-study="jarvis" aria-label="Open Jarvis case study">Case Study</button>
                     <a href="https://github.com/yashkuceriya/Jarvis" target="_blank" class="github-redirect" aria-label="Visit Jarvis on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
                     </a>
@@ -351,7 +416,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <article class="ProjectHeading">LegacyLens</article>
                   <p class="ProjectSubheading">RAG-Powered Legacy Code Navigator</p>
                   <p class="ProjectDescription">
-                    Semantic search system enabling natural language queries against <strong>150K+ lines of LAPACK Fortran</strong> using vector similarity and LLM analysis.
+                    Semantic search system enabling natural language queries against <strong>150K+ lines of legacy Fortran</strong> using vector similarity and LLM analysis.
                     8 analysis modes — explain, dependency mapping, impact analysis, documentation generation, bug search, and more.
                     Syntax-aware Fortran chunking with <strong>ChromaDB</strong>, <strong>Voyage-code-3</strong> embeddings, and <strong>Gemini 2.5 Flash</strong> via OpenRouter.
                     Interactive dependency graphs with vis-network. Sub-3s answer generation at ~$0.001/query.
@@ -365,6 +430,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="tech-tag">Docker</span>
                   </div>
                   <div class="project-buttons">
+                    <button type="button" class="case-study-btn" data-case-study="legacylens" aria-label="Open LegacyLens case study">Case Study</button>
                     <a href="https://github.com/yashkuceriya/LegacyLens"
                       target="_blank" class="github-redirect"
                       aria-label="Visit LegacyLens on GitHub">
@@ -426,7 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <article class="ProjectHeading">GhostGuide</article>
                   <p class="ProjectSubheading">AI-Powered Wealth Management Agent</p>
                   <p class="ProjectDescription">
-                    Built an AI agent layer on top of <strong>Ghostfolio</strong> (open-source wealth management) with natural-language portfolio insights.
+                    Built an AI agent layer on top of an <strong>open-source wealth management platform</strong> with natural-language portfolio insights.
                     <strong>25 specialized tools</strong> covering portfolio analysis, performance metrics, market data, and compliance checks.
                     Multi-layer hallucination verification system with LLM output validation.
                     <strong>NestJS + Angular</strong> full-stack with PostgreSQL, Prisma ORM, <strong>Redis</strong> caching, and LangSmith tracing. Pre-seeded with 200+ test transactions.
@@ -478,6 +544,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="tech-tag">Docker</span>
                   </div>
                   <div class="project-buttons">
+                    <button type="button" class="case-study-btn" data-case-study="k8s-analyser" aria-label="Open K8s Bundle Analyser case study">Case Study</button>
                     <a href="https://github.com/yashkuceriya/K8s-Bundle-Analyser" target="_blank" class="github-redirect" aria-label="Visit K8s Bundle Analyser on GitHub">
                       <img src="src/svg/github.svg" alt="github redirect button" loading="lazy" />
                     </a>
@@ -541,10 +608,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="info-dp-section">
             <div class="about-info" data-aos="fade-right">
               <p tabindex="0">
-                I specialize in building <strong>distributed backend systems</strong> and <strong>production AI applications</strong> &mdash; the kind that process millions of transactions, serve real-time inference, and actually ship to users.
+                I build <strong>production AI systems</strong> and <strong>backend platforms</strong> across RAG applications, agentic workflows, real-time AI tools, REST APIs, ML pipelines, and cloud-native services.
               </p>
               <p class="about-detail">
-                3+ years across companies like Gauntlet AI, Infosys, and startups in the US, UK, and India. I care most about making ML models useful in production, not just accurate in notebooks. MS Computer Science from Arizona State University (3.8 GPA).
+                3+ years across ST6 Partners, Gauntlet AI, ZenZiee, Buildoors Lab, and Infosys, with hands-on work in Python, Java, TypeScript, AWS, FastAPI, Spring Boot, PostgreSQL, Docker, Kubernetes, and event-driven systems. MS Computer Science from Arizona State University (3.8 GPA).
               </p>
               <!-- Resume button -->
               <button class="resume-btn" id="resume-btn" onclick="openURL()" aria-label="Download resume (PDF)">
@@ -598,6 +665,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               aria-label="Software engineer tech stack and programming skills">
               Tech Stack
             </h3>
+
+            <!-- Skill radial progress bars -->
+            <div class="skill-radials" id="skill-radials">
+              <div class="skill-radial" data-percent="95">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-radial-bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="skill-radial-fill" cx="50" cy="50" r="42" data-percent="95"></circle>
+                </svg>
+                <div class="skill-radial-label">
+                  <span class="skill-radial-value">0</span>%
+                  <span class="skill-radial-name">Languages</span>
+                </div>
+              </div>
+              <div class="skill-radial" data-percent="90">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-radial-bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="skill-radial-fill" cx="50" cy="50" r="42" data-percent="90"></circle>
+                </svg>
+                <div class="skill-radial-label">
+                  <span class="skill-radial-value">0</span>%
+                  <span class="skill-radial-name">Frameworks</span>
+                </div>
+              </div>
+              <div class="skill-radial" data-percent="85">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-radial-bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="skill-radial-fill" cx="50" cy="50" r="42" data-percent="85"></circle>
+                </svg>
+                <div class="skill-radial-label">
+                  <span class="skill-radial-value">0</span>%
+                  <span class="skill-radial-name">DevOps</span>
+                </div>
+              </div>
+              <div class="skill-radial" data-percent="88">
+                <svg viewBox="0 0 100 100">
+                  <circle class="skill-radial-bg" cx="50" cy="50" r="42"></circle>
+                  <circle class="skill-radial-fill" cx="50" cy="50" r="42" data-percent="88"></circle>
+                </svg>
+                <div class="skill-radial-label">
+                  <span class="skill-radial-value">0</span>%
+                  <span class="skill-radial-name">ML & Data</span>
+                </div>
+              </div>
+            </div>
+
             <ul class="tech-stack-wrapper">
               <li class="tech-stack-category">Languages</li>
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
@@ -613,30 +725,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </li>
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
-                <img src="./src/png/jslogo.png" alt="JavaScript skill"
-                  class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">JAVASCRIPT</span>
-              </li>
-
-              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
                 <img src="./src/png/typescriptlogo.png" alt="typescript skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">TYPESCRIPT</span>
               </li>
 
-              <li class="tech-stack-category">Frameworks</li>
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go skill"
+                  class="tech-stack-logo" loading="lazy" />
+                <span class="tooltip">GO</span>
+              </li>
+
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
-                <img src="./src/png/reactlogo.png" alt="react skill"
+                <img src="./src/png/cpplogo.png" alt="C++ skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">REACT</span>
+                <span class="tooltip">C++</span>
               </li>
 
+              <li class="tech-stack-category">Backend & APIs</li>
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="250">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg" alt="angularjs skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">ANGULARJS</span>
+                <span class="tooltip">FASTAPI</span>
               </li>
-
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="300">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="spring boot skill"
@@ -644,21 +755,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="tooltip">SPRING BOOT</span>
               </li>
 
-
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="350">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="postgresql skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">POSTGRESQL</span>
+                <span class="tooltip">NODE.JS</span>
               </li>
-
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" alt="react native skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="NestJS skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">REACT NATIVE</span>
+                <span class="tooltip">NESTJS</span>
               </li>
 
-              <li class="tech-stack-category">Cloud & DevOps</li>
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask skill"
+                  class="tech-stack-logo needtobeinvert" loading="lazy" />
+                <span class="tooltip">FLASK</span>
+              </li>
+
+              <li class="tech-stack-category">Cloud & Data</li>
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS skill"
                   class="tech-stack-logo" loading="lazy" />
@@ -666,22 +781,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </li>
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-plain.svg" alt="azure devops skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="PostgreSQL skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">AZURE</span>
+                <span class="tooltip">POSTGRESQL</span>
               </li>
 
-
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="terraform skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">TERRAFORM</span>
+                <span class="tooltip">MONGODB</span>
               </li>
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-plain.svg" alt="ansible skill"
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg" alt="Redis skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">ANSIBLE</span>
+                <span class="tooltip">REDIS</span>
               </li>
 
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="250">
@@ -696,26 +810,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="tooltip">KUBERNETES</span>
               </li>
 
-              <li class="tech-stack-category">ML & Data</li>
+              <li class="tech-stack-category">AI / ML</li>
               <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="350">
+                <img src="./src/png/ailogo.png" alt="RAG and agentic workflow skill"
+                  class="tech-stack-logo" loading="lazy" />
+                <span class="tooltip">RAG + AGENTS</span>
+              </li>
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">PYTORCH</span>
               </li>
-              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="0">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">TENSORFLOW</span>
               </li>
-              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Kafka skill"
                   class="tech-stack-logo" loading="lazy" />
                 <span class="tooltip">KAFKA</span>
               </li>
-              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go skill"
+              <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
+                <img src="./src/png/ailogo.png" alt="LLM API skill"
                   class="tech-stack-logo" loading="lazy" />
-                <span class="tooltip">GO</span>
+                <span class="tooltip">LLM APIS</span>
               </li>
 
               <li class="tech-stack-category">Tools</li>
@@ -804,84 +923,135 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="sectionHeadingP"></p>
           </div>
 
-          <div class="project-boxes-div">
-            <!-- Gauntlet AI -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-box project-box2" id="experience-box0">
-                <div class="info-div">
-                  <article class="ProjectHeading">Gauntlet AI</article>
+          <div class="timeline">
+            <div class="timeline-line">
+              <div class="timeline-line-fill"></div>
+            </div>
+
+            <!-- ST6 Partners -->
+            <div class="timeline-item">
+              <div class="timeline-dot active-dot">
+                <span class="timeline-pulse"></span>
+              </div>
+              <div class="timeline-date">May 2026 – Present</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-info">
+                    <article class="ProjectHeading">ST6 Partners</article>
+                    <span class="timeline-role">AI Engineer</span>
+                    <span class="timeline-location">United States</span>
+                  </div>
+                  <div class="image-div">
+                    <img src="src/png/ailogo.png" alt="ST6 Partners AI systems icon" class="company-logo" loading="lazy" />
+                  </div>
+                </div>
+                <div class="timeline-card-body">
                   <p class="ProjectDescription">
-                    <strong>AI Engineer</strong><br>
-                    <em>Feb 2026 – Present | Austin, TX, USA</em><br><br>
-                    • Built <strong>Jarvis</strong>, a production-grade voice assistant with adaptive jitter buffering, 24 integrated tools, and sub-second latency<br>
-                    • Shipped <strong>6 full-stack AI applications</strong> in 10 weeks &mdash; RAG systems, agentic workflows, real-time analytics, and autonomous content engines<br>
-                    • Engineered end-to-end <strong>agentic development</strong> pipelines with LangChain, ChromaDB, and Claude for production deployment<br>
-                    • Delivered under real constraints: cost governance, hallucination verification, and scalable model integrations
+                    • Building production AI systems and backend workflows with <strong>Python, TypeScript, APIs, and cloud deployment</strong><br>
+                    • Applying AI-assisted engineering practices to ship reliable backend services, automation, and model-powered product workflows<br>
+                    • Focused on maintainable systems with strong attention to reliability, latency, cost, and deployment quality
                   </p>
                 </div>
-                <div class="image-div">
-                  <img src="src/png/gauntlet-logo.svg"
-                    alt="Gauntlet AI logo" class="company-logo" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Gauntlet AI -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Feb 2026 – Apr 2026</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-info">
+                    <article class="ProjectHeading">Gauntlet AI</article>
+                    <span class="timeline-role">AI Engineer</span>
+                    <span class="timeline-location">Austin, TX, USA</span>
+                  </div>
+                  <div class="image-div">
+                    <img src="src/png/gauntlet-logo.svg" alt="Gauntlet AI logo" class="company-logo" loading="lazy" />
+                  </div>
+                </div>
+                <div class="timeline-card-body">
+                  <p class="ProjectDescription">
+                    • Built <strong>Jarvis</strong>, a production-grade voice assistant with adaptive jitter buffering, 24 integrated tools, and sub-second latency<br>
+                    • Shipped <strong>12+ production AI applications</strong> across RAG, agentic workflows, real-time voice, and AI orchestration with live deployments<br>
+                    • Built <strong>LegacyLens</strong>, a RAG system for semantic search over 150K+ lines of legacy Fortran using ChromaDB, Voyage embeddings, and Gemini 2.5 Flash<br>
+                    • Built <strong>GhostGuide</strong>, an AI portfolio-analysis agent layer with 25 tools, hallucination checks, and a NestJS, Angular, PostgreSQL, and Redis backend
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- ZenZiee (YesTech Corp) -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-box project-box2" id="experience-box1">
-                <div class="info-div">
-                  <article class="ProjectHeading">ZenZiee (YesTech Corp.)</article>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jun – Dec 2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-info">
+                    <article class="ProjectHeading">ZenZiee (YesTech Corp.)</article>
+                    <span class="timeline-role">Software Engineer</span>
+                    <span class="timeline-location">NJ, USA</span>
+                  </div>
+                  <div class="image-div">
+                    <img src="src/png/zenziee-logo.jpeg" alt="ZenZiee/YesTech logo" class="company-logo work-icon" loading="lazy" />
+                  </div>
+                </div>
+                <div class="timeline-card-body">
                   <p class="ProjectDescription">
-                    <strong>Software Engineer</strong><br>
-                    <em>Jun – Dec 2025 | NJ, USA</em><br><br>
                     • Built ZenZiee, a gamified social app with real-time APIs, analytics dashboards, and user sentiment tracking for 100+ beta users<br>
                     • Deployed containerized microservices using <strong>AWS ECS/ECR, ALB, CloudWatch</strong>, achieving <strong>99.9% uptime</strong><br>
                     • Designed event-driven pipelines with <strong>DynamoDB Streams, Lambda, S3</strong>, reducing processing latency by <strong>60%</strong>; collaborated with ML/frontend teams to embed emotion classification, increasing engagement by <strong>25%</strong>
                   </p>
                 </div>
-                <div class="image-div">
-                  <img src="src/png/zenziee-logo.jpeg"
-                    alt="ZenZiee/YesTech logo" class="company-logo work-icon" loading="lazy" />
-                </div>
               </div>
             </div>
 
             <!-- Buildoors Lab Ltd -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-box project-box5" id="experience-box2">
-                <div class="info-div">
-                  <article class="ProjectHeading">Buildoors Lab Ltd</article>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jan – Dec 2023</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-info">
+                    <article class="ProjectHeading">Buildoors Lab Ltd</article>
+                    <span class="timeline-role">Data Scientist</span>
+                    <span class="timeline-location">London, UK</span>
+                  </div>
+                  <div class="image-div">
+                    <img src="src/png/buildoor-logo.jpeg" alt="Buildoors Lab Ltd logo" class="company-logo" loading="lazy" />
+                  </div>
+                </div>
+                <div class="timeline-card-body">
                   <p class="ProjectDescription">
-                    <strong>Data Scientist</strong><br>
-                    <em>Jan – Dec 2023 | London, UK</em><br><br>
                     • Developed blockchain-based fraud detection system, reducing risk exposure by <strong>35%</strong><br>
                     • Automated ETL pipelines and built compliance dashboards using <strong>Pandas, SQL, Tableau, Power BI</strong><br>
                     • Deployed ML models on <strong>AWS SageMaker</strong> with automated retraining and monitoring workflows
                   </p>
                 </div>
-                <div class="image-div">
-                  <img src="src/png/buildoor-logo.jpeg"
-                    alt="Buildoors Lab Ltd logo" class="company-logo" loading="lazy" />
-                </div>
               </div>
             </div>
 
             <!-- Infosys Ltd -->
-            <div class="project-box-wrapper" data-aos="fade-up">
-              <div class="project-box project-box2" id="experience-box3">
-                <div class="info-div">
-                  <article class="ProjectHeading">Infosys Ltd</article>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Nov 2020 – Jul 2022</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-info">
+                    <article class="ProjectHeading">Infosys Ltd</article>
+                    <span class="timeline-role">Software Engineer</span>
+                    <span class="timeline-location">Pune, India</span>
+                  </div>
+                  <div class="image-div">
+                    <img src="src/png/infosys-logo.jpeg" alt="Infosys Ltd logo" class="company-logo" loading="lazy" />
+                  </div>
+                </div>
+                <div class="timeline-card-body">
                   <p class="ProjectDescription">
-                    <strong>Software Engineer</strong><br>
-                    <em>Nov 2020 – Jul 2022 | Pune, India</em><br><br>
                     • Designed Java <strong>Spring Boot microservices</strong> and REST APIs for enterprise billing systems, reducing manual effort by <strong>50%</strong><br>
                     • Improved backend performance by <strong>35%</strong> through MSSQL query optimization<br>
                     • Managed <strong>1M+ EDI transactions</strong> per month using IBM Sterling; implemented CI/CD pipelines reducing release cycles by <strong>45%</strong>
                   </p>
-                </div>
-                <div class="image-div">
-                  <img src="src/png/infosys-logo.jpeg"
-                    alt="Infosys Ltd logo" class="company-logo" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -896,6 +1066,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="section-heading" data-aos="fade-right">
             <h2 class="section-heading-article" tabindex="0">All Projects</h2>
             <p class="sectionHeadingP"></p>
+          </div>
+
+          <div class="project-filter-bar" id="project-filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+            <button class="filter-btn" data-filter="nextjs">Next.js</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="education">Education</button>
           </div>
 
           <div class="project-boxes-div" id="all-projects-grid" data-aos="fade-up">
@@ -1063,7 +1241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="info-div">
                   <span class="project-date">2026</span>
                   <article class="ProjectHeading">Launchpad</article>
-                  <p class="ProjectSubheading">AI-Powered Car Buying Onboarding</p>
+                  <p class="ProjectSubheading">AI-Powered E-Commerce Onboarding Assistant</p>
                   <div class="project-tech-tags">
                     <span class="tech-tag">Rails</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">pgvector</span><span class="tech-tag">XGBoost</span>
                   </div>
@@ -1318,6 +1496,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </section>
 
+      <!-- What I'm building now -->
+      <aside class="now-building-strip" id="now-building" aria-label="Currently building" data-aos="fade-up">
+        <span class="now-building-label">Now building</span>
+        <span class="now-building-text">
+          <strong>Session Analysis v2</strong> &mdash; privacy-first engagement analytics for live tutoring. In-browser MediaPipe + 52 facial blendshapes, zero data leaves the device.
+        </span>
+        <span class="now-building-stamp" id="now-building-stamp">updated Apr 2026</span>
+      </aside>
+
             <section class="contact-section" id="contact">
         <div class="contact-section-div">
           <div class="section-heading" data-aos="fade-right">
@@ -1428,12 +1615,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
     <!-- footer ends here -->
 
+    <!-- Three.js -->
+    <script src="https://unpkg.com/three@0.149.0/build/three.min.js"></script>
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <!-- Lenis smooth scroll -->
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init({ duration: 800, easing: 'ease-out-quart', once: false, mirror: true });</script>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
     <script>function openURL(){window.open("./src/pdf/Yash_Vijay_Kucheriya_Resume.pdf","_blank")}</script>
     <script data-name="BMC-Widget"
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
